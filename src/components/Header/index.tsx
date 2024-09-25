@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { AppBar, Box, Toolbar, IconButton, Button, Typography, Popover, MenuItem, List, ListItem, ListItemIcon, ListItemText, Divider } from '@mui/material';
+import { AppBar, Box, Toolbar, IconButton, Button, Typography, Popover, List, ListItem, ListItemIcon, ListItemText, Divider, Drawer } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import ChevronDownIcon from '@mui/icons-material/ArrowDropDown';
 import { useState } from 'react';
@@ -8,6 +8,7 @@ import { itemsMenu } from '../../constants/mocks/mocksMenu/mocks';
 
 export default function Header() {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
+  const [drawerOpen, setDrawerOpen] = useState(false);
 
   const handleMenuOpen = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorEl(event.currentTarget);
@@ -19,20 +20,21 @@ export default function Header() {
 
   const isMenuOpen = Boolean(anchorEl);
 
+  const toggleDrawer = (open: boolean) => () => {
+    setDrawerOpen(open);
+  };
+
   return (
     <header>
-      <AppBar  sx={{ background: '#121821',padding:"0.2rem 1rem" }}>
+      <AppBar sx={{ background: '#121821', padding: "0.2rem 1rem" }}>
         <Toolbar sx={{ justifyContent: 'space-between' }}>
           <Box sx={{ display: 'flex', alignItems: 'center' }}>
-           
-              <Box sx={{
-                display:"flex",
-                width: 100,
-              }}>
+            <Box sx={{
+              display: "flex",
+              width: 100,
+            }}>
               <img src={Logo} alt="Logo" width={"100%"} height={"100%"} />
-              </Box>
-          
-
+            </Box>
           </Box>
           {/* Menu para telas grandes */}
           <Box sx={{ display: { xs: 'none', lg: 'flex' }, gap: 4 }}>
@@ -54,7 +56,7 @@ export default function Header() {
           </Box>
           {/* Menu para mobile */}
           <Box sx={{ display: { xs: 'block', lg: 'none' } }}>
-            <IconButton edge="start" color="inherit" aria-label="menu">
+            <IconButton edge="start" color="inherit" aria-label="menu" onClick={toggleDrawer(true)}>
               <MenuIcon />
             </IconButton>
           </Box>
@@ -63,7 +65,6 @@ export default function Header() {
 
       {/* Popover - Painel de cursos */}
       <Popover
-       
         open={isMenuOpen}
         anchorEl={anchorEl}
         onClose={handleMenuClose}
@@ -75,14 +76,19 @@ export default function Header() {
           vertical: 'top',
           horizontal: 'left',
         }}
-  
+        PaperProps={{
+          sx: {
+            borderRadius: '1.2rem', // Ajuste este valor conforme necessário
+            boxShadow: 3, // Opcional, para adicionar uma sombra
+          },
+        }}
       >
-        <Box sx={{ p: 2 }}>
+        <Box sx={{ p: "1rem 1rem", }}>
           <List>
             {itemsMenu.map((item) => (
               <ListItem button key={item.name}>
                 <ListItemIcon>
-                  <item.icon aria-hidden="true" size={22}/>
+                  <item.icon aria-hidden="true" size={22} color='black' />
                 </ListItemIcon>
                 <ListItemText
                   primary={item.name}
@@ -93,6 +99,30 @@ export default function Header() {
           </List>
         </Box>
       </Popover>
+
+      {/* Drawer para mobile */}
+      <Drawer
+        anchor='left'
+        open={drawerOpen}
+        onClose={toggleDrawer(false)}
+      >
+        <Box
+          role="presentation"
+          onClick={toggleDrawer(false)}
+          onKeyDown={toggleDrawer(false)}
+        >
+          <List>
+            {itemsMenu.map((item) => (
+              <ListItem button key={item.name}>
+                <ListItemIcon>
+                  <item.icon aria-hidden="true" size={22} />
+                </ListItemIcon>
+                <ListItemText primary={item.name} secondary={item.description} />
+              </ListItem>
+            ))}
+          </List>
+        </Box>
+      </Drawer>
     </header>
   );
 }
