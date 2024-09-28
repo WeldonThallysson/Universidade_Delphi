@@ -11,21 +11,23 @@ import { Cards } from '../../Cards';
 type CardProps = {
     optionsCards: any[];
     slidesPerView?: number | null;
+    spaceBeetWeenItens?: number | null
     handleBtnPrimary?: (item: string) => void;
     handleBtnSecond?: (item: string) => void;
+    handleActionCard?: (item: string) => void;
 }
 
 export const Card = ({
     optionsCards,
     slidesPerView,
-    handleBtnPrimary,
-    handleBtnSecond
+    spaceBeetWeenItens,
+    handleActionCard,
 }: CardProps) => {
     return (
         <Swiper
-            spaceBetween={0}
+            spaceBetween={spaceBeetWeenItens ?? 45}
             slidesPerView={slidesPerView ?? 4}
-   
+            
              // Ativando a navegação
             // Adicionando os módulos de paginação e navegação
         >
@@ -36,8 +38,7 @@ export const Card = ({
                         title={item.title}
                         tag={item.tag}
                         description={item.description}
-                        handleBtnPrimary={() => { handleBtnPrimary && handleBtnPrimary(item.path) }}
-                        handleBtnSecond={() => { handleBtnSecond && handleBtnSecond(item.path) }}
+                        handleActionCard={() => {handleActionCard && handleActionCard(item.path)}}
                         titleBtnPrimary={item.titleBtnPrimary}
                         titleBtnSecond={item.titleBtnSecond}
                     />

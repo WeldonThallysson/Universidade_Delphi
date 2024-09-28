@@ -43,9 +43,11 @@ export default function Header() {
   const toggleDrawer = (open: boolean) => () => {
     setDrawerOpen(open);
   };
+
+  
   return (
     <header>
-      <AppBar sx={{ background: "#121821", padding: "0.2rem 1rem" }}>
+      <AppBar sx={{ elevation: 0,boxShadow:"none",   background: "linear-gradient(to right, #000000dd, #000000e8,#000000e6, #000000d8)",backgroundSize:"100%", padding: "0.2rem 1rem" }}>
         <Toolbar sx={{ justifyContent: "space-between" }}>
           <Box sx={{ display: "flex", alignItems: "center" }}>
             <Box

@@ -18,8 +18,9 @@ type DefaultProps = {
   titleBtnSecond: string;
   titleBtnPrimary: string;
   maxWidth?: Record<string, string | null> | string | number;
-  handleBtnSecond: () => void;
-  handleBtnPrimary: () => void;
+  handleBtnSecond?: () => void;
+  handleBtnPrimary?: () => void;
+  handleActionCard?: () => void;
 };
 
 export const Default = ({
@@ -32,14 +33,23 @@ export const Default = ({
   titleBtnPrimary = "Assistir",
   handleBtnSecond,
   handleBtnPrimary,
+  handleActionCard
 }: DefaultProps) => {
   const { theme } = useTheme();
   return (
     <Card
+      onClick={() => handleActionCard && handleActionCard()}
       sx={{
         maxWidth: maxWidth ?? 345,
         borderRadius: 2,
         boxShadow: 3,
+        transition: "transform 0.3s ease, box-shadow 0.3s ease",
+        "&:hover": {
+          cursor: "pointer",
+          transform: "scale3d(1.05, 1.05, 1.05)", // Aumenta o tamanho ligeiramente
+          boxShadow: 6, // Aumenta a sombra ao passar o mouse
+          zIndex: 15, 
+        },
       }}
     >
       <Box position="relative">
@@ -60,12 +70,23 @@ export const Default = ({
             top: 8,
             left: 8,
             fontWeight: "bold",
+     
           }}
         />
       </Box>
 
       <CardContent>
-        <Typography variant="subtitle2" color="textSecondary" gutterBottom>
+        <Typography   
+        sx={{
+          display: "-webkit-box", 
+          WebkitBoxOrient: "vertical",
+          overflow: "hidden",
+          WebkitLineClamp: 1,
+          textOverflow: "ellipsis", 
+        }}
+        variant="subtitle2"
+        color="textSecondary"
+        gutterBottom>
           {title}
         </Typography>
         <Typography
@@ -82,27 +103,33 @@ export const Default = ({
           {description}
         </Typography>
 
+
         <Box mt={2} display="flex" justifyContent="space-between">
-          <Button
-            variant="outlined"
-            color="primary"
-            size="small"
-            onClick={() => {
-              handleBtnSecond();
-            }}
-          >
-            {titleBtnSecond}
-          </Button>
-          <Button
-            variant="contained"
-            color="primary"
-            size="small"
-            onClick={() => {
-              handleBtnPrimary();
-            }}
-          >
-            {titleBtnPrimary}
-          </Button>
+          {handleBtnSecond && (
+              <Button
+              variant="outlined"
+              color="primary"
+              size="small"
+              onClick={() => {
+                handleBtnSecond();
+              }}
+            >
+              {titleBtnSecond}
+            </Button>
+          )}
+        {handleBtnPrimary && (
+           <Button
+           variant="contained"
+           color="primary"
+           size="small"
+           onClick={() => {
+             handleBtnPrimary();
+           }}
+         >
+           {titleBtnPrimary}
+         </Button>
+        )}
+         
         </Box>
       </CardContent>
     </Card>

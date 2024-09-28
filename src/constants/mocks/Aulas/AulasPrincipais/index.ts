@@ -1,6 +1,6 @@
 import CapaVideo from "../../../../assets/Cursos/capas/intraweb/capaIntraWeb.png";
 
-export const videosWebinarsUniversidadeDelphi = [
+export const aulasWebinarsUniversidadeDelphi = [
   {
     id: 1,
     img: CapaVideo, // Substitua por sua imagem específica
