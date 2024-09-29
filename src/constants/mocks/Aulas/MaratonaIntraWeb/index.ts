@@ -1,9 +1,9 @@
-import CapaVideo from "../../../../assets/Cursos/capas/intraweb/capaIntraWeb.png";
+import CapaVideo from "../../../../assets/Cursos/capas/intraweb/IntraWebCapa.png";
 
 export const aulasMaratonaIntraWeb = [
   {
     id: 1,
-    idCourse: 1,
+    idCourse: 2,
     img: CapaVideo,
     title: "Maratona Intraweb - Parte 1",
     description: "Introdução da Maratona Intraweb com Wallace Oliveira",
@@ -14,7 +14,7 @@ export const aulasMaratonaIntraWeb = [
   },
   {
     id: 2,
-    idCourse: 1,
+    idCourse: 2,
     img: CapaVideo,
     title: "Maratona IntraWeb - Parte 2",
     description:
@@ -26,7 +26,7 @@ export const aulasMaratonaIntraWeb = [
   },
   {
     id: 3,
-    idCourse: 1,
+    idCourse: 2,
     img: CapaVideo,
     title: "Maratona Intraweb - Parte 3",
     description:
@@ -38,7 +38,7 @@ export const aulasMaratonaIntraWeb = [
   },
   {
     id: 4,
-    idCourse: 1,
+    idCourse: 2,
     img: CapaVideo,
     title: "Maratona Intraweb - Parte 4",
     description:
@@ -50,7 +50,7 @@ export const aulasMaratonaIntraWeb = [
   },
   {
     id: 5,
-    idCourse: 1,
+    idCourse: 2,
     img: CapaVideo,
     title: "Maratona Intraweb - Parte 5",
     description:
@@ -62,7 +62,7 @@ export const aulasMaratonaIntraWeb = [
   },
   {
     id: 6,
-    idCourse: 1,
+    idCourse: 2,
     img: CapaVideo,
     title: "Maratona Intraweb - Parte 6",
     description:
@@ -74,7 +74,7 @@ export const aulasMaratonaIntraWeb = [
   },
   {
     id: 7,
-    idCourse: 1,
+    idCourse: 2,
     img: CapaVideo,
     title: "Maratona Intraweb – Parte 7",
     description: "Wallace Oliveira apresenta a maratona Intraweb: SweetAlert 2",
@@ -85,7 +85,7 @@ export const aulasMaratonaIntraWeb = [
   },
   {
     id: 8,
-    idCourse: 1,
+    idCourse: 2,
     img: CapaVideo,
     title: "Maratona Intraweb – Parte 8",
     description:
@@ -97,7 +97,7 @@ export const aulasMaratonaIntraWeb = [
   },
   {
     id: 9,
-    idCourse: 1,
+    idCourse: 2,
     img: CapaVideo,
     title: "Maratona Intraweb – Parte 9",
     description:
@@ -109,7 +109,7 @@ export const aulasMaratonaIntraWeb = [
   },
   {
     id: 10,
-    idCourse: 1,
+    idCourse: 2,
     img: CapaVideo,
     title: "Maratona Intraweb – Parte 10",
     description:
@@ -121,7 +121,7 @@ export const aulasMaratonaIntraWeb = [
   },
   {
     id: 11,
-    idCourse: 1,
+    idCourse: 2,
     img: CapaVideo,
     title: "Maratona Intraweb – Parte 11",
     description:
@@ -133,7 +133,7 @@ export const aulasMaratonaIntraWeb = [
   },
   {
     id: 12,
-    idCourse: 1,
+    idCourse: 2,
     img: CapaVideo,
     title: "Maratona Intraweb – Parte 12",
     description:
@@ -145,7 +145,7 @@ export const aulasMaratonaIntraWeb = [
   },
   {
     id: 13,
-    idCourse: 1,
+    idCourse: 2,
     img: CapaVideo,
     title: "Maratona Intraweb – Parte 13",
     description:
@@ -157,7 +157,7 @@ export const aulasMaratonaIntraWeb = [
   },
   {
     id: 14,
-    idCourse: 1,
+    idCourse: 2,
     img: CapaVideo,
     title: "Maratona Intraweb – Parte 14",
     description:
@@ -169,7 +169,7 @@ export const aulasMaratonaIntraWeb = [
   },
   {
     id: 15,
-    idCourse: 1,
+    idCourse: 2,
     img: CapaVideo,
     title: "Maratona Intraweb – Parte 15",
     description:
@@ -181,7 +181,7 @@ export const aulasMaratonaIntraWeb = [
   },
   {
     id: 16,
-    idCourse: 1,
+    idCourse: 2,
     img: CapaVideo,
     title: "Maratona Intraweb – Parte 16",
     description:
@@ -193,7 +193,7 @@ export const aulasMaratonaIntraWeb = [
   },
   {
     id: 17,
-    idCourse: 1,
+    idCourse: 2,
     img: CapaVideo,
     title: "Maratona Intraweb – Parte 17",
     description:
@@ -205,7 +205,7 @@ export const aulasMaratonaIntraWeb = [
   },
   {
     id: 18,
-    idCourse: 1,
+    idCourse: 2,
     img: CapaVideo,
     title: "Maratona Intraweb – Parte 18",
     description:
@@ -217,7 +217,7 @@ export const aulasMaratonaIntraWeb = [
   },
   {
     id: 19,
-    idCourse: 1,
+    idCourse: 2,
     img: CapaVideo,
     title: "Maratona Intraweb – Parte 19",
     description:
@@ -229,7 +229,7 @@ export const aulasMaratonaIntraWeb = [
   },
   {
     id: 20,
-    idCourse: 1,
+    idCourse: 2,
     img: CapaVideo,
     title: "Maratona Intraweb – Parte 20",
     description:
@@ -241,7 +241,7 @@ export const aulasMaratonaIntraWeb = [
   },
   {
     id: 21,
-    idCourse: 1,
+    idCourse: 2,
     img: CapaVideo,
     title: "Maratona Intraweb – Parte 21",
     description:
@@ -253,7 +253,7 @@ export const aulasMaratonaIntraWeb = [
   },
   {
     id: 22,
-    idCourse: 1,
+    idCourse: 2,
     img: CapaVideo,
     title: "Maratona Intraweb – Parte 22",
     description:
@@ -265,7 +265,7 @@ export const aulasMaratonaIntraWeb = [
   },
   {
     id: 23,
-    idCourse: 1,
+    idCourse: 2,
     img: CapaVideo,
     title: "Maratona Intraweb – Parte 23",
     description:
@@ -277,7 +277,7 @@ export const aulasMaratonaIntraWeb = [
   },
   {
     id: 24,
-    idCourse: 1,
+    idCourse: 2,
     img: CapaVideo,
     title: "Maratona Intraweb – Parte 24",
     description:
@@ -289,7 +289,7 @@ export const aulasMaratonaIntraWeb = [
   },
   {
     id: 25,
-    idCourse: 1,
+    idCourse: 2,
     img: CapaVideo,
     title: "Maratona Intraweb – Parte 25",
     description:
@@ -301,7 +301,7 @@ export const aulasMaratonaIntraWeb = [
   },
   {
     id: 26,
-    idCourse: 1,
+    idCourse: 2,
     img: CapaVideo,
     title: "Maratona Intraweb – Parte 26",
     description:
@@ -313,7 +313,7 @@ export const aulasMaratonaIntraWeb = [
   },
   {
     id: 27,
-    idCourse: 1,
+    idCourse: 2,
     img: CapaVideo,
     title: "Maratona Intraweb – Parte 27",
     description:
@@ -325,7 +325,7 @@ export const aulasMaratonaIntraWeb = [
   },
   {
     id: 28,
-    idCourse: 1,
+    idCourse: 2,
     img: CapaVideo,
     title: "Maratona Intraweb – Parte 28",
     description:
@@ -337,7 +337,7 @@ export const aulasMaratonaIntraWeb = [
   },
   {
     id: 29,
-    idCourse: 1,
+    idCourse: 2,
     img: CapaVideo,
     title: "Maratona Intraweb – Parte 29",
     description:
@@ -349,7 +349,7 @@ export const aulasMaratonaIntraWeb = [
   },
   {
     id: 30,
-    idCourse: 1,
+    idCourse: 2,
     img: CapaVideo,
     title: "Maratona Intraweb – Parte 30",
     description:

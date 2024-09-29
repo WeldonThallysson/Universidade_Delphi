@@ -1,15 +1,15 @@
-import { useNavigate } from "react-router"
-
-
+import { useNavigate } from "react-router";
 
 export const useCustomNavigation = () => {
-    const navigate = useNavigate();
+    const navigate = useNavigate(); 
 
+    // Função para navegação
     const handleNavigation = (item: string) => {
-        navigate(item)
-    }
-    return {
-        handleNavigation
+        navigate(item);
+    };
+ 
 
-    }
-}
+    return {
+        handleNavigation,
+    };
+};

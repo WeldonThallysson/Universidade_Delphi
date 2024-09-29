@@ -2,5 +2,14 @@
 
 
 export enum ROUTES {
-    HOME = '/'
+    HOME = '/',
+    CLASSROOM = '/aulas',
+    CLASSROOMINDIVIDUAL = '/aulas/:id',
+    COURSES = '/cursos/:idCurso',
+    COURSEINDIVIDUAL = '/cursos/:idCurso/:idAula',
+    LIVES = '/lives/:idLive',
+    COMMUNITY ='/comunidade',
+    HELP = '/ajuda'
+    
+
 }

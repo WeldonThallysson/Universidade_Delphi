@@ -1,6 +1,5 @@
 import { Box, Button, Icon, Typography } from "@mui/material";
 import bannerImage from "../../assets/Banner.png"; // Importando a imagem
-import { Cards } from "../../components/Cards";
 import { Carrousel } from "../../components/Carrousel";
 import {
   optionsFirstCarrouselCard,
@@ -10,11 +9,14 @@ import {
 import { homeOptions } from "../../constants/mocks/HomeOptions";
 import { useTheme } from "../../hooks/useTheme/useTheme";
 import { YouTube } from "@mui/icons-material";
+import { Containers } from "../../components/UI/Containers";
+import { useCustomNavigation } from "../../hooks/useCustomNavigation/useCustomNavigation";
 
 export const Home = () => {
   const { theme } = useTheme();
+  const { handleNavigation } = useCustomNavigation();
   return (
-    <Box>
+    <Containers.DefaultAnimated>
       <Box
         sx={{
           display: "flex",
@@ -49,9 +51,10 @@ export const Home = () => {
             <Typography
               sx={{
                 fontSize: "4rem",
-                fontFamily: "Open Sans",
+                fontFamily: "Poppins",
                 padding: 0,
                 height: 80,
+                fontWeight:"400",
                 color: theme.colors.secondary,
               }}
             >
@@ -60,8 +63,10 @@ export const Home = () => {
             <Typography
               sx={{
                 fontSize: "5rem",
-                fontFamily: "Open Sans",
+                fontFamily: "Poppins",
+                fontWeight:" 600",
                 padding: 0,
+                height: 110,
                 color: theme.colors.secondary,
                 marginTop: "-0.5rem",
               }}
@@ -72,7 +77,7 @@ export const Home = () => {
 
           <Typography
             sx={{
-              fontSize: "1rem",
+              fontSize: "1.1rem",
               fontFamily: "Open Sans",
               color: theme.colors.secondary,
             }}
@@ -124,7 +129,7 @@ export const Home = () => {
         {optionsFirstCarrouselCard.map((item) => (
           <Box
             key={item.id}
-            sx={{ display: "flex", flexDirection: "column", gap: 2 }}
+            sx={{ display: "flex", flexDirection: "column", gap: 1 }}
           >
             <Box>
               <Typography
@@ -148,6 +153,9 @@ export const Home = () => {
                 spaceBeetWeenItens={25}
                 slidesPerView={5}
                 optionsCards={item.data}
+                handleActionCard={(item) => {
+                  handleNavigation(item.path);
+                }}
               />
             </Box>
           </Box>
@@ -165,7 +173,7 @@ export const Home = () => {
         {optionsSecondCarrouselCard.map((item) => (
           <Box
             key={item.id}
-            sx={{ display: "flex", flexDirection: "column", gap: 2 }}
+            sx={{ display: "flex", flexDirection: "column", gap: 1 }}
           >
             <Box>
               <Typography
@@ -190,7 +198,7 @@ export const Home = () => {
                 slidesPerView={5}
                 optionsCards={item.data}
                 handleActionCard={(item) => {
-                  console.log(item);
+                  handleNavigation(item.path);
                 }}
               />
             </Box>
@@ -202,14 +210,14 @@ export const Home = () => {
         sx={{
           display: "flex",
           flexDirection: "column",
-          padding: "3rem 10rem",
+          padding: "3rem 10rem 12rem 10rem",
           gap: 3,
         }}
       >
         {optionsThirdCarrouselCard.map((item) => (
           <Box
             key={item.id}
-            sx={{ display: "flex", flexDirection: "column", gap: 2 }}
+            sx={{ display: "flex", flexDirection: "column", gap: 1 }}
           >
             <Box>
               <Typography
@@ -234,7 +242,7 @@ export const Home = () => {
                 slidesPerView={5}
                 optionsCards={item.data}
                 handleActionCard={(item) => {
-                  console.log(item);
+                  handleNavigation(item.path);
                 }}
               />
             </Box>
@@ -297,6 +305,6 @@ export const Home = () => {
           </Button>
         </Box>
       </Box>
-    </Box>
+    </Containers.DefaultAnimated>
   );
 };

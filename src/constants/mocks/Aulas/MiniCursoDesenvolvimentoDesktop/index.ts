@@ -1,4 +1,4 @@
-import CapaVideo from "../../../../assets/Cursos/capas/intraweb/capaIntraWeb.png";
+import CapaVideo from "../../../../assets/Cursos/capas/DesenvolvimentoDesktop/desktopCapa.png";
 
 export const minicursoDesktop = [
     {

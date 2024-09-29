@@ -1,12 +1,143 @@
-import { Box, Typography } from "@mui/material"
-
-
+import { Box, Typography, Link, Divider } from "@mui/material";
+import { itemsMenu } from "../../constants/mocks/mocksMenu/mocks";
+import { useCustomNavigation } from "../../hooks/useCustomNavigation/useCustomNavigation";
+import LogoFooter from "../../assets/logo.png";
+import Grid from "@mui/material/Grid2";
 
 export const Footer = () => {
-    return (
-        <Box>
+  const { handleNavigation } = useCustomNavigation();
 
-            <Typography>Footer</Typography>
+  return (
+    <Box
+      component="footer"
+      sx={{
+        display: "flex",
+        justifyItems: "center",
+        flexDirection: "column",
+        backgroundColor: "#17151d",
+        color: "#fff",
+        py: 6,
+        px: {
+          xs: 1,
+          sm: 5,
+          md: 6,
+          lg: 25,
+        },
+        gap: 2,
+      }}
+    >
+      <Grid container spacing={3} sx={{ flexWrap: "wrap" }}>
+        <Grid size={{ xs: 12, sm: 6, md: 3 }}>
+          <Typography variant="h6" sx={{ mb: 2 }}>
+            Cursos
+          </Typography>
+
+          <Box sx={{ display: "flex", flexDirection: "column", gap: 1 }}>
+            {itemsMenu.map((item) => (
+              <Box
+                key={item.id}
+                sx={{
+                  display: "flex",
+                  gap: 1,
+                  alignItems: "center",
+                  "&:hover": {
+                    cursor: "pointer",
+                  },
+                }}
+                onClick={() => {
+                  handleNavigation(item.href);
+                }}
+              >
+                <item.icon />
+                <Link sx={{ display: "flex", color: "#fff" }}>{item.name}</Link>
+              </Box>
+            ))}
+          </Box>
+        </Grid>
+
+        <Grid size={{ xs: 12, sm: 6, md: 3 }}>
+          <Typography variant="h6" sx={{ mb: 2 }}>
+            Lives
+          </Typography>
+          <Box>
+            <Link href="#" sx={{ display: "flex", color: "#fff", mb: 1 }}>
+              Política de Privacidade
+            </Link>
+            <Link href="#" sx={{ display: "flex", color: "#fff", mb: 1 }}>
+              Suas opções de privacidade
+            </Link>
+            <Link href="#" sx={{ display: "flex", color: "#fff", mb: 1 }}>
+              Termos e Condições
+            </Link>
+          </Box>
+        </Grid>
+
+        <Grid size={{ xs: 12, sm: 6, md: 3 }}>
+          <Typography variant="h6" sx={{ mb: 2 }}>
+            Social
+          </Typography>
+          <Box>
+            <Link href="#" sx={{ display: "flex", color: "#fff", mb: 1 }}>
+              @universidadedelphi
+            </Link>
+            <Link href="#" sx={{ display: "flex", color: "#fff", mb: 1 }}>
+              @universidade_delphi
+            </Link>
+            <Link href="#" sx={{ display: "flex", color: "#fff", mb: 1 }}>
+              @universidade delphi
+            </Link>
+          </Box>
+        </Grid>
+
+        <Grid size={{ xs: 12, sm: 6, md: 3 }}>
+          <Typography variant="h6" sx={{ mb: 2 }}>
+            Apoiadores
+          </Typography>
+          <Box>
+            <Link href="#" sx={{ display: "flex", color: "#fff", mb: 1 }}>
+              Landerson Gomes
+            </Link>
+            <Link href="#" sx={{ display: "flex", color: "#fff", mb: 1 }}>
+              Samuel David
+            </Link>
+            <Link href="#" sx={{ display: "flex", color: "#fff", mb: 1 }}>
+              Weldon Thallysson
+            </Link>
+          </Box>
+        </Grid>
+      </Grid>
+
+      <Divider sx={{ background: "#fff" }} />
+
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: { xs: "column", lg: "row" },
+          justifyContent: "space-between",
+          alignItems: "center",
+          textAlign: "center",
+          mt: 1,
+        }}
+      >
+        <Box
+          sx={{
+            width: 140,
+            height: 60,
+          }}
+        >
+          <img
+            src={LogoFooter}
+            alt="logo do rodapé"
+            style={{ width: "100%", height: "100%" }}
+          />
         </Box>
-    )
-}
+
+        <Box>
+          <Typography variant="body2" sx={{ color: "#fff" }}>
+            Universidade Delphi Inc. &copy; Copyright 2024. All Rights Reserved.
+          </Typography>
+        </Box>
+      </Box>
+    </Box>
+  );
+};

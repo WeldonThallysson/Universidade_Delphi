@@ -1,9 +1,9 @@
-import CapaVideo from "../../../../assets/Cursos/capas/intraweb/capaIntraWeb.png";
+import CapaVideo from "../../../../assets/Cursos/capas/DebugDelphi/debubDelphi.png";
 
 export const desvendandoDebugDelphi = [
     {
       id: 1,
-      idCourse: 3, // Substitua pelo idCourse correto
+      idCourse: 5, // Substitua pelo idCourse correto
       img: CapaVideo, // Substitua pela imagem adequada
       title: "Desvendando o Debug do Delphi - Parte 1",
       description: "Conheça os principais aspectos da ferramenta de depuração que acompanha o IDE do Delphi.",
@@ -14,7 +14,7 @@ export const desvendandoDebugDelphi = [
     },
     {
       id: 2,
-      idCourse: 3,
+      idCourse: 5,
       img: CapaVideo,
       title: "Desvendando o Debug do Delphi - Parte 2",
       description: "Continuação do aprendizado referente ao processo de depuração através do IDE do RAD Studio.",
@@ -25,7 +25,7 @@ export const desvendandoDebugDelphi = [
     },
     {
       id: 3,
-      idCourse: 3,
+      idCourse: 5,
       img: CapaVideo,
       title: "Desvendando o Debug do Delphi - Parte 3",
       description: "Terceira parte dando continuidade ao aprendizado referente ao processo de depuração através do IDE.",

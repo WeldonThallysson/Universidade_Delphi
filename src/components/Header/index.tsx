@@ -23,6 +23,7 @@ import {
 import { DrawerMobile } from "./Mobile/DrawerMobile";
 import { useCustomNavigation } from "../../hooks/useCustomNavigation/useCustomNavigation";
 import { useTheme } from "../../hooks/useTheme/useTheme";
+import { ROUTES } from "../../routes/paths";
 
 export default function Header() {
   const { theme } = useTheme();
@@ -47,14 +48,18 @@ export default function Header() {
   
   return (
     <header>
-      <AppBar sx={{ elevation: 0,boxShadow:"none",   background: "linear-gradient(to right, #000000dd, #000000e8,#000000e6, #000000d8)",backgroundSize:"100%", padding: "0.2rem 1rem" }}>
+      <AppBar position="fixed" sx={{ elevation: 0,boxShadow:"none", background: "linear-gradient(to right, #000000dd, #000000e8,#000000e6, #000000d8)",backgroundSize:"100%", padding: "0.2rem 1rem" }}>
         <Toolbar sx={{ justifyContent: "space-between" }}>
           <Box sx={{ display: "flex", alignItems: "center" }}>
             <Box
               sx={{
                 display: "flex",
                 width: 100,
+                "&:hover": {
+                  cursor:"pointer",
+                }
               }}
+              onClick={() => handleNavigation(ROUTES.HOME)}
             >
               <img
                 src={Logo}
@@ -68,7 +73,7 @@ export default function Header() {
 
           <Box sx={{ display: { xs: "none", lg: "flex" }, gap: 4 }}>
             {menuDefault.map((item) => (
-              <>
+              <Box key={item.id}>
                 <Button
                   color="inherit"
                   sx={{
@@ -89,7 +94,7 @@ export default function Header() {
                 >
                   {item.name}
                 </Button>
-              </>
+              </Box>
             ))}
           </Box>
 
@@ -159,7 +164,11 @@ export default function Header() {
                     },
                   },
                 }}
-                onClick={() => handleNavigation(item.href)}
+                onClick={() => {
+                
+                  handleNavigation(item.href)
+                  handleMenuClose()
+                }}
               >
                 <ListItemIcon>
                   <item.icon className="icon" aria-hidden="true" size={25} />

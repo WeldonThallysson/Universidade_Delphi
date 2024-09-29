@@ -1,9 +1,9 @@
-import CapaVideo from "../../../../assets/Cursos/capas/intraweb/capaIntraWeb.png";
+import CapaVideo from "../../../../assets/Cursos/capas/ApiHorse/capaHorse.png";
 
 export const aulasApiRestHorse = [
     {
       id: 1,
-      idCourse: 2,
+      idCourse: 3,
       img: CapaVideo,
       title: "Criando API REST com Horse Part1",
       description: "Utilizando o framework Horse para criação de uma REST em Delphi",
@@ -14,7 +14,7 @@ export const aulasApiRestHorse = [
     },
     {
       id: 2,
-      idCourse: 2,
+      idCourse: 3,
       img: CapaVideo,
       title: "Criando API REST com Horse Parte 2",
       description: "Utilizando o framework Horse para criação de uma API REST em Delphi",
@@ -25,7 +25,7 @@ export const aulasApiRestHorse = [
     },
     {
       id: 3,
-      idCourse: 2,
+      idCourse: 3,
       img: CapaVideo,
       title: "Criando API REST com Horse Parte 3",
       description: "Utilizando o framework Horse para criação de uma API REST em Delphi",
@@ -36,7 +36,7 @@ export const aulasApiRestHorse = [
     },
     {
       id: 4,
-      idCourse: 2,
+      idCourse: 3,
       img: CapaVideo,
       title: "Criando API REST com Horse Parte 4",
       description: "Utilizando o framework Horse para criação de uma API REST em Delphi",
@@ -47,7 +47,7 @@ export const aulasApiRestHorse = [
     },
     {
       id: 5,
-      idCourse: 2,
+      idCourse: 3,
       img: CapaVideo,
       title: "Criando API REST com Horse Parte 5",
       description: "Utilizando o framework Horse para criação de uma API REST em Delphi",
@@ -58,7 +58,7 @@ export const aulasApiRestHorse = [
     },
     {
       id: 6,
-      idCourse: 2,
+      idCourse: 3,
       img: CapaVideo,
       title: "Criando API REST com Horse Parte 6",
       description: "Utilizando o framework Horse para criação de uma API REST em Delphi",
@@ -69,7 +69,7 @@ export const aulasApiRestHorse = [
     },
     {
       id: 7,
-      idCourse: 2,
+      idCourse: 3,
       img: CapaVideo,
       title: "Criando API REST com Horse Parte 7",
       description: "Utilizando o framework Horse para criação de uma API REST em Delphi",
@@ -80,7 +80,7 @@ export const aulasApiRestHorse = [
     },
     {
       id: 8,
-      idCourse: 2,
+      idCourse: 3,
       img: CapaVideo,
       title: "Criando API REST com Horse Parte 8",
       description: "Utilizando o framework Horse para criação de uma API REST em Delphi",
@@ -91,7 +91,7 @@ export const aulasApiRestHorse = [
     },
     {
       id: 9,
-      idCourse: 2,
+      idCourse: 3,
       img: CapaVideo,
       title: "Criando API REST com Horse Parte 9",
       description: "Utilizando o framework Horse para criação de uma API REST em Delphi",
@@ -102,7 +102,7 @@ export const aulasApiRestHorse = [
     },
     {
       id: 10,
-      idCourse: 2,
+      idCourse: 3,
       img: CapaVideo,
       title: "Criando API REST com Horse Parte 10",
       description: "Utilizando o framework Horse para criação de uma API REST em Delphi",

@@ -1,19 +1,37 @@
 import { Box } from "@mui/material"
-import { Outlet } from "react-router"
+import { Outlet, useLocation } from "react-router"
 import Header from "../Header"
+import { Footer } from "../Footer"
+import { useEffect } from "react"
 
 
 export const Layouts = () => {
+    const { pathname } = useLocation();
+
+    useEffect(() => {
+    
+        window.scrollTo(0, 0);
+    }, [pathname]);
     return (
         <Box sx={{
             display:"flex",
-            flexDirection:"column"
+            flexDirection:"column",
+            justifyContent:"space-between",   
+            height: "100vh"
         }}>
-            <Header/>
+            <Box mb={8}>
+              <Header/>
+            </Box>
+          
+            <Box sx={{
+               flexGrow: 1
+            }}>
             <Outlet/>
-            {/**
-             *   <Footer/>
-             */}
+            </Box>
+           
+            
+            <Footer/>
+            
           
         </Box>
     )

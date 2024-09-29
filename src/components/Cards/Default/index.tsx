@@ -33,7 +33,7 @@ export const Default = ({
   titleBtnPrimary = "Assistir",
   handleBtnSecond,
   handleBtnPrimary,
-  handleActionCard
+  handleActionCard,
 }: DefaultProps) => {
   const { theme } = useTheme();
   return (
@@ -42,13 +42,15 @@ export const Default = ({
       sx={{
         maxWidth: maxWidth ?? 345,
         borderRadius: 2,
+        border:"none",
         boxShadow: 3,
         transition: "transform 0.3s ease, box-shadow 0.3s ease",
+      
         "&:hover": {
           cursor: "pointer",
           transform: "scale3d(1.05, 1.05, 1.05)", // Aumenta o tamanho ligeiramente
           boxShadow: 6, // Aumenta a sombra ao passar o mouse
-          zIndex: 15, 
+          zIndex: 15,
         },
       }}
     >
@@ -70,25 +72,46 @@ export const Default = ({
             top: 8,
             left: 8,
             fontWeight: "bold",
-     
           }}
         />
       </Box>
 
-      <CardContent>
-        <Typography   
+      <CardContent
         sx={{
-          display: "-webkit-box", 
-          WebkitBoxOrient: "vertical",
-          overflow: "hidden",
-          WebkitLineClamp: 1,
-          textOverflow: "ellipsis", 
+          position: "relative",
+          padding: 2,
+          border:"none",
+          zIndex: 2, // Mantém o conteúdo acima das camadas de fundo
+          background: "linear-gradient(135deg, #a52c2c, #e8413b, #8b233d)", // Degradê
+          "&::before": {
+            content: '""',
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            backgroundColor: "rgba(0, 0, 0, 0.5)", // Camada preta transparente
+            zIndex: 4, // Abaixo do conteúdo, acima do fundo
+          },
         }}
-        variant="subtitle2"
-        color="textSecondary"
-        gutterBottom>
+      >
+        <Typography
+          sx={{
+            display: "-webkit-box",
+            WebkitBoxOrient: "vertical",
+            overflow: "hidden",
+            WebkitLineClamp: 1,
+            textOverflow: "ellipsis",
+            color: "white", // Textos brancos para melhor contraste
+            position: "relative", // Para garantir que esteja acima do fundo
+            zIndex: 6,
+          }}
+          variant="subtitle2"
+          gutterBottom
+        >
           {title}
         </Typography>
+
         <Typography
           variant="body1"
           component="div"
@@ -98,15 +121,22 @@ export const Default = ({
             overflow: "hidden",
             WebkitLineClamp: 2, // Limita a 2 linhas
             textOverflow: "ellipsis",
+            color: "white", // Textos brancos
+            position: "relative",
+            zIndex: 6,
           }}
         >
           {description}
         </Typography>
 
-
-        <Box mt={2} display="flex" justifyContent="space-between">
+        <Box
+          mt={2}
+          display="flex"
+          justifyContent="space-between"
+          sx={{ position: "relative", zIndex: 2 }}
+        >
           {handleBtnSecond && (
-              <Button
+            <Button
               variant="outlined"
               color="primary"
               size="small"
@@ -117,19 +147,18 @@ export const Default = ({
               {titleBtnSecond}
             </Button>
           )}
-        {handleBtnPrimary && (
-           <Button
-           variant="contained"
-           color="primary"
-           size="small"
-           onClick={() => {
-             handleBtnPrimary();
-           }}
-         >
-           {titleBtnPrimary}
-         </Button>
-        )}
-         
+          {handleBtnPrimary && (
+            <Button
+              variant="contained"
+              color="primary"
+              size="small"
+              onClick={() => {
+                handleBtnPrimary();
+              }}
+            >
+              {titleBtnPrimary}
+            </Button>
+          )}
         </Box>
       </CardContent>
     </Card>

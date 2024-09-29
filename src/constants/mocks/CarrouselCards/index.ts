@@ -14,7 +14,7 @@ export const optionsFirstCarrouselCard = [
         title: aulasMaratonaIntraWeb[0].title,
         description: aulasMaratonaIntraWeb[0].description,
         tag: aulasMaratonaIntraWeb[0].tag,
-        path: `cursos/${aulasMaratonaIntraWeb[0].idCourse}/${aulasMaratonaIntraWeb[0].id}`,
+        path: `/cursos/${aulasMaratonaIntraWeb[0].idCourse}/${aulasMaratonaIntraWeb[0].id}`,
       },
       {
         id: 2,
@@ -22,7 +22,7 @@ export const optionsFirstCarrouselCard = [
         title: aulasMaratonaIntraWeb[1].title,
         tag: aulasMaratonaIntraWeb[1].tag,
         description: aulasMaratonaIntraWeb[1].description,
-        path: `cursos/${aulasMaratonaIntraWeb[1].idCourse}/${aulasMaratonaIntraWeb[1].id}`,
+        path: `/cursos/${aulasMaratonaIntraWeb[1].idCourse}/${aulasMaratonaIntraWeb[1].id}`,
       },
       {
         id: 3,
@@ -30,7 +30,7 @@ export const optionsFirstCarrouselCard = [
         title: aulasMaratonaIntraWeb[2].title,
         tag: aulasMaratonaIntraWeb[2].tag,
         description: aulasMaratonaIntraWeb[2].description,
-        path: `cursos/${aulasMaratonaIntraWeb[2].idCourse}/${aulasMaratonaIntraWeb[2].id}`,
+        path: `/cursos/${aulasMaratonaIntraWeb[2].idCourse}/${aulasMaratonaIntraWeb[2].id}`,
       },
       {
         id: 4,
@@ -38,7 +38,7 @@ export const optionsFirstCarrouselCard = [
         title: aulasMaratonaIntraWeb[3].title,
         tag: aulasMaratonaIntraWeb[3].tag,
         description: aulasMaratonaIntraWeb[3].description,
-        path: `cursos/${aulasMaratonaIntraWeb[3].idCourse}/${aulasMaratonaIntraWeb[3].id}`,
+        path: `/cursos/${aulasMaratonaIntraWeb[3].idCourse}/${aulasMaratonaIntraWeb[3].id}`,
       },
 
       {
@@ -47,7 +47,7 @@ export const optionsFirstCarrouselCard = [
         title: aulasMaratonaIntraWeb[4].title,
         tag: aulasMaratonaIntraWeb[4].tag,
         description: aulasMaratonaIntraWeb[4].description,
-        path: `cursos/${aulasMaratonaIntraWeb[4].idCourse}/${aulasMaratonaIntraWeb[4].id}`,
+        path: `/cursos/${aulasMaratonaIntraWeb[4].idCourse}/${aulasMaratonaIntraWeb[4].id}`,
       },
       {
         id: 6,
@@ -55,7 +55,7 @@ export const optionsFirstCarrouselCard = [
         title: aulasMaratonaIntraWeb[5].title,
         tag: aulasMaratonaIntraWeb[5].tag,
         description: aulasMaratonaIntraWeb[5].description,
-        path: `cursos/${aulasMaratonaIntraWeb[5].idCourse}/${aulasMaratonaIntraWeb[5].id}`,
+        path: `/cursos/${aulasMaratonaIntraWeb[5].idCourse}/${aulasMaratonaIntraWeb[5].id}`,
       },
     
       {
@@ -64,7 +64,7 @@ export const optionsFirstCarrouselCard = [
         title: aulasMaratonaIntraWeb[6].title,
         tag: aulasMaratonaIntraWeb[6].tag,
         description: aulasMaratonaIntraWeb[6].description,
-        path: `cursos/${aulasMaratonaIntraWeb[6].idCourse}/${aulasMaratonaIntraWeb[6].id}`,
+        path: `/cursos/${aulasMaratonaIntraWeb[6].idCourse}/${aulasMaratonaIntraWeb[6].id}`,
       },
       
       {
@@ -73,7 +73,7 @@ export const optionsFirstCarrouselCard = [
         title: aulasMaratonaIntraWeb[7].title,
         tag: aulasMaratonaIntraWeb[7].tag,
         description: aulasMaratonaIntraWeb[7].description,
-        path: `cursos/${aulasMaratonaIntraWeb[7].idCourse}/${aulasMaratonaIntraWeb[7].id}`,
+        path: `/cursos/${aulasMaratonaIntraWeb[7].idCourse}/${aulasMaratonaIntraWeb[7].id}`,
       },
     ],
   },
@@ -93,7 +93,7 @@ export const optionsSecondCarrouselCard = [
         title: aulasApiRestHorse[0].title,
         description: aulasApiRestHorse[0].description,
         tag: aulasApiRestHorse[0].tag,
-        path: `cursos/${aulasApiRestHorse[0].idCourse}/${aulasApiRestHorse[0].id}`,
+        path: `/cursos/${aulasApiRestHorse[0].idCourse}/${aulasApiRestHorse[0].id}`,
       },
       {
         id: 2,
@@ -101,7 +101,7 @@ export const optionsSecondCarrouselCard = [
         title: aulasApiRestHorse[1].title,
         tag: aulasApiRestHorse[1].tag,
         description: aulasApiRestHorse[1].description,
-        path: `cursos/${aulasApiRestHorse[1].idCourse}/${aulasApiRestHorse[1].id}`,
+        path: `/cursos/${aulasApiRestHorse[1].idCourse}/${aulasApiRestHorse[1].id}`,
       },
       {
         id: 3,
@@ -109,7 +109,7 @@ export const optionsSecondCarrouselCard = [
         title: aulasApiRestHorse[2].title,
         tag: aulasApiRestHorse[2].tag,
         description: aulasApiRestHorse[2].description,
-        path: `cursos/${aulasApiRestHorse[2].idCourse}/${aulasApiRestHorse[2].id}`,
+        path: `/cursos/${aulasApiRestHorse[2].idCourse}/${aulasApiRestHorse[2].id}`,
       },
       {
         id: 4,
@@ -117,7 +117,7 @@ export const optionsSecondCarrouselCard = [
         title: aulasApiRestHorse[3].title,
         tag: aulasApiRestHorse[3].tag,
         description: aulasApiRestHorse[3].description,
-        path: `cursos/${aulasApiRestHorse[3].idCourse}/${aulasApiRestHorse[3].id}`,
+        path: `/cursos/${aulasApiRestHorse[3].idCourse}/${aulasApiRestHorse[3].id}`,
       },
 
       {
@@ -126,7 +126,7 @@ export const optionsSecondCarrouselCard = [
         title: aulasApiRestHorse[4].title,
         tag: aulasApiRestHorse[4].tag,
         description: aulasApiRestHorse[4].description,
-        path: `cursos/${aulasApiRestHorse[4].idCourse}/${aulasApiRestHorse[4].id}`,
+        path: `/cursos/${aulasApiRestHorse[4].idCourse}/${aulasApiRestHorse[4].id}`,
       },
       {
         id: 6,
@@ -134,7 +134,7 @@ export const optionsSecondCarrouselCard = [
         title: aulasApiRestHorse[5].title,
         tag: aulasApiRestHorse[5].tag,
         description: aulasApiRestHorse[5].description,
-        path: `cursos/${aulasApiRestHorse[5].idCourse}/${aulasApiRestHorse[5].id}`,
+        path: `/cursos/${aulasApiRestHorse[5].idCourse}/${aulasApiRestHorse[5].id}`,
       },
       {
         id: 7,
@@ -142,7 +142,7 @@ export const optionsSecondCarrouselCard = [
         title: aulasApiRestHorse[6].title,
         tag: aulasApiRestHorse[6].tag,
         description: aulasApiRestHorse[6].description,
-        path: `cursos/${aulasApiRestHorse[6].idCourse}/${aulasApiRestHorse[6].id}`,
+        path: `/cursos/${aulasApiRestHorse[6].idCourse}/${aulasApiRestHorse[6].id}`,
       },
       {
         id: 8,
@@ -150,7 +150,7 @@ export const optionsSecondCarrouselCard = [
         title: aulasApiRestHorse[7].title,
         tag: aulasApiRestHorse[7].tag,
         description: aulasApiRestHorse[7].description,
-        path: `cursos/${aulasApiRestHorse[7].idCourse}/${aulasApiRestHorse[7].id}`,
+        path: `/cursos/${aulasApiRestHorse[7].idCourse}/${aulasApiRestHorse[7].id}`,
       },
     ],
   },
@@ -168,7 +168,7 @@ export const optionsThirdCarrouselCard = [
         title: minicursoDesktop[0].title,
         description: minicursoDesktop[0].description,
         tag: minicursoDesktop[0].tag,
-        path: `cursos/${minicursoDesktop[0].idCourse}/${minicursoDesktop[0].id}`,
+        path: `/cursos/${minicursoDesktop[0].idCourse}/${minicursoDesktop[0].id}`,
       },
       {
         id: 2,
@@ -176,7 +176,7 @@ export const optionsThirdCarrouselCard = [
         title: minicursoDesktop[1].title,
         tag: minicursoDesktop[1].tag,
         description: minicursoDesktop[1].description,
-        path: `cursos/${minicursoDesktop[1].idCourse}/${minicursoDesktop[1].id}`,
+        path: `/cursos/${minicursoDesktop[1].idCourse}/${minicursoDesktop[1].id}`,
       },
       {
         id: 3,
@@ -184,7 +184,7 @@ export const optionsThirdCarrouselCard = [
         title: minicursoDesktop[2].title,
         tag: minicursoDesktop[2].tag,
         description: minicursoDesktop[2].description,
-        path: `cursos/${minicursoDesktop[2].idCourse}/${minicursoDesktop[2].id}`,
+        path: `/cursos/${minicursoDesktop[2].idCourse}/${minicursoDesktop[2].id}`,
       },
       {
         id: 4,
@@ -192,7 +192,7 @@ export const optionsThirdCarrouselCard = [
         title: desvendandoDebugDelphi[0].title,
         tag: desvendandoDebugDelphi[0].tag,
         description: desvendandoDebugDelphi[0].description,
-        path: `cursos/${desvendandoDebugDelphi[0].idCourse}/${desvendandoDebugDelphi[0].id}`,
+        path: `/cursos/${desvendandoDebugDelphi[0].idCourse}/${desvendandoDebugDelphi[0].id}`,
       },
 
       {
@@ -201,7 +201,7 @@ export const optionsThirdCarrouselCard = [
         title: desvendandoDebugDelphi[0].title,
         tag: desvendandoDebugDelphi[0].tag,
         description: desvendandoDebugDelphi[0].description,
-        path: `cursos/${desvendandoDebugDelphi[0].idCourse}/${desvendandoDebugDelphi[0].id}`,
+        path: `/cursos/${desvendandoDebugDelphi[0].idCourse}/${desvendandoDebugDelphi[0].id}`,
       },
     ],
   },
