@@ -2,6 +2,7 @@ import { aulasApiRestHorse } from "../Aulas/ApiRestHorse"
 import { criandoPrimeiraAplicacao } from "../Aulas/CriandoPrimeiraAplicacao"
 import { aulasMaratonaIntraWeb } from "../Aulas/MaratonaIntraWeb"
 import { desvendandoDebugDelphi } from "../Aulas/MiniCursoDebugDelphi"
+import { delphiPoo } from "../Aulas/MiniCursoDelphiPoo"
 import { minicursoDesktop } from "../Aulas/MiniCursoDesenvolvimentoDesktop"
 
 
@@ -40,7 +41,7 @@ export const Courses = [
         title: 'Programação Orientada a Objetos com Delphi',
         description: '',
         tag: 'Delphi Poo',
-        classrooms: aulasMaratonaIntraWeb
+        classrooms: delphiPoo
     },
    */
     {
@@ -49,5 +50,13 @@ export const Courses = [
         description: '',
         tag: 'Desktop',
         classrooms: desvendandoDebugDelphi
+    },
+
+    {
+        id: 6,
+        title: 'Programação Orientada a Objetos com Delphi',
+        description: '',
+        tag: 'Delphi Poo',
+        classrooms: delphiPoo
     },
 ]

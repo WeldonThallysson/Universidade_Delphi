@@ -43,9 +43,10 @@ export const Default = ({
         maxWidth: maxWidth ?? 345,
         borderRadius: 2,
         border:"none",
+        background:"transparent",
         boxShadow: 3,
         transition: "transform 0.3s ease, box-shadow 0.3s ease",
-      
+        
         "&:hover": {
           cursor: "pointer",
           transform: "scale3d(1.05, 1.05, 1.05)", // Aumenta o tamanho ligeiramente

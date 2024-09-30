@@ -3,6 +3,7 @@ import { itemsMenu } from "../../constants/mocks/mocksMenu/mocks";
 import { useCustomNavigation } from "../../hooks/useCustomNavigation/useCustomNavigation";
 import LogoFooter from "../../assets/logo.png";
 import Grid from "@mui/material/Grid2";
+import { livesUniversidadeDelphi } from "../../constants/mocks/Lives";
 
 export const Footer = () => {
   const { handleNavigation } = useCustomNavigation();
@@ -59,20 +60,21 @@ export const Footer = () => {
           <Typography variant="h6" sx={{ mb: 2 }}>
             Lives
           </Typography>
-          <Box>
-            <Link href="#" sx={{ display: "flex", color: "#fff", mb: 1 }}>
-              Política de Privacidade
-            </Link>
-            <Link href="#" sx={{ display: "flex", color: "#fff", mb: 1 }}>
-              Suas opções de privacidade
-            </Link>
-            <Link href="#" sx={{ display: "flex", color: "#fff", mb: 1 }}>
-              Termos e Condições
-            </Link>
-          </Box>
+
+          {livesUniversidadeDelphi.map((item) => {
+            return item.id <= 3 && (
+              <Box key={item.id}>
+                <Link href={`/lives/${item.id}`} sx={{ display: "flex", color: "#fff", mb: 1 }}>
+                   {item.title}
+                </Link>
+             </Box>
+            )
+          })}
+         
         </Grid>
 
-        <Grid size={{ xs: 12, sm: 6, md: 3 }}>
+        {/*
+         <Grid size={{ xs: 12, sm: 6, md: 3 }}>
           <Typography variant="h6" sx={{ mb: 2 }}>
             Social
           </Typography>
@@ -88,19 +90,20 @@ export const Footer = () => {
             </Link>
           </Box>
         </Grid>
-
+        */}    
+    
         <Grid size={{ xs: 12, sm: 6, md: 3 }}>
           <Typography variant="h6" sx={{ mb: 2 }}>
             Apoiadores
           </Typography>
           <Box>
-            <Link href="#" sx={{ display: "flex", color: "#fff", mb: 1 }}>
+            <Link target="_blank" href="https://www.instagram.com/landersondelphi/" sx={{ display: "flex", color: "#fff", mb: 1 }}>
               Landerson Gomes
             </Link>
-            <Link href="#" sx={{ display: "flex", color: "#fff", mb: 1 }}>
+            <Link target="_blank" href="https://www.instagram.com/s.mukadavid/" sx={{ display: "flex", color: "#fff", mb: 1 }}>
               Samuel David
             </Link>
-            <Link href="#" sx={{ display: "flex", color: "#fff", mb: 1 }}>
+            <Link target="_blank" href="https://www.instagram.com/weldon_dev/" sx={{ display: "flex", color: "#fff", mb: 1 }}>
               Weldon Thallysson
             </Link>
           </Box>
@@ -123,7 +126,11 @@ export const Footer = () => {
           sx={{
             width: 140,
             height: 60,
+            "&:hover": {
+              cursor:'pointer'
+            }
           }}
+          onClick={() => handleNavigation('/')}
         >
           <img
             src={LogoFooter}
@@ -134,7 +141,7 @@ export const Footer = () => {
 
         <Box>
           <Typography variant="body2" sx={{ color: "#fff" }}>
-            Universidade Delphi Inc. &copy; Copyright 2024. All Rights Reserved.
+            Universidade Delphi Inc. V1. &copy; Copyright 2024. All Rights Reserved.
           </Typography>
         </Box>
       </Box>

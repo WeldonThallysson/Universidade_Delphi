@@ -53,7 +53,13 @@ const Lives = () => {
                     <Typography sx={{fontSize: 20, color: theme.colors.secondary, fontFamily: 'Open Sans' }}>Continue assistindo...</Typography>
                    <Box>
                          <Carrousel.Card
+                          spaceBeetWeenItens={18}
                           optionsCards={allLives}
+                          handleActionCard={(item ) => {
+                            const redirect = `/lives/${item.id}`;
+                            handleNavigation(redirect)
+
+                        }}
                          />
                    </Box>
                 </Box>

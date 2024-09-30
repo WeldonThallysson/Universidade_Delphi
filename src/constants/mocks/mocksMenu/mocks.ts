@@ -1,5 +1,5 @@
 import { GiHorseHead } from "react-icons/gi";
-import { FaRegObjectUngroup } from "react-icons/fa6";
+import { FaRegObjectGroup } from "react-icons/fa"; 
 import { CgWebsite } from "react-icons/cg";
 import { TbDeviceDesktopAnalytics } from "react-icons/tb";
 import { SiDelphi } from "react-icons/si";
@@ -90,6 +90,13 @@ export const itemsMenu: IMenuOptions[] = [
     href: "/cursos/5/1",
     icon: VscDebugConsole,
   },
+  {
+    id: 6,
+    name: "Delphi POO",
+    description: "Curso de Programação Orientada a Objetos com Delphi",
+    href: "/cursos/6/1",
+    icon: FaRegObjectGroup,
+  },
   
 ];
 
@@ -112,7 +119,7 @@ export const itemsMenuDrawer: IMenuDrawerDefault[] = [
   {
     id: 3,
     name: "Aulas",
-    href: "/aulas",
+    href: "/aulas/1",
   },
   {
     id: 4,

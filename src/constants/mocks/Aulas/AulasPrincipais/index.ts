@@ -1,4 +1,4 @@
-import CapaVideo from "../../../../assets/Cursos/capas/intraweb/capaIntraWeb.png";
+import CapaVideo from "../../../../assets/Aulas/capas/aulasCompletas.png";
 
 export const aulasWebinarsUniversidadeDelphi = [
   {

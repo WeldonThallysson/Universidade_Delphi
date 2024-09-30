@@ -5,8 +5,7 @@ import { useParams } from "react-router"
 import { useTheme } from "../../hooks/useTheme/useTheme"
 import { Carrousel } from "../../components/Carrousel"
 import { useCustomNavigation } from "../../hooks/useCustomNavigation/useCustomNavigation"
-import { useEffect } from "react"
-import { IClassRoom } from "../../interface/InterfaceCourse/interface.classroom"
+import { useEffect } from "react" 
 import { useCourses } from "../../hooks/hookPage/Courses/useCourses"
 
 
@@ -62,7 +61,7 @@ const Courses = () => {
                     <Typography sx={{fontSize: 20, color: theme.colors.secondary, fontFamily: 'Open Sans' }}>Continue assistindo...</Typography>
                    <Box>
                         <Carrousel.Card
-                            spaceBeetWeenItens={25}
+                            spaceBeetWeenItens={18}
                             slidesPerView={4}
                             optionsCards={allClass}
                             handleActionCard={(item ) => {
