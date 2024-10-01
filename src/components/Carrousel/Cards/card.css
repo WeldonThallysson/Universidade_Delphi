@@ -1,0 +1,30 @@
+/* Estilo para as setas de navegação */
+.swiper-button-prev,
+.swiper-button-next {
+  color: #ffffff; /* Muda a cor das setas */
+  margin: 0 20px; /* Define o espaçamento em relação ao conteúdo */
+}
+
+.swiper-button-prev {
+  left: -30px; /* Define a posição da seta esquerda */
+}
+
+.swiper-button-next {
+  right: -30px; /* Define a posição da seta direita */
+}
+
+/* Estilo para os dots (paginação) */
+.swiper-pagination {
+    bottom: 10px; /* Define o espaçamento entre os dots e o conteúdo */
+  }
+  
+  .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #ccc; /* Cor dos dots */
+    margin: 0 8px; /* Define o espaçamento entre os dots */
+  }
+  
+  .swiper-pagination-bullet-active {
+    background-color: #ffffff; /* Cor dos dots ativos */
+  }
