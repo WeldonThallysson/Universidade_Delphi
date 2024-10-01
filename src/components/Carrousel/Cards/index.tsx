@@ -42,20 +42,20 @@ export const Card = ({
       },
       1200: {
         slidesPerView: slidesPerView ?? 3,
-        spaceBetween: spaceBeetWeenItens ?? 45,
+        spaceBetween: spaceBeetWeenItens ?? 25,
       },
       1500:{
         slidesPerView: slidesPerView ?? 4,
-        spaceBetween: spaceBeetWeenItens ?? 45,
+        spaceBetween: spaceBeetWeenItens ?? 25,
       },
 
-      1600: {
-        slidesPerView: slidesPerView ?? 5,
-        spaceBetween: spaceBeetWeenItens ?? 45,
+      1900: {
+        slidesPerView: slidesPerView ?? 4,
+        spaceBetween: spaceBeetWeenItens ?? 25,
       },
       2000:{
-        slidesPerView: slidesPerView ?? 6,
-        spaceBetween: spaceBeetWeenItens ?? 45,
+        slidesPerView: slidesPerView ?? 5,
+        spaceBetween: spaceBeetWeenItens ?? 25,
       }
     }}
     
