@@ -5,7 +5,6 @@ import { useParams } from "react-router"
 import { useTheme } from "../../hooks/useTheme/useTheme"
 import { Carrousel } from "../../components/Carrousel"
 import { useEffect } from "react"
-import { IClassRoom } from "../../interface/InterfaceCourse/interface.classroom"
 import { useLives } from "../../hooks/hookPage/Lives/useLives"
 
 
@@ -32,20 +31,37 @@ const Lives = () => {
     return (
         <Containers.DefaultAnimated>
             <Box sx={{display:"flex",flexDirection:"column", padding: {
+                xs:  "2rem 1.5rem",
                 sm: "5rem 5rem",
-                lg: "5rem 20rem"
+                lg: "5rem 10rem",
+                 xl: "5rem 20rem"
             }, gap:2,}}>
                 <Box>
-                   <Typography sx={{fontSize: 25, color: theme.colors.secondary, fontFamily: 'Open Sans' }}>{liveSelected?.title} </Typography>
+                   <Typography sx={{fontSize: {
+                    xs: 15,
+                    sm: 25
+                   }, color: theme.colors.secondary, fontFamily: 'Open Sans' }}>{liveSelected?.title} </Typography>
                 </Box>
-                <Box >
+                <Box sx={{
+                    display:"flex",
+                    width:"100%",
+                    justifyContent:"center",
+                    alignItems:"center"
+                }}>
                   <Player videoUrl={liveSelected?.linkVideo ?? ''}/>
                 </Box>
 
-                <Box sx={{display:"flex", flexDirection: "column",padding: "1rem 1.5rem", background: "#1a1b29", borderRadius: 1,gap:2}}>
+                <Box sx={{display:"flex", flexDirection: "column",padding: "1rem 1.5rem", background: "#1a1b29", borderRadius: 1,gap:1}}>
             
-                    <Typography sx={{fontSize: 25, color: theme.colors.secondary, fontFamily: 'Open Sans' }}>{liveSelected?.tag} </Typography>
-                    <Typography sx={{fontSize: 18, color: theme.colors.secondary, fontFamily: 'Open Sans' }}>{liveSelected?.description}</Typography>
+                    <Typography sx={{fontSize: {
+                          xs: 16,
+                        sm:25
+                    }, color: theme.colors.secondary, fontFamily: 'Open Sans' }}>{liveSelected?.tag} </Typography>
+                    <Typography sx={{fontSize: {
+                        xs: 14,
+                        sm:14,
+                        lg: 18
+                    }, color: theme.colors.secondary, fontFamily: 'Open Sans' }}>{liveSelected?.description}</Typography>
                 </Box> 
                 <Divider sx={{background:theme.colors.secondary}}/>
 
@@ -54,6 +70,7 @@ const Lives = () => {
                    <Box>
                          <Carrousel.Card
                           spaceBeetWeenItens={18}
+                          slidesPerView={4.2}
                           optionsCards={allLives}
                           handleActionCard={(item ) => {
                             const redirect = `/lives/${item.id}`;

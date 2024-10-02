@@ -1,3 +1,5 @@
+import { Box } from "@mui/material";
+
 type PlayerProps = {
     videoUrl: string;
     width?: number;
@@ -20,11 +22,23 @@ export const Player = ({ videoUrl, width, height }: PlayerProps) => {
     };
 
     return (
-        <div style={{ position: 'relative', height: '100%', overflow: 'hidden', maxWidth: '100%', background: '#000' }}>
+        <Box sx={{
+            display:"flex", 
+            width: "100%",
+            height:{
+                xs: 220,
+                sm: 350,
+                md: 400,
+                lg: 450,
+                xl: 550
+            },
+            
+        }}>
+             <div style={{ position: 'relative',width:"100%", height: '100%', overflow: 'hidden', maxWidth: '100%', background: '#0000000' }}>
             {videoUrl && (
                 <iframe
                     src={getEmbedUrl(videoUrl)}
-                    style={{ width: width ?? '100%', height: height ?? 600, borderRadius: 15 }}
+                    style={{ width: width ?? '100%', height: height ?? "100%", borderRadius: 15 }}
                     frameBorder={0}
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
@@ -32,5 +46,7 @@ export const Player = ({ videoUrl, width, height }: PlayerProps) => {
                 />
             )}
         </div>
+        </Box>
+       
     );
 };

@@ -40,7 +40,11 @@ export const Default = ({
     <Card
       onClick={() => handleActionCard && handleActionCard()}
       sx={{
-        maxWidth: maxWidth ?? 345,
+        maxWidth: maxWidth ?? {
+          xs: 200,
+          sm: 345,
+          
+        },
         borderRadius: 2,
         border:"none",
         background:"transparent",
@@ -58,7 +62,14 @@ export const Default = ({
       <Box position="relative">
         <CardMedia
           component="img"
-          height="200"
+          sx={{
+            height: {
+              xs: 140,
+              sm: 160,
+              md: 180,
+              lg: 200,
+            }
+          }}
           image={img ?? capaIntraWeb}
           alt="Imagem capa da aula"
         />
@@ -80,10 +91,22 @@ export const Default = ({
       <CardContent
         sx={{
           position: "relative",
-          padding: 2,
+          padding: {
+            xs: "0.6rem 1rem",
+            sm: "1.2rem 1rem",
+            md: "1.2rem 1rem"
+          }, 
+          "&:last-child": {
+            paddingBottom: {
+              xs: 0,
+              sm: 1,
+              md: 2,
+              lg: 2
+            }, 
+          },
           border:"none",
-          zIndex: 2, // Mantém o conteúdo acima das camadas de fundo
-          background: "linear-gradient(135deg, #a52c2c, #e8413b, #8b233d)", // Degradê
+          zIndex: 2,
+          background: "linear-gradient(135deg, #a52c2c, #e8413b, #8b233d)", 
           "&::before": {
             content: '""',
             position: "absolute",
@@ -103,9 +126,13 @@ export const Default = ({
             overflow: "hidden",
             WebkitLineClamp: 1,
             textOverflow: "ellipsis",
-            color: "white", // Textos brancos para melhor contraste
-            position: "relative", // Para garantir que esteja acima do fundo
+            color: "white", 
+            position: "relative", 
             zIndex: 6,
+            fontSize: {
+              xs: '0.8rem',
+              sm: "1rem"
+            }
           }}
           variant="subtitle2"
           gutterBottom
@@ -125,6 +152,10 @@ export const Default = ({
             color: "white", // Textos brancos
             position: "relative",
             zIndex: 6,
+            fontSize: {
+              xs: '0.8rem',
+              sm: "1rem"
+            }
           }}
         >
           {description}

@@ -24,7 +24,6 @@ type DrawerMobile = {
 export const DrawerMobile = ({
   optionsMenu,
   openDrawer,
-  handleDrawer,
   handleCloseDrawer,
   handleActionItemDrawer,
 }: DrawerMobile) => {
@@ -80,6 +79,7 @@ export const DrawerMobile = ({
                     if (item.id === 1) {
                       handleToggleDropdown();
                     } else {
+                      handleCloseDrawer()
                       handleActionItemDrawer(item.href);
                     }
                   }}
@@ -121,7 +121,10 @@ export const DrawerMobile = ({
                       {item.items?.map((subItem: any) => (
                         <ListItem
                           key={subItem.name}
-                          onClick={() => handleActionItemDrawer(subItem.href)}
+                          onClick={() => {
+                            handleCloseDrawer()
+                            handleActionItemDrawer(subItem.href)
+                          }}
                           sx={{
                             pl: 3, // Indentação para subitens
                             "&:hover": {

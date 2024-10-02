@@ -5,7 +5,7 @@ export const aulasApiRestHorse = [
       id: 1,
       idCourse: 3,
       img: CapaVideo,
-      title: "Criando API REST com Horse Part1",
+      title: "Criando API REST com Horse Parte 1",
       description: "Utilizando o framework Horse para criação de uma REST em Delphi",
       linkVideo: "https://www.youtube.com/watch?v=M-4gwrCI21w",
       linkIdVideo: "M-4gwrCI21w",

@@ -36,7 +36,7 @@ export const Home = () => {
             xs: "calc(100vh - 55vh)",
             sm: "calc(100vh - 48vh)",
             md: "calc(100vh - 35vh)",
-            lg: "calc(100vh - 50vh)",
+            lg: "calc(100vh - 40vh)",
             xl: "calc(100vh - 30vh)"
           }, // Altura total da viewport
           "&::after": {
@@ -70,14 +70,18 @@ export const Home = () => {
             }
           }}
         >
-          <Box sx={{ display: "flex", flexDirection: "column",}}>
+          <Box sx={{ display: "flex", flexDirection: "column",gap:0}}>
             <Typography
               sx={{
                 fontSize: {
                   xs: "2rem",
                   sm: '2rem',
-                  lg: "4rem"
+                  lg: "3rem",
+                 
                 },
+                height: {
+                  lg: 60,
+                }, 
                 fontFamily: "Poppins",
                 padding: 0,
                 fontWeight:"400",
@@ -89,14 +93,13 @@ export const Home = () => {
             <Typography
               sx={{
                 fontSize: {
-                  xs: "2.5rem",
+                  xs: "2rem",
                   sm: '3rem',
                   lg: "4rem"
                 },
                 fontFamily: "Poppins",
                 fontWeight:" 600",
                 padding: 0,
-       
                 color: theme.colors.secondary,
                 marginTop: "-0.5rem",
               }}
@@ -107,7 +110,7 @@ export const Home = () => {
 
           <Typography
             sx={{
-              fontSize: "1.1rem",
+              fontSize: "0.90rem",
               fontFamily: "Open Sans",
               color: theme.colors.secondary,
             }}
@@ -175,8 +178,8 @@ export const Home = () => {
           display: "flex",
           flexDirection: "column",
           padding: {
-             xs: "3rem 2em 1rem 2rem",
-             sm: "3rem 4rem",
+             xs: "4rem 2rem 1rem 2rem",
+             sm: "5rem 4rem 1rem 4rem",
              lg: "3rem 10rem",
           },
           gap: 3,
@@ -207,7 +210,6 @@ export const Home = () => {
             >
               <Carrousel.Card
                 spaceBeetWeenItens={25}
-                slidesPerView={5}
                 optionsCards={item.data}
                 handleActionCard={(item) => {
                   handleNavigation(item.path);
@@ -223,8 +225,8 @@ export const Home = () => {
           display: "flex",
           flexDirection: "column",
           padding: {
-            xs: "3rem 2em 1rem 2rem",
-            sm: "3rem 4rem",
+            xs: "1rem 2em 1rem 2rem",
+            sm: "1rem 4rem 1rem 4rem",
             lg: "3rem 10rem",
          },
          gap: 3,
@@ -256,7 +258,7 @@ export const Home = () => {
             >
               <Carrousel.Card
                 spaceBeetWeenItens={25}
-                slidesPerView={5}
+            
                 optionsCards={item.data}
                 handleActionCard={(item) => {
                   handleNavigation(item.path);
@@ -272,8 +274,8 @@ export const Home = () => {
           display: "flex",
           flexDirection: "column",
           padding: {
-            xs: "3rem 2em 5rem 2rem",
-            sm: "3rem 4rem 10rem 4rem",
+            xs: "1rem 2em 4rem 2rem",
+            sm: "1rem 4rem 5rem 4rem",
             lg: "3rem 10rem 12rem 10rem",
          },
          gap: 3,
@@ -304,7 +306,7 @@ export const Home = () => {
             >
               <Carrousel.Card
                 spaceBeetWeenItens={25}
-                slidesPerView={5}
+              
                 optionsCards={item.data}
                 handleActionCard={(item) => {
                   handleNavigation(item.path);
@@ -335,7 +337,10 @@ export const Home = () => {
         >
           <Typography
             sx={{
-              fontSize: "1.2rem",
+              fontSize: {
+                xs: '1rem',
+                sm: "1.2rem"
+              },
               fontFamily: "Open Sans",
               color: theme.colors.secondary,
               height: 25,
@@ -345,7 +350,10 @@ export const Home = () => {
           </Typography>
           <Typography
             sx={{
-              fontSize: "1.5rem",
+              fontSize: {
+                xs: '0.8rem',
+                sm: "1.5rem"
+              },
               fontFamily: "Open Sans",
               color: theme.colors.secondary,
             }}
@@ -354,7 +362,7 @@ export const Home = () => {
           </Typography>
           <Button
             sx={{
-              fontSize: "1rem",
+              fontSize: {xs:"0.7rem",sm: "1rem"},
               fontFamily: "Open Sans",
               color: theme.colors.secondary,
               background: theme.colors.terciary,

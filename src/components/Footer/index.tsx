@@ -19,7 +19,7 @@ export const Footer = () => {
         color: "#fff",
         py: 6,
         px: {
-          xs: 1,
+          xs: 3,
           sm: 5,
           md: 6,
           lg: 25,
@@ -120,6 +120,8 @@ export const Footer = () => {
           alignItems: "center",
           textAlign: "center",
           mt: 1,
+          gap:1
+       
         }}
       >
         <Box
