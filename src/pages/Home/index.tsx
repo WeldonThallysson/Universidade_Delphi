@@ -11,12 +11,17 @@ import { useTheme } from "../../hooks/useTheme/useTheme";
 import { YouTube } from "@mui/icons-material";
 import { Containers } from "../../components/UI/Containers";
 import { useCustomNavigation } from "../../hooks/useCustomNavigation/useCustomNavigation";
+import { Helmet } from "react-helmet-async";
 
 export const Home = () => {
   const { theme } = useTheme();
   const { handleNavigation } = useCustomNavigation();
   return (
     <Containers.DefaultAnimated>
+       <Helmet>
+          <title>Universidade Delphi | Do zero ao Profissional</title>
+         <link rel="canonical" href="https://www.universidadedelphi.com.br" />
+       </Helmet>
       <Box
         sx={{
           display: "flex",

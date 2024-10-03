@@ -6,6 +6,7 @@ import { useTheme } from "../../hooks/useTheme/useTheme"
 import { Carrousel } from "../../components/Carrousel"
 import { useEffect } from "react"
 import { useLives } from "../../hooks/hookPage/Lives/useLives"
+import { Helmet } from "react-helmet-async"
 
 
 
@@ -13,8 +14,6 @@ const Lives = () => {
     const {theme} = useTheme()
     const {idLive} = useParams()
     const {liveSelected,allLives,handleFilterAllLives,handleFilterLiveSelected,handleNavigation} = useLives()
-
- 
 
     useEffect(() => {
         if(idLive){
@@ -30,6 +29,11 @@ const Lives = () => {
     
     return (
         <Containers.DefaultAnimated>
+                <Helmet>
+                    <title>Lives | {liveSelected?.title ? `${liveSelected?.title}` : 'Lives'} | Universidade Delphi </title>
+                    <link rel="canonical" href={`https://www.universidadedelphi.com.br/lives/${liveSelected?.id}`} />
+                </Helmet>
+
             <Box sx={{display:"flex",flexDirection:"column", padding: {
                 xs:  "2rem 1.5rem",
                 sm: "5rem 5rem",

@@ -6,6 +6,7 @@ import { useTheme } from "../../hooks/useTheme/useTheme"
 import { Carrousel } from "../../components/Carrousel"
 import { useEffect } from "react" 
 import { useClassRoom } from "../../hooks/hookPage/ClassRoom/useClassRoom"
+import { Helmet } from "react-helmet-async"
 
 
 
@@ -35,6 +36,11 @@ const ClassRoom = () => {
     
     return (
         <Containers.DefaultAnimated>
+            <Helmet>
+              <title>Aulas | {classSelected?.title? `${classSelected?.title}` : 'Aulas'} | Universidade Delphi </title> 
+              <link rel="canonical" href={`https://www.universidadedelphi.com.br/aulas/${classSelected?.id}`} />
+            </Helmet>
+
             <Box sx={{display:"flex",flexDirection:"column", padding: {
                 xs:  "2rem 1.5rem",
                 sm: "5rem 5rem",

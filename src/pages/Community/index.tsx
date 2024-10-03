@@ -2,13 +2,17 @@ import { Box, Typography } from "@mui/material";
 import { Containers } from "../../components/UI/Containers";
 import { useTheme } from "../../hooks/useTheme/useTheme";
 import comunnityBanner from '../../assets/community.png'
+import { Helmet } from "react-helmet-async";
 
 const Community = () => {
   const { theme } = useTheme();
   
   return (
     <Containers.DefaultAnimated>
-      {/* Seção com o banner e a camada preta transparente */}
+       <Helmet>
+          <title>Comunidade | Universidade Delphi </title>
+          <link rel="canonical" href="https://www.universidadedelphi.com.br/comunidade" />
+       </Helmet>
       <Box
         sx={{
           display: "flex",
