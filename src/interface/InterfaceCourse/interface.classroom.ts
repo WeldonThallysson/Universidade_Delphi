@@ -1,7 +1,7 @@
 
 export interface IClassRoom {
     id: number;
-    idCourse: number;
+    idCourse?: number | null;
     img: string;
     title: string;
     description: string;

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Autocomplete, TextField, Box, IconButton } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
 
