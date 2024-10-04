@@ -8,28 +8,28 @@ export const aulasWebinarsUniversidadeDelphi = [
     description: "Deixamos disponível aqui a gravação da aula inaugural realizada ao vivo no dia 13/04/2020.",
     linkVideo: "https://www.youtube.com/watch?v=fri3pnjn35g",
     linkIdVideo: "fri3pnjn35g",
-    tag: "Aula Inaugural",
-    category: "Eventos",
+    tag: "Auditorio",
+    category: "Auditorio",
   },
   {
     id: 2,
     img: CapaVideo, // Substitua por sua imagem específica
     title: "Lançamento do novo RAD Studio 10.4 Sydney",
     description: "Webinar promovido pela Embarcadero BR com o especialista Márcio Chaves.",
-    linkVideo: "https://www.youtube.com/watch?v=xb5WS47nmCY",
-    linkIdVideo: "xb5WS47nmCY",
-    tag: "Webinar",
-    category: "Delphi",
+    linkVideo: "https://www.youtube.com/watch?v=8qPttTJMqiA",
+    linkIdVideo: "8qPttTJMqiA",
+    tag: "Auditorio",
+    category: "Auditorio",
   },
   {
     id: 3,
     img: CapaVideo, // Substitua por sua imagem específica
     title: "Impactos da LGPD no desenvolvimento de software",
     description: "Utilizando o framework Horse para criação de uma API REST em Delphi.",
-    linkVideo: "https://www.youtube.com/watch?v=l5JpHzxGGE8",
-    linkIdVideo: "l5JpHzxGGE8",
-    tag: "LGPD",
-    category: "Delphi",
+    linkVideo: "https://www.youtube.com/watch?v=xb5WS47nmCY",
+    linkIdVideo: "xb5WS47nmCY",
+    tag: "Auditorio",
+    category: "Auditorio",
   },
   {
     id: 4,
@@ -49,7 +49,7 @@ export const aulasWebinarsUniversidadeDelphi = [
     linkVideo: "https://www.youtube.com/watch?v=bfdYD2UwvUs",
     linkIdVideo: "bfdYD2UwvUs",
     tag: "RAD Studio",
-    category: "IDE",
+    category: "Primeiros Passos",
   },
   {
     id: 6,
@@ -132,8 +132,8 @@ export const aulasWebinarsUniversidadeDelphi = [
     description: " O XML Doc comments é exibido no Help Insight (se analisados com êxito) e também é incluído pelo compilador ao gerar a Documentação XML (como devnotes elementos XML).",
     linkVideo: "https://www.youtube.com/watch?v=bQ5dSiLfwZI",
     linkIdVideo: "bQ5dSiLfwZI",
-    tag: "Projetos",
-    category: "RAD Studio",
+    tag: "XML Doc",
+    category: "Linguagens e Recursos",
   },
 
   {
@@ -143,8 +143,8 @@ export const aulasWebinarsUniversidadeDelphi = [
     description: "  Você pode gravar uma série de pressionamentos de teclas como uma macro e depois pode reproduzi-la para repetir as teclas pressionadas durante a sessão atual do IDE.",
     linkVideo: "https://www.youtube.com/watch?v=6vnpAvYZUAE",
     linkIdVideo: "6vnpAvYZUAE",
-    tag: "Projetos",
-    category: "RAD Studio",
+    tag: "Record Macros",
+    category: "Linguagens e Recursos",
   },
   {
     id: 15,
@@ -153,8 +153,8 @@ export const aulasWebinarsUniversidadeDelphi = [
     description: "A framework JSON Objects traz maneira muito simples para a leitura, iterações e modificações de uma estrutura JSON.",
     linkVideo: "https://www.youtube.com/watch?v=MDosxlqsCGo",
     linkIdVideo: "MDosxlqsCGo",
-    tag: "Projetos",
-    category: "RAD Studio",
+    tag: "JSON Objects",
+    category: "Linguagens e Recursos",
   },
   {
     id: 16,
@@ -173,8 +173,8 @@ export const aulasWebinarsUniversidadeDelphi = [
     description: " A opção MultiPaste permite modificar e colar no Editor de  código o texto que você copiou para a área de transferência, ajudando você a trabalhar com HTML, SQL, texto formatado e qualquer outro texto.",
     linkVideo: "https://www.youtube.com/watch?v=Xb9NJl8WhPk",
     linkIdVideo: "Xb9NJl8WhPk",
-    tag: "Projetos",
-    category: "RAD Studio",
+    tag: "Multipaste",
+    category: "Linguagem e Recursos",
   },
   {
     id: 18,
@@ -183,8 +183,8 @@ export const aulasWebinarsUniversidadeDelphi = [
     description: "Os Helpers permitem adicionar funcionalidades às estruturas seja Classe ou Registro, sem a necessidade de criar uma nova classe herdando da anterior.",
     linkVideo: "https://www.youtube.com/watch?v=NM_prnYdDH4",
     linkIdVideo: "NM_prnYdDH4",
-    tag: "Projetos",
-    category: "RAD Studio",
+    tag: "Helpers",
+    category: "Linguagem e Recursos",
   },
   {
     id: 19,
@@ -280,8 +280,8 @@ export const aulasWebinarsUniversidadeDelphi = [
     description: " Os Live Templates são instruções de código reutilizáveis acessíveis no Editor de código. Você pode inclusive criar seu próprio Live Template.",
     linkVideo: "https://www.youtube.com/watch?v=YfNjAfd31D0",
     linkIdVideo: "YfNjAfd31D0",
-    tag: "Projetos",
-    category: "RAD Studio",
+    tag: "Live",
+    category: "Linguagem e Recursos",
   },
 
   {
@@ -291,8 +291,8 @@ export const aulasWebinarsUniversidadeDelphi = [
     description: "A linguagem Delphi suporta os chamados atributos personalizados (JSONAttributes), que permitem marcar elementos de uma classe tornando-os mais flexíveis.",
     linkVideo: "https://www.youtube.com/watch?v=euL6CxPKt10",
     linkIdVideo: "euL6CxPKt10",
-    tag: "Projetos",
-    category: "RAD Studio",
+    tag: "JSON",
+    category: "Linguagem e Recursos",
   },
 
   {
@@ -310,10 +310,10 @@ export const aulasWebinarsUniversidadeDelphi = [
     img: CapaVideo, // Substitua por sua imagem específica
     title: "Design Patterns: Observers",
     description: " O padrão Observer permite que objetos interessados sejam avisados da mudança de estado ou outros eventos.",
-    linkVideo: " https://www.youtube.com/watch?v=AGBBh0-6jfs",
+    linkVideo: "https://www.youtube.com/watch?v=AGBBh0-6jfs",
     linkIdVideo: "AGBBh0-6jfs",
-    tag: "Projetos",
-    category: "RAD Studio",
+    tag: "Design Patterns",
+    category: "Linguagem e Recursos",
   },
 
   {
@@ -323,8 +323,8 @@ export const aulasWebinarsUniversidadeDelphi = [
     description: " LiveBindings é um recurso de ligação de dados suportado pelas estruturas VCL e FireMonkey no RAD Studio.",
     linkVideo: "https://www.youtube.com/watch?v=vUnbKkPkEgU",
     linkIdVideo: "vUnbKkPkEgU",
-    tag: "Projetos",
-    category: "RAD Studio",
+    tag: "LiveBindings",
+    category: "Linguagem e Recursos",
   },
 
   {
@@ -332,10 +332,10 @@ export const aulasWebinarsUniversidadeDelphi = [
     img: CapaVideo, // Substitua por sua imagem específica
     title: "FireDAC - Array DML",
     description: " Melhorando a performance para processamento de dados em Lote.",
-    linkVideo: " https://www.youtube.com/watch?v=89Se7NlalKA",
+    linkVideo: "https://www.youtube.com/watch?v=89Se7NlalKA",
     linkIdVideo: "89Se7NlalKA",
-    tag: "Projetos",
-    category: "RAD Studio",
+    tag: "FireDAC",
+    category: "Linguagem e Recursos",
   },
 
   {
@@ -345,20 +345,20 @@ export const aulasWebinarsUniversidadeDelphi = [
     description: "Manipulando e controlando os erros de sua aplicação com o FireDAC.",
     linkVideo: " https://www.youtube.com/watch?v=F3EvkYnB744",
     linkIdVideo: "F3EvkYnB744",
-    tag: "Projetos",
-    category: "RAD Studio",
+    tag: "FireDAC",
+    category: "Linguagem e Recursos",
   },
 
 
   {
     id: 33,
-    img: CapaVideo, // Substitua por sua imagem específica
+    img: CapaVideo,
     title: "Usabilidade Mobile Navegação por Abas - Parte 1",
     description: " Implementação de uma técnica de projeto de interface simples, funcional, com usabilidade fluída e, talvez o mais importante, com foco em manter a alta coesão e baixo acoplamento do seu software. ",
     linkVideo: " https://www.youtube.com/watch?v=UJxiMK7kKX4",
     linkIdVideo: "UJxiMK7kKX4",
-    tag: "Projetos",
-    category: "RAD Studio",
+    tag: "Usabilidade",
+    category: "UI / UX",
   },
 
   {
@@ -368,8 +368,8 @@ export const aulasWebinarsUniversidadeDelphi = [
     description: " Segunda parte de técnicas para implementação de interface simples, funcional, com usabilidade fluída e, talvez o mais importante, com foco em manter a alta coesão e baixo acoplamento do seu software. ",
     linkVideo: "https://www.youtube.com/watch?v=xLhr1gZUwPk",
     linkIdVideo: "xLhr1gZUwPk",
-    tag: "Projetos",
-    category: "RAD Studio",
+    tag: "Usabilidade",
+    category: "UI / UX",
   },
 
   {
@@ -379,8 +379,8 @@ export const aulasWebinarsUniversidadeDelphi = [
     description: " Utilização de processamento paralelo para manter a fluidez da aplicação. Implementando uma mensagem 'loading', através de Threads, para possibilitar a interação da aplicação com ousuário durante a execução de processos morosos.",
     linkVideo: "https://www.youtube.com/watch?v=h2HYe5jW158",
     linkIdVideo: "h2HYe5jW158",
-    tag: "Projetos",
-    category: "RAD Studio",
+    tag: "Threads",
+    category: "UI / UX",
   },
 
   
@@ -391,8 +391,8 @@ export const aulasWebinarsUniversidadeDelphi = [
     description: " Criando Listagens de dados fluidas com junção destes 2 componentes nativos do Delphi",
     linkVideo: " https://www.youtube.com/watch?v=Z7f-XivCpRo",
     linkIdVideo: "Z7f-XivCpRo",
-    tag: "Projetos",
-    category: "RAD Studio",
+    tag: "UI / UX",
+    category: "UI / UX",
   },
 
    
@@ -476,12 +476,12 @@ export const aulasWebinarsUniversidadeDelphi = [
   {
     id: 40,
     img: CapaVideo, // Substitua por sua imagem específica
-    title: " Dataset Serialize",
+    title: "Dataset Serialize",
     description: " Framework open source para gerar objetos JSON através de um DataSet de forma simples no Delphi.",
-    linkVideo: " https://www.youtube.com/watch?v=0klNPJq2xcU",
+    linkVideo: "https://www.youtube.com/watch?v=0klNPJq2xcU",
     linkIdVideo: "0klNPJq2xcU",
-    tag: "Projetos",
-    category: "RAD Studio",
+    tag: "Lab",
+    category: "Lab",
   },
 
 
@@ -492,8 +492,8 @@ export const aulasWebinarsUniversidadeDelphi = [
     description: " Como consumir uma API REST utilizando Delphi e Firemonkey, utilizando somente componentes nativos.",
     linkVideo: "https://www.youtube.com/watch?v=pQihgjUTSLE",
     linkIdVideo: "pQihgjUTSLE",
-    tag: "Projetos",
-    category: "RAD Studio",
+    tag: "API Rest",
+    category: "Lab",
   },
 
   {
@@ -503,8 +503,8 @@ export const aulasWebinarsUniversidadeDelphi = [
     description: " Manipulação da Câmera em dispositivos móveis utilizando o Delphi.",
     linkVideo: " https://www.youtube.com/watch?v=7xdopAZVEsU",
     linkIdVideo: "7xdopAZVEsU",
-    tag: "Projetos",
-    category: "RAD Studio",
+    tag: "Apps",
+    category: "Apps",
   },
   {
     id: 43,
@@ -531,21 +531,21 @@ export const aulasWebinarsUniversidadeDelphi = [
     id: 45,
     img: CapaVideo, // Substitua por sua imagem específica
     title: " Instalando o Delphi CE",
-    description: " Instalando o Delphi Community Edition 10.2.3",
-    linkVideo: " https://www.youtube.com/watch?v=e3esN1e4NWM",
+    description: "Instalando o Delphi Community Edition 10.2.3",
+    linkVideo: "https://www.youtube.com/watch?v=W0NDAH1v7nA",
     linkIdVideo: "W0NDAH1v7nA",
-    tag: "Projetos",
-    category: "RAD Studio",
+    tag: "Apps",
+    category: "Apps",
   },
   {
     id: 46,
     img: CapaVideo, // Substitua por sua imagem específica
     title: "Adicionando a plataforma Android",
-    description: " Adicionando a plataforma Android no Delphi Community Edition.",
-    linkVideo: " https://www.youtube.com/watch?v=ANl1SB65BVA",
+    description: "Adicionando a plataforma Android no Delphi Community Edition.",
+    linkVideo: "https://www.youtube.com/watch?v=ANl1SB65BVA",
     linkIdVideo: "ANl1SB65BVA",
-    tag: "Projetos",
-    category: "RAD Studio",
+    tag: "Apps",
+    category: "Apps",
   },
   {
     id: 47,
@@ -554,8 +554,8 @@ export const aulasWebinarsUniversidadeDelphi = [
     description: " Configurando o Android SDK no Delphi Community Edition",
     linkVideo: "https://www.youtube.com/watch?v=E17-Do_ZeJk",
     linkIdVideo: "E17-Do_ZeJk",
-    tag: "Projetos",
-    category: "RAD Studio",
+    tag: "Apps",
+    category: "Apps",
   },
 
   {
@@ -563,10 +563,10 @@ export const aulasWebinarsUniversidadeDelphi = [
     img: CapaVideo, // Substitua por sua imagem específica
     title: " Adicionando o dispositivo Target",
     description: "  Adicionando o dispositivo Android para Target de sua compilação",
-    linkVideo: " https://www.youtube.com/watch?v=6xGgK5AN5OE",
+    linkVideo: "https://www.youtube.com/watch?v=6xGgK5AN5OE",
     linkIdVideo: "6xGgK5AN5OE",
-    tag: "Projetos",
-    category: "RAD Studio",
+    tag: "Apps",
+    category: "Apps",
   },
 
   {
@@ -574,7 +574,7 @@ export const aulasWebinarsUniversidadeDelphi = [
     img: CapaVideo, // Substitua por sua imagem específica
     title: " Configuração Rápida do Android SDK",
     description: "Configuração Rápida do Android SDK, uma outra maneira",
-    linkVideo: " https://www.youtube.com/watch?v=MZcaYg9YzaQ",
+    linkVideo: "https://www.youtube.com/watch?v=MZcaYg9YzaQ",
     linkIdVideo: "MZcaYg9YzaQ",
     tag: "Projetos",
     category: "RAD Studio",
@@ -584,30 +584,30 @@ export const aulasWebinarsUniversidadeDelphi = [
     img: CapaVideo, // Substitua por sua imagem específica
     title: "Ativando a Depuração USB",
     description: " Ativando a Depuração USB no dispositivo Android",
-    linkVideo: " https://www.youtube.com/watch?v=KIGbbI1uPLI",
+    linkVideo: "https://www.youtube.com/watch?v=KIGbbI1uPLI",
     linkIdVideo: "KIGbbI1uPLI",
-    tag: "Projetos",
-    category: "RAD Studio",
+    tag: "Apps",
+    category: "Apps",
   },
   {
     id: 51,
     img: CapaVideo, // Substitua por sua imagem específica
-    title: " Efetuando chamadas telefônicas no Android",
-    description: "  Efetuando chamadas telefônicas no Android",
-    linkVideo: " https://www.youtube.com/watch?v=JJisxIOlzoc",
+    title: "Efetuando chamadas telefônicas no Android",
+    description: "",
+    linkVideo: "https://www.youtube.com/watch?v=JJisxIOlzoc",
     linkIdVideo: "JJisxIOlzoc",
-    tag: "Projetos",
-    category: "RAD Studio",
+    tag: "Apps",
+    category: "Apps",
   },
   {
     id: 52,
     img: CapaVideo, // Substitua por sua imagem específica
     title: "Captando as coordenadas com o Sensor de Localização no Android",
-    description: "  Captando as coordenadas com o Sensor de Localização no Android",
+    description: "Captando as coordenadas com o Sensor de Localização no Android",
     linkVideo: "https://www.youtube.com/watch?v=wk27Hb70y7g",
     linkIdVideo: "wk27Hb70y7g",
-    tag: "Projetos",
-    category: "RAD Studio",
+    tag: "Apps",
+    category: "Apps",
   },
 
   {
@@ -642,4 +642,294 @@ export const aulasWebinarsUniversidadeDelphi = [
     tag: "Projetos",
     category: "RAD Studio",
   },
+
+  {
+    id: 56,
+    img: CapaVideo, // Substitua por sua imagem específica
+    title: "EC2020 - O Programa Acadêmico e desafios da TI no ensino: o que te espera lá fora?",
+    description: "Trilha Academica",
+    linkVideo: "https://www.youtube.com/watch?v=VqpnZVHIPjk",
+    linkIdVideo: "VqpnZVHIPjk",
+    tag: "EC2020",
+    category: "Delphi",
+  },
+  {
+    id: 57,
+    img: CapaVideo, // Substitua por sua imagem específica
+    title: "EC2020 - Como nos tornamos referência no mercado e como o Delphi faz parte disso!",
+    description: "Trilha Academica",
+    linkVideo: "https://www.youtube.com/watch?v=huaifCeox-4",
+    linkIdVideo: "huaifCeox-4",
+    tag: "EC2020",
+    category: "Delphi",
+  },
+  {
+    id: 58,
+    img: CapaVideo, // Substitua por sua imagem específica
+    title: "EC2020 - O futuro das empresas está na escola",
+    description: "Trilha Academica",
+    linkVideo: "https://www.youtube.com/watch?v=poq1GO-_690",
+    linkIdVideo: "poq1GO-_690",
+    tag: "EC2020",
+    category: "Delphi",
+  },
+  {
+    id: 59,
+    img: CapaVideo, // Substitua por sua imagem específica
+    title: "Delphi no ensino universitário",
+    description: "Trilha Academica",
+    linkVideo: "https://www.youtube.com/watch?v=Z9Ih0vy31nY",
+    linkIdVideo: "Z9Ih0vy31nY",
+    tag: "EC2020",
+    category: "Delphi",
+  },
+
+  {
+    id: 60,
+    img: CapaVideo, // Substitua por sua imagem específica
+    title: "EC2020 - Arduino Moodbus e C++ Builder",
+    description: "Trilha Academica",
+    linkVideo: "https://www.youtube.com/watch?v=j6H7hp5g3as",
+    linkIdVideo: "j6H7hp5g3as",
+    tag: "EC2020",
+    category: "Delphi",
+  },
+
+  {
+    id: 61,
+    img: CapaVideo, // Substitua por sua imagem específica
+    title: "EC2020 - DataSnap e RTTI: Simplificando a disponibilização de serviços",
+    description: "Trilha Academica",
+    linkVideo: "https://www.youtube.com/watch?v=EyKlK5bICQY",
+    linkIdVideo: "EyKlK5bICQY",
+    tag: "EC2020",
+    category: "Delphi",
+  },
+
+  {
+    id: 62,
+    img: CapaVideo, // Substitua por sua imagem específica
+    title: "EC2020 - TMS Acadêmico: O Programa Acadêmico da TMS Software",
+    description: "Trilha Academica",
+    linkVideo: "https://www.youtube.com/watch?v=y2IyzPFFh1E",
+    linkIdVideo: "y2IyzPFFh1E",
+    tag: "EC2020",
+    category: "Delphi",
+  },
+
+  {
+    id: 63,
+    img: CapaVideo, // Substitua por sua imagem específica
+    title: "EC2020 - Como o novo cenário colocou os profissionais de tecnologia ainda mais em evidência",
+    description: "Trilha Academica",
+    linkVideo: "https://www.youtube.com/watch?v=pecnxzv0YOg",
+    linkIdVideo: "pecnxzv0YOg",
+    tag: "EC2020",
+    category: "Delphi",
+  },
+  {
+    id: 64,
+    img: CapaVideo, // Substitua por sua imagem específica
+    title: "Live 2 anos Universidade Delphi",
+    description: " Live de comemoração do aniversário de 2 anos do projeto Universidade Delphi e abertura da terceira temporada do projeto.",
+    linkVideo: "https://www.youtube.com/watch?v=K9zlN5TRfsw",
+    linkIdVideo: "K9zlN5TRfsw",
+    tag: "EC2020",
+    category: "Delphi",
+  },
+
+  {
+    id: 65,
+    img: CapaVideo, // Substitua por sua imagem específica
+    title: "Skia 4Delphi",
+    description: "Um papo com Paulo Cesar, que juntamente com seu irmão Vinícius, criou a biblioteca gráfica Skia4Delphi. Vencedores do Spirit of Delphi 2021",
+    linkVideo: "https://www.youtube.com/watch?v=cUZWXw-dScQ",
+    linkIdVideo: "cUZWXw-dScQ",
+    tag: "Auditorio",
+    category: "Auditorio",
+  },
+
+  {
+    id: 66,
+    img: CapaVideo, // Substitua por sua imagem específica
+    title: "A evolução da espécie - Embarcadero Conference 2021",
+    description: "Uma visão sobre Educação e Indústria de TI e como podemos evoluir essa aproximação para encurtarmos os caminhos dos alunos até o mercado de trabalho em uma área que clama por mão de obra qualificada",
+    linkVideo: "https://www.youtube.com/watch?v=6HMsXEWvu1E",
+    linkIdVideo: "6HMsXEWvu1E",
+    tag: "Auditorio",
+    category: "Auditorio",
+  },
+
+  
+  {
+    id: 67,
+    img: CapaVideo, // Substitua por sua imagem específica
+    title: "Tipos Enumerados",
+    description: "Um tipo enumerado define um conjunto ordenado de valores simplesmente listando identificadores que indicam esses valores.",
+    linkVideo: "https://www.youtube.com/watch?v=0N4CnFAj4AY",
+    linkIdVideo: "0N4CnFAj4AY",
+    tag: "Tipos",
+    category: "Linguagem e Recursos",
+  },
+
+  {
+    id: 68,
+    img: CapaVideo, // Substitua por sua imagem específica
+    title: "JSON Readers & Writers Framework",
+    description: "A framework JSON Readers and Writers ler e gravar dados JSON diretamente em uma stream, possibilitando assim um melhor desempenho e consumo de memória",
+    linkVideo: "https://www.youtube.com/watch?v=53YEtRLbsos",
+    linkIdVideo: "53YEtRLbsos",
+    tag: "JSON Readers",
+    category: "Linguagem e Recursos",
+  },
+
+  {
+    id: 69,
+    img: CapaVideo, 
+    title: "Testes Unitários com Delphi utilizando o DUnit",
+    description: "Testes unitários auxiliam muito na hora do deploy da sua aplicação, um teste unitário bem feito pode mostrar erros que antes não eram percebidos.",
+    linkVideo: "https://www.youtube.com/watch?v=JOpMlhtJ9AM",
+    linkIdVideo: "JOpMlhtJ9AM",
+    tag: "Testes",
+    category: "Linguagem e Recursos",
+   
+  },
+
+  {
+    id: 70,
+    img: CapaVideo, 
+    title: "Empreendedorismo",
+    description: "Como Aprender Delphi pode me ajudar no Mercado de Trabalho?",
+    linkVideo: "https://www.youtube.com/watch?v=w8ijGwpVxbI",
+    linkIdVideo: "w8ijGwpVxbI",
+    tag: "Empreendedorismo",
+    category: "Empreendedorismo",
+   
+  },
+  {
+    id: 70,
+    img: CapaVideo, 
+    title: "RAD Server - Instalando o RAD Server",
+    description: "Instalação do RAD SERVER que acompanha as edições do RAD Studio 10.3.3 ou superiores nas edições Enterprise e Architect.",
+    linkVideo: "https://www.youtube.com/watch?v=w8ijGwpVxbI",
+    linkIdVideo: "w8ijGwpVxbI",
+    tag: "Multicamadas",
+    category: "Multicamadas",
+  },
+ 
+  {
+    id: 71,
+    img: CapaVideo, 
+    title: "Configuração Rápida do Android SDK - Outra maneira",
+    description: "",
+    linkVideo: "https://www.youtube.com/watch?v=MZcaYg9YzaQ",
+    linkIdVideo: "w8ijGwpVxbI",
+    tag: "Apps",
+    category: "Apps",
+  },
+ 
+  {
+    id: 72,
+    img: CapaVideo, 
+    title: "Enviando mensagens SMS em dispositivos Android.",
+    description: "",
+    linkVideo: "https://www.youtube.com/watch?v=LZqAFZ6h388",
+    linkIdVideo: "w8ijGwpVxbI",
+    tag: "Apps",
+    category: "Apps",
+  },
+
+  {
+    id: 73,
+    img: CapaVideo, 
+    title: "Conectando a um banco de dados embarcado no dispositivo Android.",
+    description: "",
+    linkVideo: "https://www.youtube.com/watch?v=wts_JhJ5wUI",
+    linkIdVideo: "wts_JhJ5wUI",
+    tag: "Apps",
+    category: "Apps",
+  },
+  {
+    id: 74,
+    img: CapaVideo, 
+    title: "Conhecendo Intents do Android",
+    description: "",
+    linkVideo: "https://www.youtube.com/watch?v=N1nLBMfvYVk",
+    linkIdVideo: "N1nLBMfvYVk",
+    tag: "Apps",
+    category: "Apps",
+  },
+  
+  {
+    id: 75,
+    img: CapaVideo, 
+    title: "Semana DMVC Framework - Aula 1",
+    description: "Construindo APIs RESTful do Zero como DMVC",
+    linkVideo: "https://www.youtube.com/watch?v=Fk9De3RfC9Q",
+    linkIdVideo: "Fk9De3RfC9Q",
+    tag: "DMVC",
+    category: "Lab",
+  },
+  {
+    id: 76,
+    img: CapaVideo, 
+    title: "Semana DMVC Framework - Aula 2",
+    description: "Construindo APIs RESTful do Zero como DMVC",
+    linkVideo: "https://www.youtube.com/watch?v=AMO06DCoDnY",
+    linkIdVideo: "AMO06DCoDnY",
+    tag: "DMVC",
+    category: "Lab",
+  },
+  {
+    id: 77,
+    img: CapaVideo, 
+    title: "Semana DMVC Framework - Aula 3",
+    description: "Construindo APIs RESTful do Zero como DMVC",
+    linkVideo: "https://www.youtube.com/watch?v=H1mZAaxgJTI",
+    linkIdVideo: "H1mZAaxgJTI",
+    tag: "DMVC",
+    category: "Lab",
+  },
+  {
+    id: 78,
+    img: CapaVideo, 
+    title: "Semana DMVC Framework - Aula 4",
+    description: "Construindo APIs RESTful do Zero como DMVC",
+    linkVideo: "https://www.youtube.com/watch?v=biKYW-UsBy8",
+    linkIdVideo: "biKYW-UsBy8",
+    tag: "DMVC",
+    category: "Lab",
+  },
+  {
+    id: 79,
+    img: CapaVideo, 
+    title: "Semana DMVC Framework - Aula 5",
+    description: "Construindo APIs RESTful do Zero como DMVC",
+    linkVideo: "https://www.youtube.com/watch?v=-DHTaOLJvJg",
+    linkIdVideo: "DHTaOLJvJg",
+    tag: "DMVC",
+    category: "Lab",
+  },
+  {
+    id: 80,
+    img: CapaVideo, 
+    title: "Delphi e Google Cloud Vision",
+    description: "Detecção Facial e Reconhecimento ótico de caracteres (OCR)",
+    linkVideo: "https://www.youtube.com/watch?v=e3esN1e4NWM",
+    linkIdVideo: "e3esN1e4NWM",
+    tag: "Cloud",
+    category: "Lab",
+  },
+
+
+  
+ 	
+
+  
+   
+ 	
+
+
+
+
 ];

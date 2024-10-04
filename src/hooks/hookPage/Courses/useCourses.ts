@@ -41,12 +41,14 @@ export const useCourses = () => {
       );
       setAllClass(otherClasses);
 
-      // Se quiser incluir aulas de outros cursos, adicione-as também
+     /*
+       // Se quiser incluir aulas de outros cursos, adicione-as também
       const otherCourses = Courses.filter((c) => c.id !== idCourse).flatMap(
         (c) => c.classrooms
       );
 
       setAllClass((prev) => [...prev, ...otherCourses]);
+     */
     }
   };
 

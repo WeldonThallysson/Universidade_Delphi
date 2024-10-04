@@ -24,6 +24,7 @@ import { DrawerMobile } from "./Mobile/DrawerMobile";
 import { useCustomNavigation } from "../../hooks/useCustomNavigation/useCustomNavigation";
 import { useTheme } from "../../hooks/useTheme/useTheme";
 import { ROUTES } from "../../routes/paths";
+import SearchInputAutocomplete from "../UI/Inputs";
 
 export default function Header() {
   const { theme } = useTheme();
@@ -45,19 +46,28 @@ export default function Header() {
     setDrawerOpen(open);
   };
 
-  
   return (
     <header>
-      <AppBar position="fixed" sx={{ elevation: 0,boxShadow:"none", background: "linear-gradient(to right, #000000dd, #000000e8,#000000e6, #000000d8)",backgroundSize:"100%", padding: "0.2rem 1rem" }}>
-        <Toolbar sx={{ justifyContent: "space-between" }}>
+      <AppBar
+        position="fixed"
+        sx={{
+          elevation: 0,
+          boxShadow: "none",
+          background:
+            "linear-gradient(to right, #000000dd, #000000e8,#000000e6, #000000d8)",
+          backgroundSize: "100%",
+          padding: "0.2rem 1rem",
+        }}
+      >
+        <Toolbar sx={{display:"flex", justifyContent: "space-between", flexGrow:1 }}>
           <Box sx={{ display: "flex", alignItems: "center" }}>
             <Box
               sx={{
                 display: "flex",
                 width: 100,
                 "&:hover": {
-                  cursor:"pointer",
-                }
+                  cursor: "pointer",
+                },
               }}
               onClick={() => handleNavigation(ROUTES.HOME)}
             >
@@ -71,7 +81,7 @@ export default function Header() {
             </Box>
           </Box>
 
-          <Box sx={{ display: { xs: "none", lg: "flex" }, gap: 4 }}>
+          <Box sx={{ display: { xs: "none", lg: "flex" }, gap: 3 }}>
             {menuDefault.map((item) => (
               <Box key={item.id}>
                 <Button
@@ -98,25 +108,14 @@ export default function Header() {
             ))}
           </Box>
 
-          <Box sx={{ display: { xs: "none", lg: "block" } }}>
-            {/*
-             <a style={{textDecoration:"none", padding:0}} href="#">
-                <IconButton >
-                <LinkedIn sx={{color: theme.colors.secondary}}/>
-                      
-                </IconButton>
-                </a>
-
-                <a style={{textDecoration:"none"}} href="#">
-                  <IconButton>
-                    <Instagram sx={{color: theme.colors.secondary}}/>
-                  </IconButton>
-                </a>
-            */}
-            <Button color="inherit" disabled></Button>
+          <Box sx={{ display: { xs: "none", lg: "flex" } }}>
+            <SearchInputAutocomplete
+              options={["Option 1", "Option 2", "Option 3"]} // Array de opções
+              onSearch={(value) => console.log("Searching for:", value)} // Função de pesquisa
+            />
           </Box>
           {/* Menu para mobile */}
-          <Box sx={{ display: { xs: "block", lg: "none" } }}>
+          <Box sx={{ display: { xs: "flex", lg: "none" } }}>
             <IconButton
               edge="start"
               color="inherit"
@@ -165,9 +164,8 @@ export default function Header() {
                   },
                 }}
                 onClick={() => {
-                
-                  handleNavigation(item.href)
-                  handleMenuClose()
+                  handleNavigation(item.href);
+                  handleMenuClose();
                 }}
               >
                 <ListItemIcon>

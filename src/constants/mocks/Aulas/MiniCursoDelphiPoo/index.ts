@@ -11,7 +11,7 @@ export const delphiPoo = [
     linkVideo: "https://www.youtube.com/watch?v=aqrVEfHiXKA",
     linkIdVideo: "aqrVEfHiXKA",
     tag: "Delphi POO",
-    category: "Delphi com Programação Orientada a Objetos",
+    category: "Linguagem e Recursos",
   },
   {
     id: 2,
@@ -23,7 +23,7 @@ export const delphiPoo = [
     linkVideo: "https://www.youtube.com/watch?v=FUghWE47dhE",
     linkIdVideo: "FUghWE47dhE",
     tag: "Delphi POO",
-    category: "Delphi com Programação Orientada a Objetos",
+    category: "Linguagem e Recursos",
   },
   {
     id: 3,
@@ -35,7 +35,7 @@ export const delphiPoo = [
     linkVideo: " https://www.youtube.com/watch?v=nBUC384dO28",
     linkIdVideo: "nBUC384dO28",
     tag: "Delphi POO",
-    category: "Delphi com Programação Orientada a Objetosphi",
+    category: "Linguagem e Recursosphi",
   },
   {
     id: 4,
@@ -46,7 +46,7 @@ export const delphiPoo = [
     linkVideo: "https://www.youtube.com/watch?v=XWargMERY-g",
     linkIdVideo: "XWargMERY-g",
     tag: "Delphi POO",
-    category: "Delphi com Programação Orientada a Objetosphi",
+    category: "Linguagem e Recursos",
   },
   {
     id: 5,
@@ -57,7 +57,7 @@ export const delphiPoo = [
     linkVideo: " https://www.youtube.com/watch?v=cBdxB4cH0l4",
     linkIdVideo: "cBdxB4cH0l4",
     tag: "Delphi POO",
-    category: "Delphi com Programação Orientada a Objetosphi",
+    category: "Linguagem e Recursos",
   },
   {
     id: 6,
@@ -68,7 +68,7 @@ export const delphiPoo = [
     linkVideo: "https://www.youtube.com/watch?v=Q199G0IA_5A",
     linkIdVideo: "Q199G0IA_5A",
     tag: "Delphi POO",
-    category: "Delphi com Programação Orientada a Objetosphi",
+    category: "Linguagem e Recursos",
   },
   {
     id: 7,
@@ -79,7 +79,7 @@ export const delphiPoo = [
     linkVideo: " https://www.youtube.com/watch?v=kQMaL0BSjME",
     linkIdVideo: "kQMaL0BSjME",
     tag: "Delphi POO",
-    category: "Delphi com Programação Orientada a Objetosphi",
+    category: "Linguagem e Recursos",
   },
   {
     id: 8,
@@ -90,7 +90,7 @@ export const delphiPoo = [
     linkVideo: "https://www.youtube.com/watch?v=56CMVEko9_E",
     linkIdVideo: "56CMVEko9_E",
     tag: "Delphi POO",
-    category: "Delphi com Programação Orientada a Objetosphi",
+    category: "Linguagem e Recursos",
   },
   {
     id: 9,
@@ -101,7 +101,7 @@ export const delphiPoo = [
     linkVideo: "https://www.youtube.com/watch?v=L4TEZlU68yM",
     linkIdVideo: "L4TEZlU68yM",
     tag: "Delphi POO",
-    category: "Delphi com Programação Orientada a Objetosphi",
+    category: "Linguagem e Recursos",
   },
 
   {
@@ -113,7 +113,7 @@ export const delphiPoo = [
     linkVideo: "https://www.youtube.com/watch?v=Ex_9b12ZB1k",
     linkIdVideo: "Ex_9b12ZB1k",
     tag: "Delphi POO",
-    category: "Delphi com Programação Orientada a Objetosphi",
+    category: "Linguagem e Recursos",
   },
 
   {
@@ -125,7 +125,7 @@ export const delphiPoo = [
     linkVideo: "https://www.youtube.com/watch?v=BexfSPUW5B4",
     linkIdVideo: "BexfSPUW5B4",
     tag: "Delphi POO",
-    category: "Delphi com Programação Orientada a Objetosphi",
+    category: "Linguagem e Recursos",
   },
 
   {
@@ -137,7 +137,7 @@ export const delphiPoo = [
     linkVideo: "https://www.youtube.com/watch?v=0c8F3yyyM64",
     linkIdVideo: "0c8F3yyyM64",
     tag: "Delphi POO",
-    category: "Delphi com Programação Orientada a Objetosphi",
+    category: "Linguagem e Recursos",
   },
   {
     id: 13,
@@ -148,6 +148,6 @@ export const delphiPoo = [
     linkVideo: "https://www.youtube.com/watch?v=RAZr6sK34UU",
     linkIdVideo: "RAZr6sK34UU",
     tag: "Delphi POO",
-    category: "Delphi com Programação Orientada a Objetosphi",
+    category: "Linguagem e Recursos",
   },
 ];

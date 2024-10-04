@@ -10,7 +10,7 @@ export const livesUniversidadeDelphi: ILives[] = [
       linkVideo: "https://www.youtube.com/watch?v=Qu9FHnAuAyA",
       linkIdVideo: "Qu9FHnAuAyA",
       tag: "Live",
-      category: "Live",
+      category: "Auditorio",
     },
     {
       id: 2,

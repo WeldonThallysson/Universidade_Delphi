@@ -10,7 +10,7 @@ export const desvendandoDebugDelphi = [
       linkVideo: "https://www.youtube.com/watch?v=2HbHNNqTlvc",
       linkIdVideo: "2HbHNNqTlvc",
       tag: "Depuração",
-      category: "Delphi",
+      category: "Linguagem e Recursos",
     },
     {
       id: 2,
@@ -21,7 +21,7 @@ export const desvendandoDebugDelphi = [
       linkVideo: "https://www.youtube.com/watch?v=jveiYYsNK_g",
       linkIdVideo: "jveiYYsNK_g",
       tag: "Depuração",
-      category: "Delphi",
+      category: "Linguagem e Recursos",
     },
     {
       id: 3,
@@ -32,6 +32,6 @@ export const desvendandoDebugDelphi = [
       linkVideo: "https://www.youtube.com/watch?v=kA0GdHpCaW4",
       linkIdVideo: "kA0GdHpCaW4",
       tag: "Depuração",
-      category: "Delphi",
+      category: "Linguagem e Recursos",
     },
   ];

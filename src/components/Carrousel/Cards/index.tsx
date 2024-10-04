@@ -5,6 +5,7 @@ import "swiper/css/navigation"; // Importando os estilos de paginação
 import { Cards } from "../../Cards";
 import { IClassRoom } from "../../../interface/InterfaceCourse/interface.classroom";
 import { Box } from "@mui/material";
+import { Navigation } from "swiper/modules";
 
 type CardProps = {
   optionsCards: any[];
@@ -29,6 +30,8 @@ export const Card = ({
 }: CardProps) => {
   return (
     <Swiper
+    modules={[Navigation]}
+    navigation
       breakpoints={{
         320: {
           slidesPerView: 1.2,
@@ -70,7 +73,9 @@ export const Card = ({
           slidesPerView: optionsCards.length > 5 ? slidesPerView ?? 6.2 : slidesPerView ?? 5,
           spaceBetween: spaceBeetWeenItens ?? optionsCards.length > 5 ?  15 : 0 ,
         },
+
       }}
+      
       style={{
         padding: "1rem 0.5rem 2.5rem 0.5rem",
         borderRadius: 25,

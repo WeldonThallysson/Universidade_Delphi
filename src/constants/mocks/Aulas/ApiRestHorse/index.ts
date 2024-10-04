@@ -10,7 +10,7 @@ export const aulasApiRestHorse = [
       linkVideo: "https://www.youtube.com/watch?v=M-4gwrCI21w",
       linkIdVideo: "M-4gwrCI21w",
       tag: "Back",
-      category: "Back",
+      category: "Lab",
     },
     {
       id: 2,
@@ -21,7 +21,7 @@ export const aulasApiRestHorse = [
       linkVideo: "https://www.youtube.com/watch?v=vDBOj27spiY",
       linkIdVideo: "vDBOj27spiY",
       tag: "Back",
-      category: "Back",
+      category: "Lab",
     },
     {
       id: 3,
@@ -32,7 +32,7 @@ export const aulasApiRestHorse = [
       linkVideo: "https://www.youtube.com/watch?v=l5JpHzxGGE8",
       linkIdVideo: "l5JpHzxGGE8",
       tag: "Back",
-      category: "Back",
+      category: "Lab",
     },
     {
       id: 4,
@@ -43,7 +43,7 @@ export const aulasApiRestHorse = [
       linkVideo: "https://www.youtube.com/watch?v=sP_AdgW4rDU",
       linkIdVideo: "sP_AdgW4rDU",
       tag: "Back",
-      category: "Back",
+      category: "Lab",
     },
     {
       id: 5,
@@ -54,7 +54,7 @@ export const aulasApiRestHorse = [
       linkVideo: "https://www.youtube.com/watch?v=0Gu22iMtvEs",
       linkIdVideo: "0Gu22iMtvEs",
       tag: "Back",
-      category: "Back",
+      category: "Lab",
     },
     {
       id: 6,
@@ -65,7 +65,7 @@ export const aulasApiRestHorse = [
       linkVideo: "https://www.youtube.com/watch?v=1-8uDZw8IUM",
       linkIdVideo: "1-8uDZw8IUM",
       tag: "Back",
-      category: "Back",
+      category: "Lab",
     },
     {
       id: 7,
@@ -76,7 +76,7 @@ export const aulasApiRestHorse = [
       linkVideo: "https://www.youtube.com/watch?v=7d6yErr9ewI",
       linkIdVideo: "7d6yErr9ewI",
       tag: "Back",
-      category: "Back",
+      category: "Lab",
     },
     {
       id: 8,
@@ -87,7 +87,7 @@ export const aulasApiRestHorse = [
       linkVideo: "https://www.youtube.com/watch?v=o3jrkvSm9os",
       linkIdVideo: "o3jrkvSm9os",
       tag: "Back",
-      category: "Back",
+      category: "Lab",
     },
     {
       id: 9,
@@ -98,7 +98,7 @@ export const aulasApiRestHorse = [
       linkVideo: "https://www.youtube.com/watch?v=M-4gwrCI21w",
       linkIdVideo: "M-4gwrCI21w",
       tag: "Back",
-      category: "Back",
+      category: "Lab",
     },
     {
       id: 10,
@@ -109,7 +109,7 @@ export const aulasApiRestHorse = [
       linkVideo: "https://www.youtube.com/watch?v=vDBOj27spiY",
       linkIdVideo: "vDBOj27spiY",
       tag: "Back",
-      category: "Back",
+      category: "Lab",
     },
   ];
   

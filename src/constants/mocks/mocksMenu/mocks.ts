@@ -21,26 +21,37 @@ return [
 export const menuDefault: IMenuDefault[] = [
   {
     id: 1,
-    name: "Cursos",
+    name: "Destaques",
     href: "/cursos/1/1",
 
   },
+
   {
     id: 2,
+    name: "Cursos",
+    href: "/cursos",
+
+  },
+  {
+    id: 3,
     name: "Lives",
     href: "/lives/1",
  
   },
-  {
-    id: 3,
-    name: "Aulas",
-    href: "/aulas/1",
-  },
+ 
   {
     id: 4,
     name: "Comunidade",
     href: "/comunidade",
   },
+
+
+   /*
+  {
+    id: 4,
+    name: "Aulas",
+    href: "/aulas/1",
+  },*/
  /*
    {
     id: 5,
@@ -105,27 +116,38 @@ export const itemsMenuDrawer: IMenuDrawerDefault[] = [
 
   {
     id: 1,
-    name: "Cursos",
+    name: "Destaques",
     href: "/cursos/1/1",
     items: itemsMenu ?? []
 
   },
   {
     id: 2,
+    name: "Cursos",
+    href: "/cursos",
+    items: itemsMenu ?? []
+
+  },
+  {
+    id: 3,
     name: "Lives",
     href: "/lives/1",
  
   },
-  {
-    id: 3,
-    name: "Aulas",
-    href: "/aulas/1",
-  },
+ 
   {
     id: 4,
     name: "Comunidade",
     href: "/comunidade",
   },
+
+  /*
+   {
+    id: 3,
+    name: "Aulas",
+    href: "/aulas/1",
+  },
+  */
  /*
    {
     id: 5,

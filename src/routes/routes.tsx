@@ -6,6 +6,7 @@ import Community from "../pages/Community";
 import Lives from "../pages/Lives";
 import ClassRoom from "../pages/Classroom";
 import Courses from "../pages/Courses";
+import DetailsCourses from "../pages/Courses/DetailsCourse";
 
 
 export const routes = createBrowserRouter([
@@ -18,8 +19,12 @@ export const routes = createBrowserRouter([
                 element:<Home/>
             },
             {
-                path: ROUTES.COURSEINDIVIDUAL,
+                path: ROUTES.COURSES,
                 element: <Courses/>
+            },
+            {
+                path: ROUTES.COURSEINDIVIDUAL,
+                element: <DetailsCourses/>
             },
             {
                 path: ROUTES.CLASSROOMINDIVIDUAL,

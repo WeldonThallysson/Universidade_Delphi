@@ -9,8 +9,8 @@ export const minicursoDesktop = [
       description: "O MVP Marcos Moreira conduz esse mini treinamento focado em desenvolvimento Desktop, confira a parte 1.",
       linkVideo: "https://www.youtube.com/watch?v=Tfx-cOVQWeY",
       linkIdVideo: "Tfx-cOVQWeY",
-      tag: "Desenvolvimento",
-      category: "Desktop",
+      tag: "Desktop",
+      category: "Lab",
     },
     {
       id: 2,
@@ -20,8 +20,8 @@ export const minicursoDesktop = [
       description: "O MVP Marcos Moreira conduz esse mini treinamento focado em desenvolvimento Desktop, confira a parte 2.",
       linkVideo: "https://www.youtube.com/watch?v=VyiJdE46_Ns",
       linkIdVideo: "VyiJdE46_Ns",
-      tag: "Desenvolvimento",
-      category: "Desktop",
+      tag: "Desktop",
+      category: "Lab",
     },
     {
       id: 3,
@@ -31,8 +31,8 @@ export const minicursoDesktop = [
       description: "O MVP Marcos Moreira conduz esse mini treinamento focado em desenvolvimento Desktop, confira a parte 3.",
       linkVideo: "https://www.youtube.com/watch?v=u0BQzNW19ww",
       linkIdVideo: "u0BQzNW19ww",
-      tag: "Desenvolvimento",
-      category: "Desktop",
+      tag: "Desktop",
+      category: "Lab",
     },
     {
       id: 4,
@@ -42,8 +42,8 @@ export const minicursoDesktop = [
       description: "O MVP Marcos Moreira conduz esse mini treinamento focado em desenvolvimento Desktop, confira a parte 4.",
       linkVideo: "https://www.youtube.com/watch?v=jxtXSy-WEqs",
       linkIdVideo: "jxtXSy-WEqs",
-      tag: "Desenvolvimento",
-      category: "Desktop",
+      tag: "Desktop",
+      category: "Lab",
     },
     {
       id: 5,
@@ -53,8 +53,8 @@ export const minicursoDesktop = [
       description: "O MVP Marcos Moreira conduz esse mini treinamento focado em desenvolvimento Desktop, confira a parte 5.",
       linkVideo: "https://www.youtube.com/watch?v=-mqLDPGJ3H0",
       linkIdVideo: "-mqLDPGJ3H0",
-      tag: "Desenvolvimento",
-      category: "Desktop",
+      tag: "Desktop",
+      category: "Lab",
     },
     {
       id: 6,
@@ -64,8 +64,8 @@ export const minicursoDesktop = [
       description: "O MVP Marcos Moreira conduz esse mini treinamento focado em desenvolvimento Desktop, confira a parte 6.",
       linkVideo: "https://www.youtube.com/watch?v=ocCZi2x3g3k",
       linkIdVideo: "ocCZi2x3g3k",
-      tag: "Desenvolvimento",
-      category: "Desktop",
+      tag: "Desktop",
+      category: "Lab",
     },
     {
       id: 7,
@@ -75,8 +75,8 @@ export const minicursoDesktop = [
       description: "O MVP Marcos Moreira conduz esse mini treinamento focado em desenvolvimento Desktop, confira a parte 7.",
       linkVideo: "https://www.youtube.com/watch?v=l-BMlqSD16M",
       linkIdVideo: "l-BMlqSD16M",
-      tag: "Desenvolvimento",
-      category: "Desktop",
+      tag: "Desktop",
+      category: "Lab",
     },
     {
       id: 8,
@@ -86,8 +86,8 @@ export const minicursoDesktop = [
       description: "O MVP Marcos Moreira conduz esse mini treinamento focado em desenvolvimento Desktop, confira a parte 8.",
       linkVideo: "https://www.youtube.com/watch?v=0dUUmG9yLdc",
       linkIdVideo: "0dUUmG9yLdc",
-      tag: "Desenvolvimento",
-      category: "Desktop",
+      tag: "Desktop",
+      category: "Lab",
     },
     {
       id: 9,
@@ -97,8 +97,8 @@ export const minicursoDesktop = [
       description: "O MVP Marcos Moreira conduz esse mini treinamento focado em desenvolvimento Desktop, confira a parte 9.",
       linkVideo: "https://www.youtube.com/watch?v=3iD6IOicDgY",
       linkIdVideo: "3iD6IOicDgY",
-      tag: "Desenvolvimento",
-      category: "Desktop",
+      tag: "Desktop",
+      category: "Lab",
     },
   ];
   
