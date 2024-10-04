@@ -70,22 +70,25 @@ const ClassRoom = () => {
                     }, color: theme.colors.secondary, fontFamily: 'Open Sans' }}>{classSelected?.description}</Typography>
                 </Box> 
                 <Divider sx={{background:theme.colors.secondary}}/>
-
-                <Box sx={{display:"flex", flexDirection:"column",  gap: 1, mt: 5}}>
-                    <Typography sx={{fontSize: 20, color: theme.colors.secondary, fontFamily: 'Open Sans' }}>Continue assistindo...</Typography>
-                   <Box>
-                         <Carrousel.Card
-                          spaceBeetWeenItens={18}
-                          slidesPerView={4.2}
-                          optionsCards={allClass}
-                          handleActionCard={(item ) => {
-                            const redirect = `/aulas/${item.category}/${item.id}`;
-                            handleNavigation(redirect)
-
-                        }}
-                         />
-                   </Box>
-                </Box>
+                    
+                {allClass.length !== 0 && (
+                             <Box sx={{display:"flex", flexDirection:"column",  gap: 1, mt: 5}}>
+                             <Typography sx={{fontSize: 20, color: theme.colors.secondary, fontFamily: 'Open Sans' }}>Continue assistindo...</Typography>
+                            <Box>
+                                  <Carrousel.Card
+                                   spaceBeetWeenItens={18}
+                                   slidesPerView={4.2}
+                                   optionsCards={allClass}
+                                   handleActionCard={(item ) => {
+                                     const redirect = `/aulas/${item.category}/${item.id}`;
+                                     handleNavigation(redirect)
+         
+                                 }}
+                                  />
+                            </Box>
+                         </Box>
+                )}                    
+           
                 
             </Box>
         </Containers.DefaultAnimated>

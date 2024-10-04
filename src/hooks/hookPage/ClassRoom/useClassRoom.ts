@@ -26,14 +26,15 @@ export const useClassRoom = () => {
     setClassSelected(live);
   };
 
-  const handleFilterAllClass = ({ category}: PropsParams) => {
+  const handleFilterAllClass = ({ category }: PropsParams) => {
     if (category) {
       const otherLives = allClassUD.filter(
-        (cls: any) => cls.category === category
+        (cls: ILives) => cls.category === category && cls.id !== classSelected?.id
       );
       setAllClass(otherLives);
     }
   };
+
 
   return {
     handleNavigation,
