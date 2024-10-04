@@ -32,7 +32,7 @@ const SearchInputAutocomplete: React.FC<SearchInputAutocompleteProps> = ({ optio
 
 
   return (
-    <Box sx={{ display: 'flex', width: "100%", background: 'white', borderRadius: 1,  }}>
+    <Box sx={{ display: 'flex', width: "100%", background: '#3d3d3d71', borderRadius: 1,  }}>
       <Autocomplete
         freeSolo
         options={filteredOptions}
@@ -49,24 +49,29 @@ const SearchInputAutocomplete: React.FC<SearchInputAutocompleteProps> = ({ optio
             xs: "100%",
             lg: 200
           },
+          color:"white",
           border: "none",
+          
           "& .MuiOutlinedInput-root": {
             borderRadius: 5,
             "& fieldset": {
-              borderColor: "#000000", // Cor vermelha do outline
+              borderColor: "#ffffff", // Cor vermelha do outline
             },
             "&:hover fieldset": {
-              borderColor: "#030303", // Cor vermelha ao passar o mouse (hover)
+              borderColor: "#ffffff", // Cor vermelha ao passar o mouse (hover)
             },
             "&.Mui-focused fieldset": {
-              borderColor: "#111010", // Cor vermelha ao focar no campo
+              borderColor: "#ffffff", // Cor vermelha ao focar no campo
             },
           },
           "& .MuiFormLabel-root": {
-            color: "#020202", // Cor vermelha do label
+            color: "#ffffff", // Cor vermelha do label
           },
           "& .MuiFormLabel-root.Mui-focused": {
-            color: "#161616", // Cor vermelha do label ao focar
+            color: "#ffffff", // Cor vermelha do label ao focar
+          },
+          "& .MuiAutocomplete-clearIndicator": {
+            color: "#ffffff", // Altera a cor do "x" (botão de limpar)
           },
 
         }}
@@ -77,17 +82,21 @@ const SearchInputAutocomplete: React.FC<SearchInputAutocompleteProps> = ({ optio
             variant="filled"
             size="small"
             sx={{
-              backgroundColor: "white",
+              backgroundColor: "#3d3d3d7a",
               border: "none",
               padding: 0,
-              borderRadius: 10,
-              maxHeight: 45
+              borderRadius: 1,
+              color:"#fff",
+              maxHeight: 45,
+              "& .MuiInputBase-input": {
+                color: "#fff", 
+              }
             }}
           />
         )}
       />
       <IconButton onClick={handleSearch}>
-        <SearchIcon />
+        <SearchIcon sx={{color: 'white'}} />
       </IconButton>
     </Box>
   );
