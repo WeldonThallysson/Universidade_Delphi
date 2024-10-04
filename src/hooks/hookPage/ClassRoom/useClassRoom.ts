@@ -2,6 +2,13 @@ import { useCustomNavigation } from "../../useCustomNavigation/useCustomNavigati
 import { useState } from "react";
 import { ILives } from "../../../interface/interfaceLive/interface.live";
 import { aulasWebinarsUniversidadeDelphi } from "../../../constants/mocks/Aulas/AulasPrincipais";
+import { criandoPrimeiraAplicacao } from "../../../constants/mocks/Aulas/CriandoPrimeiraAplicacao";
+import { aulasApiRestHorse } from "../../../constants/mocks/Aulas/ApiRestHorse";
+import { aulasMaratonaIntraWeb } from "../../../constants/mocks/Aulas/MaratonaIntraWeb";
+import { desvendandoDebugDelphi } from "../../../constants/mocks/Aulas/MiniCursoDebugDelphi";
+import { minicursoDesktop } from "../../../constants/mocks/Aulas/MiniCursoDesenvolvimentoDesktop";
+import { delphiPoo } from "../../../constants/mocks/Aulas/MiniCursoDelphiPoo";
+
 type PropsParams = {
     idAula?: number;
     category?: string;
@@ -11,7 +18,7 @@ export const useClassRoom = () => {
   const { handleNavigation } = useCustomNavigation();
   const [allClass, setAllClass] = useState<ILives[]>([]);
   const [classSelected, setClassSelected] = useState<ILives>();
-
+  const allClassUD = [...criandoPrimeiraAplicacao,...aulasWebinarsUniversidadeDelphi,...aulasApiRestHorse,...aulasMaratonaIntraWeb,...desvendandoDebugDelphi,...minicursoDesktop,...delphiPoo]
   const handleFilterClassSelected = ({
     idAula,
   }: PropsParams) => {
@@ -21,7 +28,7 @@ export const useClassRoom = () => {
 
   const handleFilterAllClass = ({ category}: PropsParams) => {
     if (category) {
-      const otherLives = aulasWebinarsUniversidadeDelphi.filter(
+      const otherLives = allClassUD.filter(
         (cls: any) => cls.category === category
       );
       setAllClass(otherLives);

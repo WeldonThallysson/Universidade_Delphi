@@ -11,7 +11,7 @@ import { Trails } from "../../constants/mocks/Trilhas";
 const Courses = () => {
   const { theme } = useTheme();
   const { handleNavigation } = useCustomNavigation();
-  console.log(Trails);
+
   return (
     <Containers.DefaultAnimated>
       <Helmet>

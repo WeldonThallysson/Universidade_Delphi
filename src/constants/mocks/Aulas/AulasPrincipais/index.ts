@@ -123,7 +123,7 @@ export const aulasWebinarsUniversidadeDelphi = [
     linkVideo: "https://www.youtube.com/watch?v=bQ5dSiLfwZI",
     linkIdVideo: "bQ5dSiLfwZI",
     tag: "XML Doc",
-    category: "Linguagens e Recursos",
+    category: "LinguagenseRecursos",
   },
 
   {
@@ -134,7 +134,7 @@ export const aulasWebinarsUniversidadeDelphi = [
     linkVideo: "https://www.youtube.com/watch?v=6vnpAvYZUAE",
     linkIdVideo: "6vnpAvYZUAE",
     tag: "Record Macros",
-    category: "Linguagens e Recursos",
+    category: "LinguagenseRecursos",
   },
   {
     id: 14,
@@ -144,7 +144,7 @@ export const aulasWebinarsUniversidadeDelphi = [
     linkVideo: "https://www.youtube.com/watch?v=MDosxlqsCGo",
     linkIdVideo: "MDosxlqsCGo",
     tag: "JSON Objects",
-    category: "Linguagens e Recursos",
+    category: "LinguagenseRecursos",
   },
   {
     id: 15,
@@ -348,7 +348,7 @@ export const aulasWebinarsUniversidadeDelphi = [
     linkVideo: " https://www.youtube.com/watch?v=UJxiMK7kKX4",
     linkIdVideo: "UJxiMK7kKX4",
     tag: "Usabilidade",
-    category: "UI / UX",
+    category: "UIUX",
   },
 
   {
@@ -359,7 +359,7 @@ export const aulasWebinarsUniversidadeDelphi = [
     linkVideo: "https://www.youtube.com/watch?v=xLhr1gZUwPk",
     linkIdVideo: "xLhr1gZUwPk",
     tag: "Usabilidade",
-    category: "UI / UX",
+    category: "UIUX",
   },
 
   {
@@ -370,7 +370,7 @@ export const aulasWebinarsUniversidadeDelphi = [
     linkVideo: "https://www.youtube.com/watch?v=h2HYe5jW158",
     linkIdVideo: "h2HYe5jW158",
     tag: "Threads",
-    category: "UI / UX",
+    category: "UIUX",
   },
 
   
@@ -382,7 +382,7 @@ export const aulasWebinarsUniversidadeDelphi = [
     linkVideo: " https://www.youtube.com/watch?v=Z7f-XivCpRo",
     linkIdVideo: "Z7f-XivCpRo",
     tag: "UI / UX",
-    category: "UI / UX",
+    category: "UIUX",
   },
 
    

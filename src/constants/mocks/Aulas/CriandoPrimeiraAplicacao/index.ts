@@ -10,7 +10,7 @@ export const criandoPrimeiraAplicacao = [
       linkVideo: "https://www.youtube.com/watch?v=bfdYD2UwvUs",
       linkIdVideo: "bfdYD2UwvUs",
       tag: "RAD Studio",
-      category: "Primeiros Passos",
+      category: "PrimeirosPassos",
     },
     {
       id: 1,
@@ -21,7 +21,7 @@ export const criandoPrimeiraAplicacao = [
       linkVideo: "https://www.youtube.com/watch?v=op7Q70hpVeY",
       linkIdVideo: "op7Q70hpVeY",
       tag: "Introdução",
-      category: "Primeiros Passos",
+      category: "PrimeirosPassos",
     },
 
     {
@@ -33,7 +33,7 @@ export const criandoPrimeiraAplicacao = [
       linkVideo: "https://www.youtube.com/watch?v=op7Q70hpVeY",
       linkIdVideo: "op7Q70hpVeY",
       tag: "Introdução",
-      category: "Primeiros Passos",
+      category: "PrimeirosPassos",
     },
 
     {
@@ -45,7 +45,7 @@ export const criandoPrimeiraAplicacao = [
       linkVideo: "https://www.youtube.com/watch?v=bchUVPFRUj8",
       linkIdVideo: "bchUVPFRUj8",
       tag: "Introdução",
-      category: "Primeiros Passos",
+      category: "PrimeirosPassos",
     },
 
  
@@ -58,7 +58,7 @@ export const criandoPrimeiraAplicacao = [
       linkVideo: "https://www.youtube.com/watch?v=Ev_EaKt4hno",
       linkIdVideo: "Ev_EaKt4hno",
       tag: "Introdução",
-      category: "Primeiros Passos",
+      category: "PrimeirosPassos",
     },
 
     {
@@ -70,7 +70,7 @@ export const criandoPrimeiraAplicacao = [
       linkVideo: "https://www.youtube.com/watch?v=Ev_EaKt4hno",
       linkIdVideo: "Ev_EaKt4hno",
       tag: "Introdução",
-      category: "Primeiros Passos",
+      category: "PrimeirosPassos",
     },
 
 
@@ -83,7 +83,7 @@ export const criandoPrimeiraAplicacao = [
       linkVideo: "https://www.youtube.com/watch?v=ITiz4Wv42VM",
       linkIdVideo: "ITiz4Wv42VM",
       tag: "Introdução",
-      category: "Primeiros Passos",
+      category: "PrimeirosPassos",
     },
 
     {
@@ -95,7 +95,7 @@ export const criandoPrimeiraAplicacao = [
       linkVideo: "https://www.youtube.com/watch?v=xfY9xLV1k1E",
       linkIdVideo: "xfY9xLV1k1E",
       tag: "Introdução",
-      category: "Primeiros Passos",
+      category: "PrimeirosPassos",
     },
 
     {
@@ -107,7 +107,7 @@ export const criandoPrimeiraAplicacao = [
       linkVideo: " https://www.youtube.com/watch?v=xfY9xLV1k1E",
       linkIdVideo: "xfY9xLV1k1E",
       tag: "Introdução",
-      category: "Primeiros Passos",
+      category: "PrimeirosPassos",
     },
   
     {
@@ -119,7 +119,7 @@ export const criandoPrimeiraAplicacao = [
       linkVideo: "https://www.youtube.com/watch?v=oTb-ApmSgD0",
       linkIdVideo: "oTb-ApmSgD0",
       tag: "Introdução",
-      category: "Primeiros Passos",
+      category: "PrimeirosPassos",
     },
   
     {
@@ -131,7 +131,7 @@ export const criandoPrimeiraAplicacao = [
       linkVideo: "https://www.youtube.com/watch?v=oTb-ApmSgD0",
       linkIdVideo: "oTb-ApmSgD0",
       tag: "Introdução",
-      category: "Primeiros Passos",
+      category: "PrimeirosPassos",
     },
   
     {
@@ -143,7 +143,7 @@ export const criandoPrimeiraAplicacao = [
       linkVideo: "https://www.youtube.com/watch?v=Ev_EaKt4hno",
       linkIdVideo: "Ev_EaKt4hno",
       tag: "Introdução",
-      category: "Primeiros Passos",
+      category: "PrimeirosPassos",
     },
     {
       id: 12,
@@ -154,7 +154,7 @@ export const criandoPrimeiraAplicacao = [
       linkVideo: "https://www.youtube.com/watch?v=ITiz4Wv42VM",
       linkIdVideo: "ITiz4Wv42VM",
       tag: "Introdução",
-      category: "Primeiros Passos",
+      category: "PrimeirosPassos",
     },
 
     {
@@ -166,7 +166,7 @@ export const criandoPrimeiraAplicacao = [
       linkVideo: "https://www.youtube.com/watch?v=budP5MIqd54",
       linkIdVideo: "budP5MIqd54",
       tag: "Introdução",
-      category: "Primeiros Passos",
+      category: "PrimeirosPassos",
     },
 
   
@@ -184,7 +184,7 @@ export const criandoPrimeiraAplicacao = [
       linkVideo: "https://www.youtube.com/watch?v=h4ZWYPdekqU",
       linkIdVideo: "h4ZWYPdekqU",
       tag: "Introdução",
-      category: "Primeiros Passos",
+      category: "PrimeirosPassos",
     },
           {
       id: 12,
@@ -195,7 +195,7 @@ export const criandoPrimeiraAplicacao = [
       linkVideo: "https://www.youtube.com/watch?v=bQ1dSiLfwZI",
       linkIdVideo: "bQ1dSiLfwZI",
       tag: "Introdução",
-      category: "Primeiros Passos",
+      category: "PrimeirosPassos",
     },
   
       */
