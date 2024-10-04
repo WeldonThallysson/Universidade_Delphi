@@ -82,6 +82,7 @@ const Community = () => {
           display: "flex",
           flexDirection: "column",
           padding: {
+            xs: "5rem 2rem",
             sm: "5rem 5rem",
             lg: "5rem 20rem",
           },
@@ -91,7 +92,10 @@ const Community = () => {
         <Box sx={{display:"flex",flexDirection:"column",gap: 1}}>
             <Typography 
                 sx={{
-                    fontSize: "1.5rem",
+                    fontSize: {
+                      xs: "1.2rem",
+                      sm: "1.5rem",
+                    },
                     fontFamily: "Poppins",
                     fontWeight: "800",
                     padding: 0,
@@ -102,7 +106,10 @@ const Community = () => {
             </Typography>
             <Typography 
                 sx={{
-                    fontSize: "1.2rem",
+                    fontSize: {
+                      xs: "1rem",
+                      sm: "1.2rem",
+                    },
                     fontFamily: "Poppins",
                     fontWeight: "300",
                     padding: 0,
@@ -116,7 +123,10 @@ const Community = () => {
         <Box sx={{display:"flex",flexDirection:"column",gap: 1}}>
             <Typography 
                 sx={{
-                    fontSize: "1.5rem",
+                    fontSize: {
+                      xs: "1.2rem",
+                      sm: "1.5rem",
+                    },
                     fontFamily: "Poppins",
                     fontWeight: "800",
                     padding: 0,
@@ -127,7 +137,10 @@ const Community = () => {
             </Typography>
             <Typography 
                 sx={{
-                    fontSize: "1.2rem",
+                    fontSize: {
+                      xs: "1rem",
+                      sm: "1.2rem",
+                    },
                     fontFamily: "Poppins",
                     fontWeight: "300",
                     padding: 0,

@@ -90,7 +90,10 @@ export default function Header() {
           background:
             "linear-gradient(to right, #000000dd, #000000e8,#000000e6, #000000d8)",
           backgroundSize: "100%",
-          padding: "0.3rem 1rem",
+          padding: {
+            xs: "0.3rem 0.4rem",
+            sm: "0.3rem 1rem"
+          },
         }}
       >
         <Toolbar sx={{display:"flex", justifyContent: "space-between", flexGrow: 1 }}>
@@ -158,8 +161,22 @@ export default function Header() {
             />
           </Box>
           {/* Menu para mobile */}
-          <Box sx={{ display: { xs: "flex", lg: "none" }, gap: 12 }}>
-            <Box sx={{ display: { xs: "flex", lg: "none" }, ml: -10 }}>
+          <Box sx={{ display: { xs: "flex", lg: "none" }, gap: 2 }}>
+            
+            <Box>
+            <IconButton
+              edge="start"
+              color="inherit"
+              aria-label="menu"
+              onClick={toggleDrawer(true)}
+            >
+              <MenuIcon />
+            </IconButton>
+            </Box>
+          
+          </Box>
+        </Toolbar>
+        <Box sx={{ display: { xs: "flex", lg: "none" }, padding: "0.5rem 1rem"}}>
               <SearchInputAutocomplete
                 options={searchOptions} 
                 onSearch={(value) => {
@@ -174,16 +191,6 @@ export default function Header() {
                 }} // Função de pesquisa
               />
             </Box>
-            <IconButton
-              edge="start"
-              color="inherit"
-              aria-label="menu"
-              onClick={toggleDrawer(true)}
-            >
-              <MenuIcon />
-            </IconButton>
-          </Box>
-        </Toolbar>
       </AppBar>
 
       <Popover
@@ -248,6 +255,7 @@ export default function Header() {
           handleNavigation(item);
         }}
       />
+  
     </header>
   );
 }

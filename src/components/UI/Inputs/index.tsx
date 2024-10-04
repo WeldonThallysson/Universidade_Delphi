@@ -29,14 +29,10 @@ const SearchInputAutocomplete: React.FC<SearchInputAutocompleteProps> = ({ optio
     option.description.toLowerCase().includes(inputValue.toLowerCase())
   );
 
-  useEffect(() => {
-    if (selectedOption && typeof selectedOption !== 'string') {
-      onSearch(selectedOption);
-    }
-  }, [selectedOption, onSearch]);
+
 
   return (
-    <Box sx={{ display: 'flex', width: "100%", background: 'white', borderRadius: 1 }}>
+    <Box sx={{ display: 'flex', width: "100%", background: 'white', borderRadius: 1,  }}>
       <Autocomplete
         freeSolo
         options={filteredOptions}
@@ -49,7 +45,10 @@ const SearchInputAutocomplete: React.FC<SearchInputAutocompleteProps> = ({ optio
           setSelectedOption(newSelectedOption); 
         }}
         sx={{
-          width: 200,
+          width: {
+            xs: "100%",
+            lg: 200
+          },
           border: "none",
           "& .MuiOutlinedInput-root": {
             borderRadius: 5,

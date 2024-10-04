@@ -19,7 +19,12 @@ export const Layouts = () => {
             justifyContent:"space-between",   
             height: "100vh"
         }}>
-            <Box mb={8}>
+            <Box sx={{
+                mb: {
+                    xs: 15,
+                    lg: 8
+                }
+            }}>
               <Header/>
             </Box>
           

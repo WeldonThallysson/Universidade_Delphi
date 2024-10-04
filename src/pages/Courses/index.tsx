@@ -42,7 +42,10 @@ const Courses = () => {
               sm: 35,
               lg: 45,
             },
-            mt: 5,
+            mt: {
+              xs: 2,
+              sm: 5
+            },
             color: theme.colors.secondary,
             fontFamily: "Open Sans",
             fontWeight: "700",
