@@ -4,7 +4,7 @@
 export enum ROUTES {
     HOME = '/',
     CLASSROOM = '/aulas',
-    CLASSROOMINDIVIDUAL = '/aulas/:idAula',
+    CLASSROOMINDIVIDUAL = '/aulas/:categoria/:idAula',
     COURSES = '/cursos',
     COURSEINDIVIDUAL = '/cursos/:idCurso/:idAula',
     LIVES = '/lives/:idLive',

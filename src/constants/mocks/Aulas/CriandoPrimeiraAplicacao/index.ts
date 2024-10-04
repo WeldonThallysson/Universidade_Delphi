@@ -4,6 +4,16 @@ import CapaVideo from "../../../../assets/Cursos/capas/CriandoPrimeiraAplicacao/
 export const criandoPrimeiraAplicacao = [
     {
       id: 1,
+      img: CapaVideo, // Substitua por sua imagem específica
+      title: "Conhecendo o IDE do RAD Studio",
+      description: "O primeiro contato com o RAD Studio, um ambiente integrado de desenvolvimento (IDE) produzido pela Embarcadero que engloba seus produtos: Delphi e C++ Builder.",
+      linkVideo: "https://www.youtube.com/watch?v=bfdYD2UwvUs",
+      linkIdVideo: "bfdYD2UwvUs",
+      tag: "RAD Studio",
+      category: "Primeiros Passos",
+    },
+    {
+      id: 1,
       idCourse: 1, // Substitua pelo idCourse correto
       img: CapaVideo, // Substitua pela imagem adequada
       title: "Criando uma primeira aplicação - Parte 1",
@@ -35,7 +45,7 @@ export const criandoPrimeiraAplicacao = [
       linkVideo: "https://www.youtube.com/watch?v=bchUVPFRUj8",
       linkIdVideo: "bchUVPFRUj8",
       tag: "Introdução",
-      category: "Lab",
+      category: "Primeiros Passos",
     },
 
  
@@ -128,6 +138,7 @@ export const criandoPrimeiraAplicacao = [
       id: 11,
       idCourse: 1, // Substitua por sua imagem específica
       title: "Projetos",
+      img: CapaVideo,
       description: "Uma visão sobre Educação e Indústria de TI e como podemos evoluir essa aproximação para encurtarmos os caminhos dos alunos até o mercado de trabalho em uma área que clama por mão de obra qualificada",
       linkVideo: "https://www.youtube.com/watch?v=Ev_EaKt4hno",
       linkIdVideo: "Ev_EaKt4hno",
@@ -136,7 +147,8 @@ export const criandoPrimeiraAplicacao = [
     },
     {
       id: 12,
-      idCourse: 1, // Substitua por sua imagem específica
+      idCourse: 1,
+      img: CapaVideo, // Substitua por sua imagem específica
       title: "Opções de Projeto",
       description: "Visão geral sobre as opções de projeto no RAD Studio. Opções de compilação, build, diretório de saída, etc. Enfim, saiba como configurar as definições ideais para os projetos que você adotar",
       linkVideo: "https://www.youtube.com/watch?v=ITiz4Wv42VM",
@@ -147,6 +159,7 @@ export const criandoPrimeiraAplicacao = [
 
     {
       id: 13,
+      img: CapaVideo,
       idCourse: 1,
       title: "Tool Palette",
       description: "A Tool Palettte (paleta de ferramentas ou paleta de componentes) contém os componentes que você usa para desenvolver seu aplicativo, esses componentes são exibidos através de uma listagem de categorias que os agrupa de acordo com seu grupo funcional.",
@@ -156,16 +169,7 @@ export const criandoPrimeiraAplicacao = [
       category: "Primeiros Passos",
     },
 
-    {
-      id: 14,
-      idCourse: 1,
-      title: "Tool Palette",
-      description: "A Tool Palettte (paleta de ferramentas ou paleta de componentes) contém os componentes que você usa para desenvolver seu aplicativo, esses componentes são exibidos através de uma listagem de categorias que os agrupa de acordo com seu grupo funcional.",
-      linkVideo: "https://www.youtube.com/watch?v=budP5MIqd54",
-      linkIdVideo: "budP5MIqd54",
-      tag: "Introdução",
-      category: "Primeiros Passos",
-    },
+  
   ];
 
   

@@ -26,18 +26,21 @@ export const Trails = [
     
     {
         id: 2,
+        title: 'Lab',
+        description: '',
+        tag: 'Lab',
+        classrooms: Lab
+    },
+
+    
+    {
+        id: 3,
         title: 'Primeiros Passos',
         description: '',
         tag: 'Start',
         classrooms: PrimeirosPassos
     },
-    {
-        id: 3,
-        title: 'Linguagens e Recursos',
-        description: '',
-        tag: 'Linguagens',
-        classrooms: LinguagensRecursos
-    },
+
     {
         id: 4,
         title: 'Apps',
@@ -63,9 +66,17 @@ export const Trails = [
         tag: 'UI/UX',
         classrooms: UXUI
     },
-
     {
         id: 6,
+        title: 'Linguagens e Recursos',
+        description: '',
+        tag: 'Linguagens',
+        classrooms: LinguagensRecursos
+    },
+   
+
+    {
+        id: 7,
         title: 'Multicamadas',
         description: '',
         tag: 'Multicamadas',
@@ -73,19 +84,11 @@ export const Trails = [
     },
 
     {
-        id: 7,
+        id: 8,
         title: 'Empreendedorismo',
         description: '',
         tag: 'Empreendedorismo',
         classrooms: Empreendedorismo
-    },
-
-    {
-        id: 8,
-        title: 'Lab',
-        description: '',
-        tag: 'Lab',
-        classrooms: Lab
     },
 
 

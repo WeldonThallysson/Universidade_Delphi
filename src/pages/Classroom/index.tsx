@@ -12,7 +12,7 @@ import { Helmet } from "react-helmet-async"
 
 const ClassRoom = () => {
     const {theme} = useTheme()
-    const {idAula} = useParams()
+    const {idAula,categoria} = useParams()
     const {
         handleFilterClassSelected,
         handleFilterAllClass,
@@ -23,15 +23,15 @@ const ClassRoom = () => {
  
 
     useEffect(() => {
-        if(idAula){
+        if(idAula && categoria){
             const data = {
                 idAula: Number(idAula),
             }
             
             handleFilterClassSelected(data)
-            handleFilterAllClass(data)
+            handleFilterAllClass({category: categoria})
         }
-    },[idAula])
+    },[idAula, categoria])
 
     
     return (
@@ -79,7 +79,7 @@ const ClassRoom = () => {
                           slidesPerView={4.2}
                           optionsCards={allClass}
                           handleActionCard={(item ) => {
-                            const redirect = `/aulas/${item.id}`;
+                            const redirect = `/aulas/${item.category}/${item.id}`;
                             handleNavigation(redirect)
 
                         }}

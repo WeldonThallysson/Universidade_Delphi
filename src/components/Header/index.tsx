@@ -26,6 +26,15 @@ import { useTheme } from "../../hooks/useTheme/useTheme";
 import { ROUTES } from "../../routes/paths";
 import SearchInputAutocomplete from "../UI/Inputs";
 
+
+import { aulasApiRestHorse } from "../../constants/mocks/Aulas/ApiRestHorse"
+import { aulasWebinarsUniversidadeDelphi } from "../../constants/mocks/Aulas/AulasPrincipais"
+import { aulasMaratonaIntraWeb } from "../../constants/mocks/Aulas/MaratonaIntraWeb"
+import { desvendandoDebugDelphi } from "../../constants/mocks/Aulas/MiniCursoDebugDelphi"
+import { delphiPoo } from "../../constants/mocks/Aulas/MiniCursoDelphiPoo"
+import { minicursoDesktop } from "../../constants/mocks/Aulas/MiniCursoDesenvolvimentoDesktop"
+import { criandoPrimeiraAplicacao } from "../../constants/mocks/Aulas/CriandoPrimeiraAplicacao"
+
 export default function Header() {
   const { theme } = useTheme();
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
@@ -46,6 +55,31 @@ export default function Header() {
     setDrawerOpen(open);
   };
 
+
+ 
+  const allClasses = [
+    ...criandoPrimeiraAplicacao,
+    ...aulasWebinarsUniversidadeDelphi,
+    ...aulasApiRestHorse,
+    ...aulasMaratonaIntraWeb,
+    ...desvendandoDebugDelphi,
+    ...minicursoDesktop,
+    ...delphiPoo
+  ];
+  
+  const searchOptions = allClasses
+    .filter((item, index, self) => 
+      index === self.findIndex((t) => t.title === item.title)
+    )
+    .map((item: any) => ({
+      id: item.id,
+      idCourse: item?.idCourse,
+      title: item.title,
+      category: item.category,
+      description: item.description,
+    }));
+
+
   return (
     <header>
       <AppBar
@@ -56,10 +90,10 @@ export default function Header() {
           background:
             "linear-gradient(to right, #000000dd, #000000e8,#000000e6, #000000d8)",
           backgroundSize: "100%",
-          padding: "0.2rem 1rem",
+          padding: "0.3rem 1rem",
         }}
       >
-        <Toolbar sx={{display:"flex", justifyContent: "space-between", flexGrow:1 }}>
+        <Toolbar sx={{display:"flex", justifyContent: "space-between", flexGrow: 1 }}>
           <Box sx={{ display: "flex", alignItems: "center" }}>
             <Box
               sx={{
@@ -108,14 +142,38 @@ export default function Header() {
             ))}
           </Box>
 
-          <Box sx={{ display: { xs: "none", lg: "flex" } }}>
+          <Box sx={{ display: { xs: "none", lg: "flex" }, ml: -10 }}>
             <SearchInputAutocomplete
-              options={["Option 1", "Option 2", "Option 3"]} // Array de opções
-              onSearch={(value) => console.log("Searching for:", value)} // Função de pesquisa
+              options={searchOptions} 
+              onSearch={(value) => {
+                if (value?.idCourse) {
+                  const redirect = `/cursos/${value.idCourse}/${value.id}`;
+                  handleNavigation(redirect);
+                } else if (value?.id && !value?.idCourse) {
+                  const redirect = `/aulas/${value.category}/${value.id}`;
+                  handleNavigation(redirect);
+                }
+            
+              }} // Função de pesquisa
             />
           </Box>
           {/* Menu para mobile */}
-          <Box sx={{ display: { xs: "flex", lg: "none" } }}>
+          <Box sx={{ display: { xs: "flex", lg: "none" }, gap: 12 }}>
+            <Box sx={{ display: { xs: "flex", lg: "none" }, ml: -10 }}>
+              <SearchInputAutocomplete
+                options={searchOptions} 
+                onSearch={(value) => {
+                  if (value?.idCourse) {
+                    const redirect = `/cursos/${value.idCourse}/${value.id}`;
+                    handleNavigation(redirect);
+                  } else if (value?.id && !value?.idCourse) {
+                    const redirect = `/aulas/${value.category}/${value.id}`;
+                    handleNavigation(redirect);
+                  }
+              
+                }} // Função de pesquisa
+              />
+            </Box>
             <IconButton
               edge="start"
               color="inherit"

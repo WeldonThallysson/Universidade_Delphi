@@ -3,7 +3,8 @@ import { useState } from "react";
 import { ILives } from "../../../interface/interfaceLive/interface.live";
 import { aulasWebinarsUniversidadeDelphi } from "../../../constants/mocks/Aulas/AulasPrincipais";
 type PropsParams = {
-    idAula: number;
+    idAula?: number;
+    category?: string;
 };
 
 export const useClassRoom = () => {
@@ -18,10 +19,10 @@ export const useClassRoom = () => {
     setClassSelected(live);
   };
 
-  const handleFilterAllClass = ({ idAula}: PropsParams) => {
-    if (idAula) {
+  const handleFilterAllClass = ({ category}: PropsParams) => {
+    if (category) {
       const otherLives = aulasWebinarsUniversidadeDelphi.filter(
-        (cls: any) => cls.id !== idAula
+        (cls: any) => cls.category === category
       );
       setAllClass(otherLives);
     }

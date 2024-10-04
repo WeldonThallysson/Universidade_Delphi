@@ -44,16 +44,6 @@ export const aulasWebinarsUniversidadeDelphi = [
   {
     id: 5,
     img: CapaVideo, // Substitua por sua imagem específica
-    title: "Conhecendo o IDE do RAD Studio",
-    description: "O primeiro contato com o RAD Studio, um ambiente integrado de desenvolvimento (IDE) produzido pela Embarcadero que engloba seus produtos: Delphi e C++ Builder.",
-    linkVideo: "https://www.youtube.com/watch?v=bfdYD2UwvUs",
-    linkIdVideo: "bfdYD2UwvUs",
-    tag: "RAD Studio",
-    category: "Primeiros Passos",
-  },
-  {
-    id: 6,
-    img: CapaVideo, // Substitua por sua imagem específica
     title: "Projetos no RAD Studio",
     description: "Conceito de projetos no RAD Studio sob a óptica do IDE apresentando a estrutura do Project Manager e tipos de arquivos básicos de um projeto no Delphi.",
     linkVideo: "https://www.youtube.com/watch?v=Ev_EaKt4hno",
@@ -62,7 +52,7 @@ export const aulasWebinarsUniversidadeDelphi = [
     category: "Projetos",
   },
   {
-    id: 7,
+    id: 6,
     img: CapaVideo, // Substitua por sua imagem específica
     title: "Opções de um projeto no RAD Studio",
     description: "Saiba como configurar as definições ideais para os projetos que você adotar, opções de compilação, build e diretório de saída.",
@@ -72,7 +62,7 @@ export const aulasWebinarsUniversidadeDelphi = [
     category: "Configurações",
   },
   {
-    id: 8,
+    id: 7,
     img: CapaVideo, // Substitua por sua imagem específica
     title: "Tipos de Projetos no RAD Studio",
     description: "De acordo com a edição do RAD Studio, você pode criar aplicações tradicionais do Windows, multi-dispositivos, web, banco de dados e muito mais.",
@@ -82,7 +72,7 @@ export const aulasWebinarsUniversidadeDelphi = [
     category: "RAD Studio",
   },
   {
-    id: 9,
+    id: 8,
     img: CapaVideo, // Substitua por sua imagem específica
     title: "Editor de Códigos",
     description: " O Editor de Códigos que integra o RAD Studio conta com diversos recursos e funcionalidade que auxiliam na digitação de códigos adicionando ainda mais produtividade ao desenvolvedor.",
@@ -93,7 +83,7 @@ export const aulasWebinarsUniversidadeDelphi = [
   },
 
   {
-    id: 10,
+    id: 9,
     img: CapaVideo, // Substitua por sua imagem específica
     title: "O Form Designer",
     description: "  Ao construir aplicações visuais com o  RAD Studio, sejam elas Windows (VCL) ou Multi-plataforma (Firemonkey - FMX), o editor visual torna mais produtivo o design das suas interfaces gráficas.",
@@ -104,7 +94,7 @@ export const aulasWebinarsUniversidadeDelphi = [
   },
 
   {
-    id: 11,
+    id: 10,
     img: CapaVideo, // Substitua por sua imagem específica
     title: "Inspetor de Objetos",
     description: "O Inspetor de objetos permite a manipulação características e comportamentos destes em tempo de projeto.",
@@ -115,7 +105,7 @@ export const aulasWebinarsUniversidadeDelphi = [
   },
 
   {
-    id: 12,
+    id: 11,
     img: CapaVideo, // Substitua por sua imagem específica
     title: "Tipos de dados",
     description: "Tipos de Dados para que os usuários consigam conhecer, declarar e utilizar estes no Delphi.",
@@ -126,7 +116,7 @@ export const aulasWebinarsUniversidadeDelphi = [
   },
 
   {
-    id: 13,
+    id: 12,
     img: CapaVideo, // Substitua por sua imagem específica
     title: "XML Doc Comments",
     description: " O XML Doc comments é exibido no Help Insight (se analisados com êxito) e também é incluído pelo compilador ao gerar a Documentação XML (como devnotes elementos XML).",
@@ -137,7 +127,7 @@ export const aulasWebinarsUniversidadeDelphi = [
   },
 
   {
-    id: 14,
+    id: 13,
     img: CapaVideo, // Substitua por sua imagem específica
     title: "Record Macros",
     description: "  Você pode gravar uma série de pressionamentos de teclas como uma macro e depois pode reproduzi-la para repetir as teclas pressionadas durante a sessão atual do IDE.",
@@ -147,7 +137,7 @@ export const aulasWebinarsUniversidadeDelphi = [
     category: "Linguagens e Recursos",
   },
   {
-    id: 15,
+    id: 14,
     img: CapaVideo, // Substitua por sua imagem específica
     title: " JSON Objects Framework",
     description: "A framework JSON Objects traz maneira muito simples para a leitura, iterações e modificações de uma estrutura JSON.",
@@ -157,7 +147,7 @@ export const aulasWebinarsUniversidadeDelphi = [
     category: "Linguagens e Recursos",
   },
   {
-    id: 16,
+    id: 15,
     img: CapaVideo, // Substitua por sua imagem específica
     title: "  JSON Readers e Writers Framework",
     description: " A framework JSON Readers and Writers ler e gravar dados JSON diretamente em uma stream, possibilitando assim um melhor desempenho e consumo de memória.",
@@ -167,7 +157,7 @@ export const aulasWebinarsUniversidadeDelphi = [
     category: "RAD Studio",
   },
   {
-    id: 17,
+    id: 16,
     img: CapaVideo, // Substitua por sua imagem específica
     title: "Multipaste",
     description: " A opção MultiPaste permite modificar e colar no Editor de  código o texto que você copiou para a área de transferência, ajudando você a trabalhar com HTML, SQL, texto formatado e qualquer outro texto.",
@@ -177,7 +167,7 @@ export const aulasWebinarsUniversidadeDelphi = [
     category: "Linguagem e Recursos",
   },
   {
-    id: 18,
+    id: 17,
     img: CapaVideo, // Substitua por sua imagem específica
     title: "Helpers: Class e Record",
     description: "Os Helpers permitem adicionar funcionalidades às estruturas seja Classe ou Registro, sem a necessidade de criar uma nova classe herdando da anterior.",
@@ -187,7 +177,7 @@ export const aulasWebinarsUniversidadeDelphi = [
     category: "Linguagem e Recursos",
   },
   {
-    id: 19,
+    id: 18,
     img: CapaVideo, // Substitua por sua imagem específica
     title: "O Programa Acadêmico e  desafios da TI no ensino: o que te espera lá fora?",
     description: " Embarcadero conference 2020 online.",
@@ -198,7 +188,7 @@ export const aulasWebinarsUniversidadeDelphi = [
   },
 
   {
-    id: 20,
+    id: 19,
     img: CapaVideo, // Substitua por sua imagem específica
     title: " Solus: Como nos tornamos referência no mercado e como o Delphi faz parte disso!",
     description: "Embarcadero conference 2020 online.",
@@ -208,7 +198,7 @@ export const aulasWebinarsUniversidadeDelphi = [
     category: "RAD Studio",
   },
   {
-    id: 21,
+    id: 20,
     img: CapaVideo, // Substitua por sua imagem específica
     title: "O futuro das empresas está na escola",
     description: "Embarcadero conference 2020 online.",
@@ -219,7 +209,7 @@ export const aulasWebinarsUniversidadeDelphi = [
   },
 
   {
-    id: 22,
+    id: 21,
     img: CapaVideo, // Substitua por sua imagem específica
     title: "Delphi no ensino universitário",
     description: "Embarcadero conference 2020 online.",
@@ -230,7 +220,7 @@ export const aulasWebinarsUniversidadeDelphi = [
   },
 
   {
-    id: 23,
+    id: 22,
     img: CapaVideo, // Substitua por sua imagem específica
     title: "Arduino Moodbus e C++ Builder",
     description: "Embarcadero conference 2020 online.",
@@ -241,7 +231,7 @@ export const aulasWebinarsUniversidadeDelphi = [
   },
 
   {
-    id: 24,
+    id: 23,
     img: CapaVideo, // Substitua por sua imagem específica
     title: " DataSnap e RTTI: Simplificando a disponibilização de serviços",
     description: "Embarcadero conference 2020 online.",
@@ -252,7 +242,7 @@ export const aulasWebinarsUniversidadeDelphi = [
   },
 
   {
-    id: 25,
+    id: 24,
     img: CapaVideo, // Substitua por sua imagem específica
     title: "  TMS Acadêmico: O Programa Acadêmico da TMS Software",
     description: "Embarcadero conference 2020 online.",
@@ -263,7 +253,7 @@ export const aulasWebinarsUniversidadeDelphi = [
   },
 
   {
-    id: 26,
+    id: 25,
     img: CapaVideo, // Substitua por sua imagem específica
     title: " Como o novo cenário colocou os profissionais de tecnologia ainda mais em evidência",
     description: "Embarcadero conference 2020 online.",
@@ -408,7 +398,7 @@ export const aulasWebinarsUniversidadeDelphi = [
   },
 
   {
-    id: 36,
+    id: 38,
     img: CapaVideo, // Substitua por sua imagem específica
     title: "A evolução da espécie",
     description: " Uma visão sobre Educação e Indústria de TI e como podemos evoluir essa aproximação para encurtarmos os caminhos dos alunos até o mercado de trabalho em uma área que clama por mão de obra qualificada.",
@@ -419,7 +409,7 @@ export const aulasWebinarsUniversidadeDelphi = [
   },
 
   {
-    id: 36,
+    id: 39,
     img: CapaVideo, // Substitua por sua imagem específica
     title: "Semana DMVC Framework parte 1",
     description: " Construindo APIs RESTful do Zero como DMVC, primeira parte",
@@ -430,7 +420,7 @@ export const aulasWebinarsUniversidadeDelphi = [
   },
 
   {
-    id: 37,
+    id: 40,
     img: CapaVideo, // Substitua por sua imagem específica
     title: "Semana DMVC Framework Parte 2",
     description: " Construindo APIs RESTful do Zero como DMVC segunda parte",
@@ -441,7 +431,7 @@ export const aulasWebinarsUniversidadeDelphi = [
   },
 
   {
-    id: 38,
+    id: 41,
     img: CapaVideo, // Substitua por sua imagem específica
     title: " Semana DMVC Framework parte 3",
     description: " Construindo APIs RESTful do Zero como DMVC terceira parte",
@@ -452,7 +442,7 @@ export const aulasWebinarsUniversidadeDelphi = [
   },
 
   {
-    id: 38,
+    id: 42,
     img: CapaVideo, // Substitua por sua imagem específica
     title: "Semana DMVC Framework parte 4",
     description: " Construindo APIs RESTfuldo Zero como DMVC quarta parte",
@@ -463,7 +453,7 @@ export const aulasWebinarsUniversidadeDelphi = [
   },
 
   {
-    id: 39,
+    id: 43,
     img: CapaVideo, // Substitua por sua imagem específica
     title: " Semana DMVC Framework parte 5",
     description: " Construindo APIs RESTful do Zero como DMVC quinta parte",
@@ -474,7 +464,7 @@ export const aulasWebinarsUniversidadeDelphi = [
   },
 
   {
-    id: 40,
+    id: 44,
     img: CapaVideo, // Substitua por sua imagem específica
     title: "Dataset Serialize",
     description: " Framework open source para gerar objetos JSON através de um DataSet de forma simples no Delphi.",
@@ -486,7 +476,7 @@ export const aulasWebinarsUniversidadeDelphi = [
 
 
   {
-    id: 41,
+    id: 45,
     img: CapaVideo, // Substitua por sua imagem específica
     title: "Consumindo API REST com Delphi e Firemonkey",
     description: " Como consumir uma API REST utilizando Delphi e Firemonkey, utilizando somente componentes nativos.",
@@ -497,7 +487,7 @@ export const aulasWebinarsUniversidadeDelphi = [
   },
 
   {
-    id: 42,
+    id: 46,
     img: CapaVideo, // Substitua por sua imagem específica
     title: " Manipulando a Câmera em dispositivos móveis",
     description: " Manipulação da Câmera em dispositivos móveis utilizando o Delphi.",
@@ -507,7 +497,7 @@ export const aulasWebinarsUniversidadeDelphi = [
     category: "Apps",
   },
   {
-    id: 43,
+    id: 47,
     img: CapaVideo, // Substitua por sua imagem específica
     title: "Criando um CRUD básico com Delphi",
     description: " Como criar uma aplicação com as operações de banco de dados de maneira simplificada.",
@@ -517,7 +507,7 @@ export const aulasWebinarsUniversidadeDelphi = [
     category: "RAD Studio",
   },
   {
-    id: 44,
+    id: 48,
     img: CapaVideo, // Substitua por sua imagem específica
     title: " Google Cloud Vision com Delphi",
     description: " Detecção Facial e Reconhecimento ótico de caracteres (OCR) com aplicações Delphi.",
@@ -528,7 +518,7 @@ export const aulasWebinarsUniversidadeDelphi = [
   },
 
   {
-    id: 45,
+    id: 49,
     img: CapaVideo, // Substitua por sua imagem específica
     title: " Instalando o Delphi CE",
     description: "Instalando o Delphi Community Edition 10.2.3",
@@ -538,7 +528,7 @@ export const aulasWebinarsUniversidadeDelphi = [
     category: "Apps",
   },
   {
-    id: 46,
+    id: 50,
     img: CapaVideo, // Substitua por sua imagem específica
     title: "Adicionando a plataforma Android",
     description: "Adicionando a plataforma Android no Delphi Community Edition.",
@@ -548,7 +538,7 @@ export const aulasWebinarsUniversidadeDelphi = [
     category: "Apps",
   },
   {
-    id: 47,
+    id: 51,
     img: CapaVideo, // Substitua por sua imagem específica
     title: " Configurando o Android SDK",
     description: " Configurando o Android SDK no Delphi Community Edition",
@@ -559,7 +549,7 @@ export const aulasWebinarsUniversidadeDelphi = [
   },
 
   {
-    id: 48,
+    id: 52,
     img: CapaVideo, // Substitua por sua imagem específica
     title: " Adicionando o dispositivo Target",
     description: "  Adicionando o dispositivo Android para Target de sua compilação",
@@ -570,7 +560,7 @@ export const aulasWebinarsUniversidadeDelphi = [
   },
 
   {
-    id: 49,
+    id: 53,
     img: CapaVideo, // Substitua por sua imagem específica
     title: " Configuração Rápida do Android SDK",
     description: "Configuração Rápida do Android SDK, uma outra maneira",
@@ -580,7 +570,7 @@ export const aulasWebinarsUniversidadeDelphi = [
     category: "RAD Studio",
   },
   {
-    id: 50,
+    id: 54,
     img: CapaVideo, // Substitua por sua imagem específica
     title: "Ativando a Depuração USB",
     description: " Ativando a Depuração USB no dispositivo Android",
@@ -590,17 +580,17 @@ export const aulasWebinarsUniversidadeDelphi = [
     category: "Apps",
   },
   {
-    id: 51,
+    id: 55,
     img: CapaVideo, // Substitua por sua imagem específica
-    title: "Efetuando chamadas telefônicas no Android",
-    description: "",
+    title: "Efetuando chamadas telefônicas no Android com Delphi  ",
+    description: "Aplicando tecnicas e conceitos de como realizar chamadas telefônicas no android Delphi",
     linkVideo: "https://www.youtube.com/watch?v=JJisxIOlzoc",
     linkIdVideo: "JJisxIOlzoc",
     tag: "Apps",
     category: "Apps",
   },
   {
-    id: 52,
+    id: 56,
     img: CapaVideo, // Substitua por sua imagem específica
     title: "Captando as coordenadas com o Sensor de Localização no Android",
     description: "Captando as coordenadas com o Sensor de Localização no Android",
@@ -611,7 +601,7 @@ export const aulasWebinarsUniversidadeDelphi = [
   },
 
   {
-    id: 53,
+    id: 57,
     img: CapaVideo, // Substitua por sua imagem específica
     title: " Enviando mensagens SMS em dispositivos Android",
     description: " Enviando mensagens SMS em dispositivos Android",
@@ -622,7 +612,7 @@ export const aulasWebinarsUniversidadeDelphi = [
   },
 
   {
-    id: 54,
+    id: 58,
     img: CapaVideo, // Substitua por sua imagem específica
     title: " Conectando a um banco de dados no dispositivo Android",
     description: " Conectando a um banco de dados no dispositivo Android",
@@ -633,7 +623,7 @@ export const aulasWebinarsUniversidadeDelphi = [
   },
 
   {
-    id: 55,
+    id: 59,
     img: CapaVideo, // Substitua por sua imagem específica
     title: "Conhecendo Intents do Android",
     description: " Conhecendo Intents do Android",
@@ -644,7 +634,7 @@ export const aulasWebinarsUniversidadeDelphi = [
   },
 
   {
-    id: 56,
+    id: 60,
     img: CapaVideo, // Substitua por sua imagem específica
     title: "EC2020 - O Programa Acadêmico e desafios da TI no ensino: o que te espera lá fora?",
     description: "Trilha Academica",
@@ -654,7 +644,7 @@ export const aulasWebinarsUniversidadeDelphi = [
     category: "Delphi",
   },
   {
-    id: 57,
+    id: 61,
     img: CapaVideo, // Substitua por sua imagem específica
     title: "EC2020 - Como nos tornamos referência no mercado e como o Delphi faz parte disso!",
     description: "Trilha Academica",
@@ -664,7 +654,7 @@ export const aulasWebinarsUniversidadeDelphi = [
     category: "Delphi",
   },
   {
-    id: 58,
+    id: 62,
     img: CapaVideo, // Substitua por sua imagem específica
     title: "EC2020 - O futuro das empresas está na escola",
     description: "Trilha Academica",
@@ -674,7 +664,7 @@ export const aulasWebinarsUniversidadeDelphi = [
     category: "Delphi",
   },
   {
-    id: 59,
+    id: 63,
     img: CapaVideo, // Substitua por sua imagem específica
     title: "Delphi no ensino universitário",
     description: "Trilha Academica",
@@ -685,7 +675,7 @@ export const aulasWebinarsUniversidadeDelphi = [
   },
 
   {
-    id: 60,
+    id: 64,
     img: CapaVideo, // Substitua por sua imagem específica
     title: "EC2020 - Arduino Moodbus e C++ Builder",
     description: "Trilha Academica",
@@ -696,7 +686,7 @@ export const aulasWebinarsUniversidadeDelphi = [
   },
 
   {
-    id: 61,
+    id: 65,
     img: CapaVideo, // Substitua por sua imagem específica
     title: "EC2020 - DataSnap e RTTI: Simplificando a disponibilização de serviços",
     description: "Trilha Academica",
@@ -707,7 +697,7 @@ export const aulasWebinarsUniversidadeDelphi = [
   },
 
   {
-    id: 62,
+    id: 66,
     img: CapaVideo, // Substitua por sua imagem específica
     title: "EC2020 - TMS Acadêmico: O Programa Acadêmico da TMS Software",
     description: "Trilha Academica",
@@ -718,7 +708,7 @@ export const aulasWebinarsUniversidadeDelphi = [
   },
 
   {
-    id: 63,
+    id: 67,
     img: CapaVideo, // Substitua por sua imagem específica
     title: "EC2020 - Como o novo cenário colocou os profissionais de tecnologia ainda mais em evidência",
     description: "Trilha Academica",
@@ -728,7 +718,7 @@ export const aulasWebinarsUniversidadeDelphi = [
     category: "Delphi",
   },
   {
-    id: 64,
+    id: 68,
     img: CapaVideo, // Substitua por sua imagem específica
     title: "Live 2 anos Universidade Delphi",
     description: " Live de comemoração do aniversário de 2 anos do projeto Universidade Delphi e abertura da terceira temporada do projeto.",
@@ -739,7 +729,7 @@ export const aulasWebinarsUniversidadeDelphi = [
   },
 
   {
-    id: 65,
+    id: 69,
     img: CapaVideo, // Substitua por sua imagem específica
     title: "Skia 4Delphi",
     description: "Um papo com Paulo Cesar, que juntamente com seu irmão Vinícius, criou a biblioteca gráfica Skia4Delphi. Vencedores do Spirit of Delphi 2021",
@@ -750,7 +740,7 @@ export const aulasWebinarsUniversidadeDelphi = [
   },
 
   {
-    id: 66,
+    id: 70,
     img: CapaVideo, // Substitua por sua imagem específica
     title: "A evolução da espécie - Embarcadero Conference 2021",
     description: "Uma visão sobre Educação e Indústria de TI e como podemos evoluir essa aproximação para encurtarmos os caminhos dos alunos até o mercado de trabalho em uma área que clama por mão de obra qualificada",
@@ -762,7 +752,7 @@ export const aulasWebinarsUniversidadeDelphi = [
 
   
   {
-    id: 67,
+    id: 71,
     img: CapaVideo, // Substitua por sua imagem específica
     title: "Tipos Enumerados",
     description: "Um tipo enumerado define um conjunto ordenado de valores simplesmente listando identificadores que indicam esses valores.",
@@ -773,7 +763,7 @@ export const aulasWebinarsUniversidadeDelphi = [
   },
 
   {
-    id: 68,
+    id: 72,
     img: CapaVideo, // Substitua por sua imagem específica
     title: "JSON Readers & Writers Framework",
     description: "A framework JSON Readers and Writers ler e gravar dados JSON diretamente em uma stream, possibilitando assim um melhor desempenho e consumo de memória",
@@ -784,7 +774,7 @@ export const aulasWebinarsUniversidadeDelphi = [
   },
 
   {
-    id: 69,
+    id: 73,
     img: CapaVideo, 
     title: "Testes Unitários com Delphi utilizando o DUnit",
     description: "Testes unitários auxiliam muito na hora do deploy da sua aplicação, um teste unitário bem feito pode mostrar erros que antes não eram percebidos.",
@@ -796,7 +786,7 @@ export const aulasWebinarsUniversidadeDelphi = [
   },
 
   {
-    id: 70,
+    id: 74,
     img: CapaVideo, 
     title: "Empreendedorismo",
     description: "Como Aprender Delphi pode me ajudar no Mercado de Trabalho?",
@@ -807,7 +797,7 @@ export const aulasWebinarsUniversidadeDelphi = [
    
   },
   {
-    id: 70,
+    id: 75,
     img: CapaVideo, 
     title: "RAD Server - Instalando o RAD Server",
     description: "Instalação do RAD SERVER que acompanha as edições do RAD Studio 10.3.3 ou superiores nas edições Enterprise e Architect.",
@@ -818,10 +808,10 @@ export const aulasWebinarsUniversidadeDelphi = [
   },
  
   {
-    id: 71,
+    id: 76,
     img: CapaVideo, 
     title: "Configuração Rápida do Android SDK - Outra maneira",
-    description: "",
+    description: "Você sabe como fazer uma configuração rápida do android sdk de outra maneira ",
     linkVideo: "https://www.youtube.com/watch?v=MZcaYg9YzaQ",
     linkIdVideo: "w8ijGwpVxbI",
     tag: "Apps",
@@ -829,10 +819,10 @@ export const aulasWebinarsUniversidadeDelphi = [
   },
  
   {
-    id: 72,
+    id: 77,
     img: CapaVideo, 
     title: "Enviando mensagens SMS em dispositivos Android.",
-    description: "",
+    description: "Como enviar sms em dispositivos android com delphi, aula completa e cheia de detalhes",
     linkVideo: "https://www.youtube.com/watch?v=LZqAFZ6h388",
     linkIdVideo: "w8ijGwpVxbI",
     tag: "Apps",
@@ -840,20 +830,20 @@ export const aulasWebinarsUniversidadeDelphi = [
   },
 
   {
-    id: 73,
+    id: 78,
     img: CapaVideo, 
     title: "Conectando a um banco de dados embarcado no dispositivo Android.",
-    description: "",
+    description: "Como conectar com banco de dados embarcado no dispositivo android com delphi, aula completa ",
     linkVideo: "https://www.youtube.com/watch?v=wts_JhJ5wUI",
     linkIdVideo: "wts_JhJ5wUI",
     tag: "Apps",
     category: "Apps",
   },
   {
-    id: 74,
+    id: 79,
     img: CapaVideo, 
     title: "Conhecendo Intents do Android",
-    description: "",
+    description: "Você já conhece sobre intents do android, acompanhe essa aula completa!",
     linkVideo: "https://www.youtube.com/watch?v=N1nLBMfvYVk",
     linkIdVideo: "N1nLBMfvYVk",
     tag: "Apps",
@@ -861,7 +851,7 @@ export const aulasWebinarsUniversidadeDelphi = [
   },
   
   {
-    id: 75,
+    id: 80,
     img: CapaVideo, 
     title: "Semana DMVC Framework - Aula 1",
     description: "Construindo APIs RESTful do Zero como DMVC",
@@ -871,7 +861,7 @@ export const aulasWebinarsUniversidadeDelphi = [
     category: "Lab",
   },
   {
-    id: 76,
+    id: 81,
     img: CapaVideo, 
     title: "Semana DMVC Framework - Aula 2",
     description: "Construindo APIs RESTful do Zero como DMVC",
@@ -881,7 +871,7 @@ export const aulasWebinarsUniversidadeDelphi = [
     category: "Lab",
   },
   {
-    id: 77,
+    id: 82,
     img: CapaVideo, 
     title: "Semana DMVC Framework - Aula 3",
     description: "Construindo APIs RESTful do Zero como DMVC",
@@ -891,7 +881,7 @@ export const aulasWebinarsUniversidadeDelphi = [
     category: "Lab",
   },
   {
-    id: 78,
+    id: 83,
     img: CapaVideo, 
     title: "Semana DMVC Framework - Aula 4",
     description: "Construindo APIs RESTful do Zero como DMVC",
@@ -901,7 +891,7 @@ export const aulasWebinarsUniversidadeDelphi = [
     category: "Lab",
   },
   {
-    id: 79,
+    id: 84,
     img: CapaVideo, 
     title: "Semana DMVC Framework - Aula 5",
     description: "Construindo APIs RESTful do Zero como DMVC",
@@ -911,7 +901,7 @@ export const aulasWebinarsUniversidadeDelphi = [
     category: "Lab",
   },
   {
-    id: 80,
+    id: 85,
     img: CapaVideo, 
     title: "Delphi e Google Cloud Vision",
     description: "Detecção Facial e Reconhecimento ótico de caracteres (OCR)",
