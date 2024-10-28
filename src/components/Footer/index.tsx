@@ -4,6 +4,8 @@ import { useCustomNavigation } from "../../hooks/useCustomNavigation/useCustomNa
 import LogoFooter from "../../assets/logo.png";
 import Grid from "@mui/material/Grid2";
 import { livesUniversidadeDelphi } from "../../constants/mocks/Lives";
+import { ROUTES } from "../../routes/paths";
+import { Login } from "@mui/icons-material";
 
 export const Footer = () => {
   const { handleNavigation } = useCustomNavigation();
@@ -72,25 +74,8 @@ export const Footer = () => {
           })}
          
         </Grid>
-
-        {/*
-         <Grid size={{ xs: 12, sm: 6, md: 3 }}>
-          <Typography variant="h6" sx={{ mb: 2 }}>
-            Social
-          </Typography>
-          <Box>
-            <Link href="#" sx={{ display: "flex", color: "#fff", mb: 1 }}>
-              @universidadedelphi
-            </Link>
-            <Link href="#" sx={{ display: "flex", color: "#fff", mb: 1 }}>
-              @universidade_delphi
-            </Link>
-            <Link href="#" sx={{ display: "flex", color: "#fff", mb: 1 }}>
-              @universidade delphi
-            </Link>
-          </Box>
-        </Grid>
-        */}    
+ 
+     
     
         <Grid size={{ xs: 12, sm: 6, md: 3 }}>
           <Typography variant="h6" sx={{ mb: 2 }}>
@@ -108,6 +93,20 @@ export const Footer = () => {
             </Link>
           </Box>
         </Grid>
+
+        <Grid size={{ xs: 12, sm: 6, md: 3 }}>
+          <Typography variant="h6" sx={{ mb: 2 }}>
+            Área do Admin
+          </Typography>
+          <Box sx={{display:"flex",flexDirection:"row",}}>
+    
+            <Link onClick={() => handleNavigation(ROUTES.LOGIN)} sx={{ display: "flex",cursor:"pointer", color: "#fff", mb: 1, gap:0.5 }}>
+              Acessar <Login sx={{fontSize: 20, marginTop:0.4}}/>  
+            </Link>
+         
+          </Box>
+        </Grid>
+        
       </Grid>
 
       <Divider sx={{ background: "#fff" }} />

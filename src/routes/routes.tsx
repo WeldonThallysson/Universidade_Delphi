@@ -7,6 +7,13 @@ import Lives from "../pages/Lives";
 import ClassRoom from "../pages/Classroom";
 import Courses from "../pages/Courses";
 import DetailsCourses from "../pages/Courses/DetailsCourse";
+import { LayoutDashboard } from "../components/Layouts/LayoutDashboard";
+import HomeDashboard from "../pages/Dashboard/HomeDashboard";
+import Login from "../pages/Auth/login";
+import CoursesDashboard from "../pages/Dashboard/CoursesDashboard";
+import ClassDashboard from "../pages/Dashboard/ClassDashboard";
+import CategoryDashboard from "../pages/Dashboard/CategoriesDashboard";
+import LivesDashboard from "../pages/Dashboard/LivesDashboard";
 
 
 export const routes = createBrowserRouter([
@@ -42,6 +49,50 @@ export const routes = createBrowserRouter([
                 path: ROUTES.HELP,
                 element: <Community/>
             }
+
+        ]
+    },
+    {
+        path: ROUTES.LOGIN,
+        element: <Login/>
+    },
+    {
+        path: ROUTES.DASHBOARD,
+        element: <LayoutDashboard/>,
+        children: [
+            {
+                path: ROUTES.DASHBOARD,
+                element: <HomeDashboard/>
+            },
+            {
+
+                path: ROUTES.CATEGORIES_DASHBOARD,
+                element: <CategoryDashboard/>
+
+
+            },
+            {
+
+                path: ROUTES.COURSES_DASHBOARD,
+                element: <CoursesDashboard/>
+
+            },
+
+            {
+
+                path: ROUTES.CLASS_DASHBOARD,
+                element: <ClassDashboard/>
+
+
+            },
+            {
+
+                path: ROUTES.LIVES_DASHBOARD,
+                element: <LivesDashboard/>
+
+
+            },
+        
 
         ]
     }

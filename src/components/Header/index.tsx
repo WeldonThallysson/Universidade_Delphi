@@ -24,7 +24,7 @@ import { DrawerMobile } from "./Mobile/DrawerMobile";
 import { useCustomNavigation } from "../../hooks/useCustomNavigation/useCustomNavigation";
 import { useTheme } from "../../hooks/useTheme/useTheme";
 import { ROUTES } from "../../routes/paths";
-import SearchInputAutocomplete from "../UI/Inputs";
+import { Inputs} from "../UI/Inputs";
 
 
 import { aulasApiRestHorse } from "../../constants/mocks/Aulas/ApiRestHorse"
@@ -146,7 +146,7 @@ export default function Header() {
           </Box>
 
           <Box sx={{ display: { xs: "none", lg: "flex" }, ml: -10 }}>
-            <SearchInputAutocomplete
+            <Inputs.SearchInputAutocomplete
               options={searchOptions} 
               onSearch={(value) => {
                 if (value?.idCourse) {
@@ -177,7 +177,7 @@ export default function Header() {
           </Box>
         </Toolbar>
         <Box sx={{ display: { xs: "flex", lg: "none" }, padding: "0.5rem 1rem"}}>
-              <SearchInputAutocomplete
+              <Inputs.SearchInputAutocomplete
                 options={searchOptions} 
                 onSearch={(value) => {
                   if (value?.idCourse) {
