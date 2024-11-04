@@ -16,6 +16,7 @@ import { useState } from "react";
 import { menuDashboard } from "../../constants/mocks/MenuDashboard/mocks";
 import { useCustomNavigation } from "../../hooks/useCustomNavigation/useCustomNavigation";
 import Logo from '../../assets/logo.png'
+import { useDashboards } from "../../store/dashboard";
 const drawerWidth = 240;
 
 export const DashboardMenu = () => {
@@ -24,9 +25,10 @@ export const DashboardMenu = () => {
   const { handleNavigation } = useCustomNavigation();
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
-  };
+  };  
 
-  const [tabSelected,setTabSelected] = useState<number>(1)
+  const {tabSelected,handleSelectTab} = useDashboards()
+
 
   const drawer = (
     <Box
@@ -47,18 +49,18 @@ export const DashboardMenu = () => {
           <ListItem
             key={item.id}
             onClick={() => {
-              setTabSelected(item.id)
+              handleSelectTab(item.path)
               handleNavigation(item.path)
             }}
             sx={{
-              bgcolor: item.id === tabSelected ? theme.colors.primary : "transparent",
-              color: item.id === tabSelected ? theme.colors.secondary : theme.colors.terciary,
+              bgcolor: item.path === tabSelected ? theme.colors.primary : "transparent",
+              color: item.path === tabSelected ? theme.colors.secondary : theme.colors.terciary,
               transition: "ease-in-out 0.2s",
               
               "&:hover": {
                 cursor:"pointer",
                 transition: "ease-in-out 0.2s",
-                bgcolor: item.id === tabSelected ? "#b81929" : "#6e1d1d",
+                bgcolor: item.path === tabSelected ? "#b81929" : "#6e1d1d",
               },
               gap: 1,
               borderRadius: 1

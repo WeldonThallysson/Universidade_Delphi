@@ -23,7 +23,7 @@ export const Default = ({register,name,placeholder,background,error, colorFocuse
         placeholder={placeholder ?? ''}
         sx={{
             borderRadius: 1,
-            background: background ,//theme.colors.secondary
+            background: background ?? 'white' ,//theme.colors.secondary
             
             "& .MuiOutlinedInput-root": {
                 "& fieldset": {

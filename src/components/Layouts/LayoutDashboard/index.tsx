@@ -29,6 +29,7 @@ export const LayoutDashboard = () => {
           flexDirection: "row",
           alignItems: "flex-start",
           justifyContent: "flex-start",
+          
         }}
       >
         <DashboardMenu />
@@ -36,9 +37,9 @@ export const LayoutDashboard = () => {
         component="main"
         sx={{
           flexGrow: 1,
-          p: 3,
+          p: "3rem 2rem",
           width: "100%",
-          height: "100vh",
+          height: {xs: 'auto',sm:"100vh"},
           background:theme.colors.secondary
         }}
       >

@@ -7,7 +7,8 @@ export const useTheme = () => {
             secondary: "#e2e2e2",
             terciary: "#161616",
             redDark: "#790c17",
-            gray:"#242323"
+            gray:"#242323",
+            blacksoft: "#131212"
            
     }
 } 

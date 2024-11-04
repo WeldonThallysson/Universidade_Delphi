@@ -13,7 +13,9 @@ export enum ROUTES {
 
 
     LOGIN = "/login",
-    
+    RECOVER_PASSWORD = "/recoverpassword",
+    REDEFINE_PASSWORD = "/redefinepassword/:token",
+
     DASHBOARD = "/dashboard" ,
     
     CATEGORIES_DASHBOARD = '/dashboard/categories',

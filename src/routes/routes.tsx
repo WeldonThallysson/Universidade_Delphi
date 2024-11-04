@@ -14,6 +14,8 @@ import CoursesDashboard from "../pages/Dashboard/CoursesDashboard";
 import ClassDashboard from "../pages/Dashboard/ClassDashboard";
 import CategoryDashboard from "../pages/Dashboard/CategoriesDashboard";
 import LivesDashboard from "../pages/Dashboard/LivesDashboard";
+import RecoverPassword from "../pages/Auth/RecoverPassword";
+import RedefinePassword from "../pages/Auth/RedefinePassword";
 
 
 export const routes = createBrowserRouter([
@@ -55,6 +57,14 @@ export const routes = createBrowserRouter([
     {
         path: ROUTES.LOGIN,
         element: <Login/>
+    },
+    {
+        path: ROUTES.RECOVER_PASSWORD,
+        element: <RecoverPassword/>
+    },
+    {
+        path: ROUTES.REDEFINE_PASSWORD,
+        element: <RedefinePassword/>
     },
     {
         path: ROUTES.DASHBOARD,
