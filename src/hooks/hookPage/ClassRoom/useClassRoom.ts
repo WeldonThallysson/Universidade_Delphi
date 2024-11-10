@@ -8,6 +8,11 @@ import { aulasMaratonaIntraWeb } from "../../../constants/mocks/Aulas/MaratonaIn
 import { desvendandoDebugDelphi } from "../../../constants/mocks/Aulas/MiniCursoDebugDelphi";
 import { minicursoDesktop } from "../../../constants/mocks/Aulas/MiniCursoDesenvolvimentoDesktop";
 import { delphiPoo } from "../../../constants/mocks/Aulas/MiniCursoDelphiPoo";
+import { useGetAllClass } from "../../../services/service.class";
+import { usePaginations } from "../../../store/paginations";
+import { useLoading } from "../../../store/loading";
+import { useClassState } from "../../../store/class";
+import { IClassItem, IParamsClass } from "../../../interface/Services/interface.class.services";
 
 type PropsParams = {
     idAula?: number;
@@ -16,6 +21,14 @@ type PropsParams = {
 
 export const useClassRoom = () => {
   const { handleNavigation } = useCustomNavigation();
+  const {mutate: getAllClass } = useGetAllClass()
+  const {page, limit,handleChangePage} = usePaginations()
+
+  const {dataClass,handleDataClass} = useClassState()
+  
+  const {loading, handleActiveLoading,handleInactiveLoading} = useLoading()
+
+
   const [allClass, setAllClass] = useState<ILives[]>([]);
   const [classSelected, setClassSelected] = useState<ILives>();
   const allClassUD = [...criandoPrimeiraAplicacao,...aulasWebinarsUniversidadeDelphi,...aulasApiRestHorse,...aulasMaratonaIntraWeb,...desvendandoDebugDelphi,...minicursoDesktop,...delphiPoo]
@@ -35,12 +48,53 @@ export const useClassRoom = () => {
     }
   };
 
+  const handleGetAllClass = ({name,tag,data,tutor}: IParamsClass) => {
+    const params = {
+        name,
+        tag,
+        data,
+        tutor,
+        page, 
+        limit
+    }
+    handleActiveLoading()
+    getAllClass(params, {
+        onSuccess: (res) => {
+            handleInactiveLoading()
+            handleDataClass(res)
+        },
+        onError: (err) => {
+            handleInactiveLoading()
+            console.log(err.message)
+        }
+        
+    })
+}
+
+const dataClassFormatted = dataClass?.items.map((item) => {
+  return {
+     name: item.name,
+     description: item.description,
+     tag:item.tag,
+     tutor: item.tutor,
+     actions: [
+      { label: 'Edit', icon: 'edit', onClick: (row: IClassItem) => console.log('Edit:', row.id) },
+      { label: 'Delete', icon: 'delete', onClick: (row: IClassItem) => console.log('Delete:', row.id) },
+    ],
+  }
+}) 
+
 
   return {
+    dataClassFormatted,
+    loading,
+    handleGetAllClass,
     handleNavigation,
     handleFilterClassSelected,
     handleFilterAllClass,
     allClass,
     classSelected,
+    handleChangePage,
+    page,
   };
 };

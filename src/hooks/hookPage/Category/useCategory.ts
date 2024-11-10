@@ -1,5 +1,5 @@
-import { IParamsCategory } from "../../../interface/Services/interface.category.services"
-import { useGetAllCategory } from "../../../services/service.category"
+import { ICategoryItem, IParamsCategory } from "../../../interface/Services/interface.category.services"
+import { useGetAllCategory, useGetCategories } from "../../../services/service.category"
 import { useCategoryState } from "../../../store/category"
 import { useLoading } from "../../../store/loading"
 import { usePaginations } from "../../../store/paginations"
@@ -7,8 +7,10 @@ import { usePaginations } from "../../../store/paginations"
 
 export const useCategory = () => {
     const {mutate: getAllCategory } = useGetAllCategory()
+    const {mutate: getAllCategories } = useGetCategories()
     const {page,limit, handleChangePage} = usePaginations()
-    const {dataCategory,handleDataDashboard} = useCategoryState()
+    const {dataCategory,handleDataCategory} = useCategoryState()
+    
     const {loading, handleActiveLoading,handleInactiveLoading} = useLoading()
     
     const handleGetAllCategory = ({name,description}: IParamsCategory) => {
@@ -22,7 +24,7 @@ export const useCategory = () => {
         getAllCategory(params, {
             onSuccess: (res) => {
                 handleInactiveLoading()
-                handleDataDashboard(res)
+                handleDataCategory(res)
             },
             onError: (err) => {
                 handleInactiveLoading()
@@ -32,6 +34,8 @@ export const useCategory = () => {
         })
     }
 
+        
+
     
     const dataCategoryFormatted = dataCategory?.items.map((item) => {
         return {
@@ -39,8 +43,8 @@ export const useCategory = () => {
            description: item.description,
            tag:item.tag,
            actions: [
-            { label: 'Edit', icon: 'edit', onClick: (row) => console.log('Edit:', row) },
-            { label: 'Delete', icon: 'delete', onClick: (row) => console.log('Delete:', row) },
+            { label: 'Edit', icon: 'edit', onClick: (row: ICategoryItem) => console.log('Edit:', row.id) },
+            { label: 'Delete', icon: 'delete', onClick: (row: ICategoryItem) => console.log('Delete:', row.id) },
           ],
         }
     }) 
@@ -52,6 +56,7 @@ export const useCategory = () => {
         page,
         loading,
         dataCategoryFormatted,
+        
         handleGetAllCategory,
         handleChangePage
     }

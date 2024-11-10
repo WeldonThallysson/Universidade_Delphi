@@ -7,8 +7,8 @@ export const BreadcrumbCategory: IBreadcrumbItem[] = [
     path: ROUTES.DASHBOARD,
   },
   {
-    label: "Categorias",
-    path: ROUTES.CATEGORIES_DASHBOARD,
+    label: "Cursos",
+    path: ROUTES.COURSES_DASHBOARD,
   },
 ];
 
@@ -18,12 +18,12 @@ export const BreadcrumbRegister: IBreadcrumbItem[] = [
     path: ROUTES.DASHBOARD,
   },
   {
-    label: "Categorias",
-    path: ROUTES.CATEGORIES_DASHBOARD,
+    label: "Cursos",
+    path: ROUTES.COURSES_DASHBOARD,
   },
   {
     label: "Registrar",
-    path: ROUTES.CATEGORIES_DASHBOARD_REGISTER,
+    path: ROUTES.COURSES_DASHBOARD_REGISTER,
   },
 ];
 
@@ -40,21 +40,21 @@ export const BreadcrumbEdit = ({
       path: ROUTES.DASHBOARD,
     },
     {
-      label: "Categorias",
+      label: "Cursos",
       path: ROUTES.CATEGORIES_DASHBOARD,
     },
     {
-      label: name ?? "Nome da categoria",
+      label: name ?? "Nome da curso",
       path: `/dashboard/categories/${id}/edit`,
     },
     {
       label: "Editar",
-      path: ROUTES.CATEGORIES_DASHBOARD_EDIT,
+      path: ROUTES.COURSES_DASHBOARD_EDIT,
     },
   ];
 };
 
-export const columnsCategory = [
+export const columnsCourses = [
   { id: "name", label: "Name", align: "left" },
   { id: "description", label: "Descrição", align: "left" },
   { id: "tag", label: "Tag", align: "left" },

@@ -12,6 +12,7 @@ type IPassword = {
     colorFocused?: string | null;
     backgroundFieldFocused?: string | null;
     error?: string | null;
+    heightInput?: number | null
 };
 
 export const Password = ({
@@ -22,6 +23,7 @@ export const Password = ({
     error,
     colorFocused,
     backgroundFieldFocused,
+    heightInput
 }: IPassword) => {
     const [showPassword, setShowPassword] = useState(false);
 
@@ -39,7 +41,9 @@ export const Password = ({
                 sx={{
                     borderRadius: 1,
                     background: background,
+                    height: heightInput ?? 48,  
                     "& fieldset": {
+                  
                         borderColor: "gray",
                     },
                     "&:hover fieldset": {

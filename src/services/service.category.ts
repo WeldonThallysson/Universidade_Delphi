@@ -29,6 +29,11 @@ export const getAllCategory = async (args: IParamsCategory) => {
   return await api.get<IResponseGetAllCategory>("/category", { params });
 };
 
+export const getAllCategories = async () => {
+
+  return await api.get<IResponseGetAllCategory>("/category");
+};
+
 export const getDetailsCategory = async (args: IParamsDetailsCategory) => {
   const { idCategory } = args;
 
@@ -97,6 +102,13 @@ export const useGetAllCategory = () =>
     mutationFn: (args: IParamsCategory) =>
       getAllCategory(args).then((res) => res.data),
   });
+
+export const useGetCategories = () =>
+    useMutation({
+      mutationFn: () =>
+        getAllCategories().then((res) => res.data),
+    });
+  
 
 export const useGetDetailsCategory = () =>
   useMutation({

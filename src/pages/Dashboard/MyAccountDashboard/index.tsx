@@ -8,18 +8,19 @@ import { BreadcrumbCategory, columnsCategory } from "../../../constants/mocks/Pa
 import { Inputs } from "../../../components/UI/Inputs";
 import Tables from "../../../components/UI/Tables";
 import { Paginations } from "../../../components/UI/Pagination";
-import VideocamIcon from '@mui/icons-material/Videocam';
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
 
-
-const LivesDashboard = () => {
+const MyAccountDashboard = () => {
   const {
     handleGetAllCategory,
     loading,
     page,
     dataCategoryFormatted,
     handleChangePage,
+    handleGetCategories,
   } = useCategory();
+
   const { theme } = useTheme();
   const { register, handleSubmit } = useForm();
 
@@ -46,7 +47,7 @@ const LivesDashboard = () => {
         
       }}>
 
-        <VideocamIcon sx={{fontSize: 25}}/>
+        <AccountCircleIcon sx={{fontSize: 30}}/>
         
         <Typography
           sx={{
@@ -56,9 +57,10 @@ const LivesDashboard = () => {
             fontWeight: "500"
           }}
         >
-        Lives
+        Minha Conta
         </Typography>
       </Box>
+
    
       <Box
         sx={{
@@ -147,4 +149,4 @@ const LivesDashboard = () => {
  );
 }
 
-export default LivesDashboard
+export default MyAccountDashboard

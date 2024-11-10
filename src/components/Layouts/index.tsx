@@ -17,7 +17,7 @@ export const Layouts = () => {
             display:"flex",
             flexDirection:"column",
             justifyContent:"space-between",   
-            height: "100vh"
+            height: "auto"
         }}>
             <Box sx={{
                 mb: {

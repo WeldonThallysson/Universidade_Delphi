@@ -16,6 +16,7 @@ import CategoryDashboard from "../pages/Dashboard/CategoriesDashboard";
 import LivesDashboard from "../pages/Dashboard/LivesDashboard";
 import RecoverPassword from "../pages/Auth/RecoverPassword";
 import RedefinePassword from "../pages/Auth/RedefinePassword";
+import MyAccountDashboard from "../pages/Dashboard/MyAccountDashboard";
 
 
 export const routes = createBrowserRouter([
@@ -102,6 +103,15 @@ export const routes = createBrowserRouter([
 
 
             },
+
+            {
+
+                path: ROUTES.ACCOUNT_DASHBOARD,
+                element: <MyAccountDashboard/>
+
+
+            },
+            
         
 
         ]

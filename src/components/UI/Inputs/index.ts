@@ -2,6 +2,8 @@
 import { Default } from "./Default";
 import { Password } from "./Password";
 import SearchInputAutocomplete from "./SearchInputAutocomplete";
+import { Selects } from "./Selects";
+import { SelectInput } from "./Selects/SelectInput";
 
 
 
@@ -9,5 +11,7 @@ import SearchInputAutocomplete from "./SearchInputAutocomplete";
 export const Inputs = {
     SearchInputAutocomplete,
     Default,
-    Password
+    Password,
+    SelectInput,
+    Selects
 }

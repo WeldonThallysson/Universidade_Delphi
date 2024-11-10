@@ -1,33 +1,33 @@
 import { IBreadcrumbItem } from "../../../../interface/InterfaceBreadcrumbs/interface.breadcrumbs";
 import { ROUTES } from "../../../../routes/paths";
 
-export const BreadcrumbCategory: IBreadcrumbItem[] = [
+export const BreadcrumbClass: IBreadcrumbItem[] = [
   {
     label: "Home",
     path: ROUTES.DASHBOARD,
   },
   {
-    label: "Categorias",
-    path: ROUTES.CATEGORIES_DASHBOARD,
+    label: "Aulas",
+    path: ROUTES.CLASS_DASHBOARD,
   },
 ];
 
-export const BreadcrumbRegister: IBreadcrumbItem[] = [
+export const BreadcrumbClassRegister: IBreadcrumbItem[] = [
   {
     label: "Home",
     path: ROUTES.DASHBOARD,
   },
   {
-    label: "Categorias",
-    path: ROUTES.CATEGORIES_DASHBOARD,
+    label: "Aulas",
+    path: ROUTES.CLASS_DASHBOARD,
   },
   {
     label: "Registrar",
-    path: ROUTES.CATEGORIES_DASHBOARD_REGISTER,
+    path: ROUTES.CLASS_DASHBOARD_REGISTER,
   },
 ];
 
-export const BreadcrumbEdit = ({
+export const BreadcrumbClassEdit = ({
   id,
   name,
 }: {
@@ -40,12 +40,12 @@ export const BreadcrumbEdit = ({
       path: ROUTES.DASHBOARD,
     },
     {
-      label: "Categorias",
-      path: ROUTES.CATEGORIES_DASHBOARD,
+      label: "Aulas",
+      path: ROUTES.CLASS_DASHBOARD,
     },
     {
-      label: name ?? "Nome da categoria",
-      path: `/dashboard/categories/${id}/edit`,
+      label: name ?? "Nome da aula",
+      path: `/dashboard/class/${id}/edit`,
     },
     {
       label: "Editar",
@@ -54,8 +54,10 @@ export const BreadcrumbEdit = ({
   ];
 };
 
-export const columnsCategory = [
-  { id: "name", label: "Name", align: "left" },
+export const columnsClass = [
+  { id: "name", label: "Nome", align: "left" },
   { id: "description", label: "Descrição", align: "left" },
   { id: "tag", label: "Tag", align: "left" },
+  { id: "tutor", label: "Tutor", align: "left"}
+
 ];

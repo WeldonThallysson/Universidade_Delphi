@@ -20,7 +20,7 @@ export const LayoutDashboard = () => {
         flexDirection: "column",
         justifyContent: "space-between",
         background: theme.colors.terciary,
-        height: "100vh",
+        height: "auto",
       }}
     >
       <Box
@@ -39,7 +39,7 @@ export const LayoutDashboard = () => {
           flexGrow: 1,
           p: "3rem 2rem",
           width: "100%",
-          height: {xs: 'auto',sm:"100vh"},
+          height: '100vh',
           background:theme.colors.secondary
         }}
       >
