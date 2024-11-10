@@ -18,11 +18,12 @@ export const getCountTotalCategory = async () => {
 };
 
 export const getAllCategory = async (args: IParamsCategory) => {
-  const { name, description, page, limit } = args;
+  const { name, description,tag, page, limit } = args;
 
   const params = {
     ...(name && {name}),
     ...(description && {description}),
+    ...(tag && {tag}),
     page,
     limit,
   };

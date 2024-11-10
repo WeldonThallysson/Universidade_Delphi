@@ -1,4 +1,6 @@
+import { ICategoryItem } from "./interface.category.services";
 import { IClassItem } from "./interface.class.services"; 
+import { IResponseUsersResume } from "./interface.users.services";
 
 export interface IParamsCourses {
   name?: string | null;
@@ -43,7 +45,9 @@ export interface ICoursesItem {
   data: string,
   urlImage: string,
   status: boolean,
+  category: ICategoryItem
   created_At: string
+  users: IResponseUsersResume
 }
 
 export interface IResponseGetAllCourses {

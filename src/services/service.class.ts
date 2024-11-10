@@ -18,12 +18,21 @@ export const getCountTotalClass = async () => {
 };
 
 export const getAllClass = async (args: IParamsClass) => {
-  const { name, data, id_category, tag, tutor, page, limit } = args;
+  const {   
+    name,
+    tag,
+    id_category,
+    id_course,
+    data,
+    tutor,
+    page, 
+    limit} = args;
 
   const params = {
     ...(name && { name }),
     ...(data && { data }),
     ...(id_category && { id_category }),
+    ...(id_course && {id_course}),
     ...(tag && { tag }),
     ...(tutor && { tutor }),
     page,

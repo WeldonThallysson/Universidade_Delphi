@@ -1,6 +1,11 @@
+import { ICategoryItem } from "./interface.category.services"
+import { ICoursesItem } from "./interface.courses.services"
+import { IResponseUsersResume } from "./interface.users.services"
+
 export interface IParamsClass {
     name?: string | null
     id_category?: string | null
+    id_course?: string | null
     tag?: string | null
     data?: string | null
     tutor?: string | null
@@ -30,6 +35,7 @@ export interface IParamsDeleteClass {
     tutor?: string | null
     tag?: string | null
     data?: string | null
+    
 }
 
 export interface IParamsEditClass {
@@ -64,7 +70,11 @@ export interface IClassItem {
   urlImage: string,
   order: number,
   status: boolean,
+  users: IResponseUsersResume
+  courses: ICoursesItem
+  category: ICategoryItem
   created_At: string
+
 }
 
 export interface IResponseGetAllClass {

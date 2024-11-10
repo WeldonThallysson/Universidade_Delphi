@@ -1,6 +1,9 @@
+import { IResponseUsersResume } from "./interface.users.services"
+
 export interface IParamsCategory {
     name?: string | null
     description?: string | null
+    tag?: string | null
     page?: number | null,
     limit?: number | null
 }
@@ -36,6 +39,7 @@ export interface ICategoryItem {
         description: string,
         created_At: string
         id_author?:  string | null
+        users: IResponseUsersResume
 }
 
 export interface IResponseGetAllCategory {

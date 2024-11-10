@@ -3,12 +3,12 @@ import { useCategory } from "../../../hooks/hookPage/Category/useCategory";
 import { useTheme } from "../../../hooks/useTheme/useTheme";
 import { useForm } from "react-hook-form";
 import { useEffect } from "react";
-import CustomBreadcrumbs from "../../../components/Breadcrumbs";
-import { BreadcrumbCategory, columnsCategory } from "../../../constants/mocks/PagesDashboard/Category/mocks";
+import CustomBreadcrumbs from "../../../components/Breadcrumbs"; 
 import { Inputs } from "../../../components/UI/Inputs";
 import Tables from "../../../components/UI/Tables";
 import { Paginations } from "../../../components/UI/Pagination";
 import VideocamIcon from '@mui/icons-material/Videocam';
+import { BreadcrumbLive, columnsLives } from "../../../constants/mocks/PagesDashboard/Lives/mocks";
 
 
 
@@ -19,7 +19,8 @@ const LivesDashboard = () => {
     page,
     dataCategoryFormatted,
     handleChangePage,
-  } = useCategory();
+  } = useLives();
+
   const { theme } = useTheme();
   const { register, handleSubmit } = useForm();
 
@@ -35,7 +36,7 @@ const LivesDashboard = () => {
       gap: 1,
     }}
   >
-    <CustomBreadcrumbs items={BreadcrumbCategory} />
+    <CustomBreadcrumbs items={BreadcrumbLive} />
     <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
       <Divider />
       <Box sx={{
@@ -70,7 +71,7 @@ const LivesDashboard = () => {
           borderRadius: 2,
         }}
       >
-        <Grid2 container spacing={2} alignItems={"center"}>
+          <Grid2 container spacing={2} alignItems={"center"}>
           <Grid2>
             <Inputs.Default
               label={"Nome"}
@@ -79,14 +80,39 @@ const LivesDashboard = () => {
               name="name"
             />
           </Grid2>
-          <Grid2>
-            <Inputs.Default
-              label={"Descrição"}
-              heightInput={40}
-              register={register}
-              name="description"
+          <Grid2 size={{
+             lg: 2
+          }}>
+            <Inputs.SelectInput
+              defaultValue={dataOptionsCategoriesFormated?.[0].value}
+              label={"Categorias"}
+              options={dataOptionsCategoriesFormated ?? []}
+              handleOptionSelected={(value) => { 
+                setValue('id_category',value) 
+                console.log(value) 
+              }}
+              width={"100%"}
             />
           </Grid2>
+         
+          <Grid2>
+            <Inputs.Default
+              label={"Tag"}
+              heightInput={40}
+              register={register}
+              name="tag"
+            />
+          </Grid2>
+
+          <Grid2>
+            <Inputs.Default
+              label={"Tutor"}
+              heightInput={40}
+              register={register}
+              name="tutor"
+            />
+          </Grid2>
+
           <Grid2
             sx={{
               display: "flex",
@@ -103,6 +129,8 @@ const LivesDashboard = () => {
                 background: theme.colors.primary,
                 color: theme.colors.secondary,
               }}
+              
+            onClick={() => handleSubmit(handleGetAllLives)}
             >
               Buscar
             </Button>
@@ -131,7 +159,7 @@ const LivesDashboard = () => {
       ) : (
         <>
           <Tables
-            columns={columnsCategory ?? []}
+            columns={columnsLives?? []}
             itemsRow={dataCategoryFormatted ?? []}
           />
           <Paginations

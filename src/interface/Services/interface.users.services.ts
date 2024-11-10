@@ -10,6 +10,14 @@ export interface IParamsUsers {
   limit?: number | null;
 }
 
+export interface IResponseUsersResume {
+  id: string;
+  name: string;
+  email: string;
+  status: boolean;
+  id_author: string;
+}
+
 export interface IParamsDetailsUsers {
   idUsers?: string | null;
 }
@@ -26,32 +34,32 @@ export interface IParamsRegisterUsers {
 }
 
 export interface IParamsEditUsers {
-  id: string | null 
-  id_user_logged: string | null  
-  name: string | null 
-  email: string | null  
-  masterAccess: boolean | null 
-   password: string | null 
-   status: boolean | null 
+  id: string | null;
+  id_user_logged: string | null;
+  name: string | null;
+  email: string | null;
+  masterAccess: boolean | null;
+  password: string | null;
+  status: boolean | null;
 }
 
 export interface IUsersItem {
-  id: string,
-  id_author: string,
-  name: string,
-  email: string,
-  status: boolean,
-  masterAccess: boolean,
-  category: ICategoryItem[],
-  courses: ICoursesItem[],
-  class: IClassItem[],
-  lives: ILiveItem[],
-  created_At: string,
+  id: string;
+  id_author: string;
+  name: string;
+  email: string;
+  status: boolean;
+  masterAccess: boolean;
+  category: ICategoryItem[];
+  courses: ICoursesItem[];
+  class: IClassItem[];
+  lives: ILiveItem[];
+  created_At: string;
   author: {
-      id: string,
-      name: string,
-      email: string
-  }
+    id: string;
+    name: string;
+    email: string;
+  };
 }
 
 export interface IResponseGetAllUsers {

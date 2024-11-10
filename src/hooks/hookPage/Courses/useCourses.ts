@@ -111,6 +111,8 @@ export const useCourses = () => {
 const dataCoursesFormatted = dataCourses?.items.map((item) => {
   return {
      name: item.name,
+     category: item.category?.name ?? 'Nenhum vinculado',
+     author: item.users.name,
      actions: [
       { label: 'Edit', icon: 'edit', onClick: (row: ICoursesItem) => console.log('Edit:', row.id) },
       { label: 'Delete', icon: 'delete', onClick: (row: ICoursesItem) => console.log('Delete:', row.id) },

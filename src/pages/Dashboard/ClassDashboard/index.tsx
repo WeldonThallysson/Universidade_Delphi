@@ -10,6 +10,7 @@ import { Inputs } from "../../../components/UI/Inputs";
 import PlayCircleIcon from '@mui/icons-material/PlayCircle';
 import { useClassRoom } from "../../../hooks/hookPage/ClassRoom/useClassRoom";
 import { columnsClass } from "../../../constants/mocks/PagesDashboard/Class/mocks";
+import { Containers } from "../../../components/UI/Containers";
 
 
 
@@ -17,18 +18,25 @@ const ClassDashboard = () => {
   const {
     dataClassFormatted,
     loading,
-    handleGetAllClass,
+
     page,
-    handleChangePage
+    dataOptionsCoursesFormated,
+    dataOptionsCategoriesFormated,
+    handleGetAllClass,
+    handleGetCourse,
+    handleChangePage,
+    handleGetCategories,
   } = useClassRoom();
 
   const { theme } = useTheme();
-  const { register, handleSubmit } = useForm();
+  const { register,setValue, handleSubmit } = useForm();
 
   useEffect(() => {
     handleGetAllClass({});
-  }, []);
-
+    handleGetCategories()
+    handleGetCourse()
+  }, [page]);
+ 
   
  return (
   <Box>
@@ -84,14 +92,52 @@ const ClassDashboard = () => {
               name="name"
             />
           </Grid2>
-          <Grid2>
-            <Inputs.Default
-              label={"Descrição"}
-              heightInput={40}
-              register={register}
-              name="description"
+          <Grid2 size={{
+             lg: 2
+          }}>
+            <Inputs.SelectInput
+              defaultValue={dataOptionsCategoriesFormated?.[0].value}
+              label={"Categorias"}
+              options={dataOptionsCategoriesFormated ?? []}
+              handleOptionSelected={(value) => { 
+                setValue('id_category',value) 
+                console.log(value) 
+              }}
+              width={"100%"}
             />
           </Grid2>
+          <Grid2 size={{
+             lg: 2
+          }}>
+            <Inputs.SelectInput
+              defaultValue={dataOptionsCoursesFormated?.[0].value}
+              label={"Cursos"}
+              options={dataOptionsCoursesFormated ?? []}
+              handleOptionSelected={(value) => { 
+                setValue('id_course',value) 
+                console.log(value) 
+              }}
+              width={"100%"}
+            />
+          </Grid2>
+          <Grid2>
+            <Inputs.Default
+              label={"Tag"}
+              heightInput={40}
+              register={register}
+              name="tag"
+            />
+          </Grid2>
+
+          <Grid2>
+            <Inputs.Default
+              label={"Tutor"}
+              heightInput={40}
+              register={register}
+              name="tutor"
+            />
+          </Grid2>
+
           <Grid2
             sx={{
               display: "flex",
@@ -108,6 +154,8 @@ const ClassDashboard = () => {
                 background: theme.colors.primary,
                 color: theme.colors.secondary,
               }}
+              
+            onClick={() => handleSubmit(handleGetAllClass)}
             >
               Buscar
             </Button>
@@ -135,6 +183,8 @@ const ClassDashboard = () => {
         </Box>
       ) : (
         <>
+          {dataClassFormatted?.length !== 0 ? (
+          <>
           <Tables
             columns={columnsClass ?? []}
             itemsRow={dataClassFormatted ?? []}
@@ -144,6 +194,12 @@ const ClassDashboard = () => {
             totalPages={10}
             onPageChange={(page) => handleChangePage(page)}
           />
+        </>
+        ) : (
+          <Containers.Default justifyContent={"center"} alignItems={"center"} height={"100%"} width={"100%"} padding={"2rem 0"}>
+          <Typography>Nenhuma aula encontrada...</Typography>
+       </Containers.Default>
+        )}
         </>
       )}
     </Box>

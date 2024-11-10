@@ -1,8 +1,12 @@
 import { IClassItem } from "./interface.class.services";
+import { IResponseUsersResume } from "./interface.users.services";
 
 export interface IParamsLive {
   name?: string | null;
-  category_id?: string | null;
+  id_category?: string | null;
+  tag?: string | null;
+  data?: string | null;
+  tutor?: string | null;
   page?: number | null;
   limit?: number | null;
 }
@@ -54,6 +58,7 @@ export interface ILiveItem {
   urlVideo: string;
   urlImage: string;
   status: boolean | null;
+  users: IResponseUsersResume
   created_At: string | null;
 }
 

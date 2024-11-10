@@ -29,6 +29,10 @@ export const getAllCourses = async (args: IParamsCourses) => {
   return await api.get<IResponseGetAllCourses>("/courses", { params });
 };
 
+export const getCourses = async () => {
+  return await api.get<IResponseGetAllCourses>("/courses");
+};
+
 export const getDetailsCourses = async (args: IParamsDetailsCourses) => {
   const { idCourses } = args;
 
@@ -118,6 +122,12 @@ export const useGetAllCourses = () =>
       getAllCourses(args).then((res) => res.data),
   });
 
+  export const useGetCourses = () =>
+    useMutation({
+      mutationFn: () =>
+        getCourses().then((res) => res.data),
+    });
+  
 export const useGetDetailsCourses = () =>
   useMutation({
     mutationFn: (args: IParamsDetailsCourses) =>

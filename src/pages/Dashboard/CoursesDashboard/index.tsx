@@ -9,6 +9,8 @@ import Tables from "../../../components/UI/Tables";
 import { Paginations } from "../../../components/UI/Pagination";
 import SchoolIcon from '@mui/icons-material/School'; 
 import { useCourses } from "../../../hooks/hookPage/Courses/useCourses";
+import { columnsCourses } from "../../../constants/mocks/PagesDashboard/Courses/mocks";
+import { Containers } from "../../../components/UI/Containers";
 
 
 const CoursesDashboard = () => {
@@ -18,9 +20,9 @@ const CoursesDashboard = () => {
     dataCoursesFormatted,
     dataOptionsCategoriesFormated,
     handleChangePage,
-
+    handleGetCategories,
     handleGetAllCourses,
-    handleGetCategories
+
   } = useCourses();
 
 
@@ -30,7 +32,7 @@ const CoursesDashboard = () => {
   useEffect(() => {
     handleGetCategories()
     handleGetAllCourses({});
-  }, []);
+  }, [page]);
   
  return (
   <Box>
@@ -146,16 +148,25 @@ const CoursesDashboard = () => {
         </Box>
       ) : (
         <>
+        {dataCoursesFormatted?.length !== 0 ? (
+          <>
+          
           <Tables
-            columns={columnsCategory ?? []}
-            itemsRow={dataCoursesFormatted ?? []}
-          />
-          <Paginations
-            page={page}
-            totalPages={10}
-            onPageChange={(page) => handleChangePage(page)}
-          />
-        </>
+              columns={columnsCourses ?? []}
+              itemsRow={dataCoursesFormatted ?? []}
+            />
+            <Paginations
+              page={page}
+              totalPages={10}
+              onPageChange={(page) => handleChangePage(page)}
+            />
+          </>
+        ) : (
+          <Containers.Default justifyContent={"center"} alignItems={"center"} height={"100%"} width={"100%"} padding={"2rem 0"}>
+            <Typography>Nenhuma curso encontrado...</Typography>
+          </Containers.Default>
+        )}
+      </>
       )}
     </Box>
   </Box>

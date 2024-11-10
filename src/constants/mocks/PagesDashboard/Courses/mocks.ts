@@ -55,7 +55,7 @@ export const BreadcrumbEdit = ({
 };
 
 export const columnsCourses = [
-  { id: "name", label: "Name", align: "left" },
-  { id: "description", label: "Descrição", align: "left" },
-  { id: "tag", label: "Tag", align: "left" },
+  { id: "name", label: "Nome", align: "left" },
+  { id: "category", label: "Categoria", align: "left" },
+  { id: "author", label: "Autor", align: "left" },
 ];

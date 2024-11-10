@@ -11,16 +11,16 @@ import {
   BreadcrumbCategory,
   columnsCategory,
 } from "../../../constants/mocks/PagesDashboard/Category/mocks";
-import Tables from "../../../components/UI/Tables";
-import { Delete, Edit } from "@mui/icons-material";
+import Tables from "../../../components/UI/Tables"; 
 import { useCategory } from "../../../hooks/hookPage/Category/useCategory";
-import { Paginations } from "../../../components/UI/Pagination";
-import { usePaginations } from "../../../store/paginations";
+import { Paginations } from "../../../components/UI/Pagination"; 
 import { useEffect } from "react";
 import { Inputs } from "../../../components/UI/Inputs";
 import { useForm } from "react-hook-form";
 import { useTheme } from "../../../hooks/useTheme/useTheme";
 import CategoryIcon from '@mui/icons-material/Category';
+import { Containers } from "../../../components/UI/Containers";
+
 const CategoryDashboard = () => {
   const {
     handleGetAllCategory,
@@ -28,13 +28,15 @@ const CategoryDashboard = () => {
     page,
     dataCategoryFormatted,
     handleChangePage,
+  
   } = useCategory();
+  
   const { theme } = useTheme();
   const { register, handleSubmit } = useForm();
 
   useEffect(() => {
     handleGetAllCategory({});
-  }, []);
+  }, [page]);
 
   return (
     <Box>
@@ -99,6 +101,17 @@ const CategoryDashboard = () => {
                   name="description"
                 />
               </Grid2>
+
+              <Grid2>
+                <Inputs.Default
+                  label={"Tag"}
+                  heightInput={40}
+                  register={register}
+                  name="tag"
+                />
+              </Grid2>
+              
+              
               <Grid2
                 sx={{
                   display: "flex",
@@ -115,6 +128,7 @@ const CategoryDashboard = () => {
                     background: theme.colors.primary,
                     color: theme.colors.secondary,
                   }}
+                  onClick={handleSubmit(handleGetAllCategory)}
                 >
                   Buscar
                 </Button>
@@ -142,15 +156,24 @@ const CategoryDashboard = () => {
             </Box>
           ) : (
             <>
-              <Tables
-                columns={columnsCategory ?? []}
-                itemsRow={dataCategoryFormatted ?? []}
-              />
-              <Paginations
-                page={page}
-                totalPages={10}
-                onPageChange={(page) => handleChangePage(page)}
-              />
+              {dataCategoryFormatted?.length !== 0 ? (
+                <>
+                   <Tables
+                    columns={columnsCategory ?? []}
+                    itemsRow={dataCategoryFormatted ?? []}
+                  />
+                  <Paginations
+                    page={page}
+                    totalPages={10}
+                    onPageChange={(page) => handleChangePage(page)}
+                  />
+                </>
+              ) : (
+                <Containers.Default justifyContent={"center"} alignItems={"center"} height={"auto"} width={"100%"} padding={"2rem 0"}>
+                   <Typography>Nenhuma categoria encontrada...</Typography>
+                </Containers.Default>
+              )}
+             
             </>
           )}
         </Box>
