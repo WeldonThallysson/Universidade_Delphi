@@ -18,8 +18,9 @@ export const Layouts = () => {
   
     useEffect(() => {
       const storageAuth = handleGetStorage(KeyStorage.AuthTokenStorage)
-      if(!storageAuth.token) {
-        handleNavigation(ROUTES.LOGIN)
+      
+      if (!storageAuth?.token) {
+        handleNavigation(ROUTES.HOME)
       }
       else { 
         handleNavigation(ROUTES.DASHBOARD)
@@ -27,8 +28,13 @@ export const Layouts = () => {
             idUsers: storageAuth.id
         })
       }
-      window.scrollTo(0, 0);
+    
     }, []);
+
+    useEffect(() => {
+
+      window.scrollTo(0, 0);
+    },[pathname])
     return (
         <Box sx={{
             display:"flex",

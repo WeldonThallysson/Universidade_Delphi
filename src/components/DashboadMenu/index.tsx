@@ -17,6 +17,7 @@ import { menuDashboard } from "../../constants/mocks/MenuDashboard/mocks";
 import { useCustomNavigation } from "../../hooks/useCustomNavigation/useCustomNavigation";
 import Logo from '../../assets/logo.png'
 import { useDashboards } from "../../store/dashboard";
+import { useAuth } from "../../hooks/hookPage/Auth/useAuth";
 const drawerWidth = 240;
 
 export const DashboardMenu = () => {
@@ -29,6 +30,7 @@ export const DashboardMenu = () => {
 
   const {tabSelected,handleSelectTab} = useDashboards()
 
+  const {handleLogout} = useAuth()
 
   const drawer = (
     <Box
@@ -95,7 +97,7 @@ export const DashboardMenu = () => {
         
       
         }}
-        onClick={() => handleNavigation("/")}
+        onClick={() => handleLogout()}
       >
         <Icon sx={{ color: "white" }}>logout</Icon>
         <ListItemText primary="Logout" sx={{ color: theme.colors.secondary }} />

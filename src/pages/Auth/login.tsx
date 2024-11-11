@@ -9,12 +9,18 @@ import { Inputs } from "../../components/UI/Inputs";
 import { z } from "zod";
 
 import { useAuth } from "../../hooks/hookPage/Auth/useAuth";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { ROUTES } from "../../routes/paths";
+import { useEffect } from "react";
+import { KeyStorage } from "../../constants/keys/key.localstorage";
+import { useMyAccount } from "../../hooks/hookPage/MyAccount/useMyAccount";
+import { useCustomNavigation } from "../../hooks/useCustomNavigation/useCustomNavigation";
+import { useStorage } from "../../hooks/useStorage/useStorage";
 
 const Login = () => {
   type formAuthenticationSchema = z.infer<typeof schemaLogin>;
   const { theme } = useTheme();
+  const {pathname} = useLocation()
   const {
     register,
     handleSubmit,
@@ -23,6 +29,26 @@ const Login = () => {
     resolver: zodResolver(schemaLogin),
   });
   const { handleLogin,loading } = useAuth();
+
+  const {handleGetDetailsAccount} = useMyAccount()
+  const {handleNavigation} = useCustomNavigation()
+  const {handleGetStorage} = useStorage()
+
+  useEffect(() => {
+    const storageAuth = handleGetStorage(KeyStorage.AuthTokenStorage)
+    
+    if (!storageAuth?.token) {
+      handleNavigation(ROUTES.HOME)
+    }
+    
+    else { 
+      handleNavigation(ROUTES.DASHBOARD)
+      handleGetDetailsAccount({
+          idUsers: storageAuth.id
+      })
+    }
+  
+  }, [pathname]);
 
   return (
     <Containers.DefaultAnimated>

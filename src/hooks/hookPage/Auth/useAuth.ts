@@ -17,6 +17,8 @@ export const useAuth = () => {
     const {handleNavigation} = useCustomNavigation()
     const {mutate: authentication} = useAuthentication()
     const {loading,handleActiveLoading,handleInactiveLoading} = useLoading()
+
+
     const handleLogin = (item: formAuthenticationSchema) => {
         
         const data = {
@@ -27,7 +29,7 @@ export const useAuth = () => {
         authentication(data, {
             onSuccess: (res) => {
                 handleInactiveLoading()
-                handleSaveStorage({name: KeyStorage.AuthTokenStorage, data: res.token})
+                handleSaveStorage({name: KeyStorage.AuthTokenStorage, data: res})
                 toast.success(`Bem vindo ${res.name}`)
                 handleNavigation(ROUTES.DASHBOARD)
 
@@ -43,8 +45,14 @@ export const useAuth = () => {
     }
 
 
+    const handleLogout = () => {
+         localStorage.removeItem(KeyStorage.AuthTokenStorage)
+         handleNavigation(ROUTES.HOME)
+    }
+
     return {
         loading,
-        handleLogin
+        handleLogin,
+        handleLogout
     }
 }

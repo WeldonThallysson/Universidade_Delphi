@@ -20,17 +20,21 @@ export const LayoutDashboard = () => {
 
   useEffect(() => {
     const storageAuth = handleGetStorage(KeyStorage.AuthTokenStorage)
-    if(!storageAuth.token) {
-      handleNavigation(ROUTES.LOGIN)
-    }
-    else { 
-      handleNavigation(ROUTES.DASHBOARD)
-      handleGetDetailsAccount({
-          idUsers: storageAuth.id
-      })
-    }
-    window.scrollTo(0, 0);
+
+      if (!storageAuth?.token) {
+        handleNavigation(ROUTES.LOGIN)
+      }
+      else { 
+        handleNavigation(ROUTES.DASHBOARD)
+        handleGetDetailsAccount({
+            idUsers: storageAuth.id
+        })
+      }
   }, []);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  },[pathname])
 
   return (
     <Box
