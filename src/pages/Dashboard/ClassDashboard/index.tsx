@@ -96,7 +96,6 @@ const ClassDashboard = () => {
              lg: 2
           }}>
             <Inputs.SelectInput
-              defaultValue={dataOptionsCategoriesFormated?.[0].value}
               label={"Categorias"}
               options={dataOptionsCategoriesFormated ?? []}
               handleOptionSelected={(value) => { 
@@ -110,7 +109,6 @@ const ClassDashboard = () => {
              lg: 2
           }}>
             <Inputs.SelectInput
-              defaultValue={dataOptionsCoursesFormated?.[0].value}
               label={"Cursos"}
               options={dataOptionsCoursesFormated ?? []}
               handleOptionSelected={(value) => { 

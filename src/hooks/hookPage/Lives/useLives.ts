@@ -3,34 +3,35 @@ import { useState } from "react";
 
 import { livesUniversidadeDelphi } from "../../../constants/mocks/Lives";
 import { ILives } from "../../../interface/interfaceLive/interface.live";
-import { IParamsLive } from "../../../interface/Services/interface.live.services";
+import { ILiveItem, IParamsLive } from "../../../interface/Services/interface.live.services";
 import { useGetCategories } from "../../../services/service.category";
 import { useGetAllLive } from "../../../services/service.lives";
 import { usePaginations } from "../../../store/paginations";
 import { useLoading } from "../../../store/loading";
 import { useCategoryState } from "../../../store/category";
+import { useLiveState } from "../../../store/live";
+//import { aulasWebinarsUniversidadeDelphi } from "../../../constants/mocks/Aulas/AulasPrincipais";
+
 type PropsParams = {
   idLive: number;
 };
 
 export const useLives = () => {
-  const { handleNavigation } = useCustomNavigation();
+
   const [allLives, setAllLives] = useState<ILives[]>([]);
   const [liveSelected, setLive] = useState<ILives>();
+  const { handleNavigation } = useCustomNavigation()
 
   const { mutate: getAllLives } = useGetAllLive();
   const { mutate: getCategories } = useGetCategories();
-  const { mutate: getCourses } = useGetCourses();
+
   const { page, limit, handleChangePage } = usePaginations();
  
   const { loading, handleActiveLoading, handleInactiveLoading } = useLoading();
+  const {dataCategories, handleDataCategories} = useCategoryState()
 
-  const { dataCategories, handleDataCategories } = useCategoryState();
-  name,
-  id_category,
-  tag,
-  data,
-  tutor,
+  const {dataLive,handleDataLive} = useLiveState()
+  
   const handleGetCategories = () => {
     handleActiveLoading();
     getCategories(undefined, {
@@ -45,19 +46,7 @@ export const useLives = () => {
     });
   };
 
-  const handleGetCourse = () => {
-    handleActiveLoading();
-    getCourses(undefined, {
-      onSuccess: (res) => {
-        handleInactiveLoading();
-        handleDataAllCourses(res);
-      },
-      onError: (err) => {
-        handleInactiveLoading();
-        console.log(err.message);
-      },
-    });
-  };
+  /*
 
   const handleFilterClassSelected = ({ idAula }: PropsParams) => {
     const live = aulasWebinarsUniversidadeDelphi.find(
@@ -65,7 +54,6 @@ export const useLives = () => {
     );
     setClassSelected(live);
   };
-
   const handleFilterAllClass = ({ category }: PropsParams) => {
     if (category) {
       const otherLives = allClassUD.filter(
@@ -74,31 +62,27 @@ export const useLives = () => {
       );
       setAllClass(otherLives);
     }
-  };
+  };*/
 
   const handleGetAllLives = ({
     name,
     id_category,
-    id_course,
     tag,
-    data,
     tutor,
   }: IParamsLive) => {
     const params = {
       name,
       tag,
       id_category,
-      id_course,
-      data,
       tutor,
       page,
       limit,
     };
     handleActiveLoading();
-    getAllClass(params, {
+    getAllLives(params, {
       onSuccess: (res) => {
         handleInactiveLoading();
-        handleDataClass(res);
+        handleDataLive(res);
       },
       onError: (err) => {
         handleInactiveLoading();
@@ -107,6 +91,8 @@ export const useLives = () => {
     });
   };
   
+
+
   const handleFilterLiveSelected = ({
     idLive,
   }: PropsParams) => {
@@ -124,11 +110,42 @@ export const useLives = () => {
     }
   };
 
+
+  const dataLiveFormatted = dataLive?.items
+  .filter((item) => item !== null && item !== undefined) // Remove nulos e indefinidos
+  .map((item) => ({
+    name: item.name,
+    description: item.description,
+    category: item.category?.name ?? 'Nenhum vinculado',
+    tag: item.tag,
+    tutor: item.tutor,
+    actions: [
+      { label: "Edit", icon: "edit", onClick: (row: ILiveItem) => console.log("Edit:", row.id) },
+      { label: "Delete", icon: "delete", onClick: (row: ILiveItem) => console.log("Delete:", row.id) },
+    ],
+  }));
+
+  const dataOptionsCategoriesFormated = dataCategories?.items.map((item) => {
+    return {
+      label: item.name,
+      value: item.id
+    }
+ })
+
   return {
+    dataLive,
     handleNavigation,
     handleFilterLiveSelected,
     handleFilterAllLives,
+    handleGetAllLives,
     allLives,
     liveSelected,
+    loading,
+    page,
+    handleGetCategories,
+    dataOptionsCategoriesFormated,
+    dataCategories,
+    dataLiveFormatted,
+    handleChangePage,
   };
 };

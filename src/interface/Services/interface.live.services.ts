@@ -1,4 +1,4 @@
-import { IClassItem } from "./interface.class.services";
+import { ICategoryItem } from "./interface.category.services";
 import { IResponseUsersResume } from "./interface.users.services";
 
 export interface IParamsLive {
@@ -59,6 +59,7 @@ export interface ILiveItem {
   urlImage: string;
   status: boolean | null;
   users: IResponseUsersResume
+  category: ICategoryItem
   created_At: string | null;
 }
 

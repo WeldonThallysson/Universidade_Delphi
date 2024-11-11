@@ -18,14 +18,19 @@ export const getCountTotalLive = async () => {
 };
 
 export const getAllLive = async (args: IParamsLive) => {
-  const { name,category_id, page, limit } = args;
+  const { name,id_category,tag,data,tutor, page, limit } = args;
 
+ 
   const params = {
     ...(name && { name }),
-    ...(category_id && { category_id }),
+    ...(id_category && { id_category }),
+    ...(tag && {tag}),
+    ...(data && {data}),
+    ...(tutor && {tutor}),
     page,
     limit,
   };
+  
   return await api.get<IResponseGetAllLive>("/live", { params });
 };
 

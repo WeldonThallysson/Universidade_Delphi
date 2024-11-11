@@ -5,13 +5,32 @@ import { Footer } from "../../Footer";
 import { useEffect } from "react";
 import { DashboardMenu } from "../../DashboadMenu";
 import { useTheme } from "../../../hooks/useTheme/useTheme";
+import { useMyAccount } from "../../../hooks/hookPage/MyAccount/useMyAccount";
+import { useStorage } from "../../../hooks/useStorage/useStorage";
+import { KeyStorage } from "../../../constants/keys/key.localstorage";
+import { useCustomNavigation } from "../../../hooks/useCustomNavigation/useCustomNavigation";
+import { ROUTES } from "../../../routes/paths";
 
 export const LayoutDashboard = () => {
   const { pathname } = useLocation();
   const { theme } = useTheme();
+  const {handleGetDetailsAccount} = useMyAccount()
+  const {handleNavigation} = useCustomNavigation()
+  const {handleGetStorage} = useStorage()
+
   useEffect(() => {
+    const storageAuth = handleGetStorage(KeyStorage.AuthTokenStorage)
+    if(!storageAuth.token) {
+      handleNavigation(ROUTES.LOGIN)
+    }
+    else { 
+      handleNavigation(ROUTES.DASHBOARD)
+      handleGetDetailsAccount({
+          idUsers: storageAuth.id
+      })
+    }
     window.scrollTo(0, 0);
-  }, [pathname]);
+  }, []);
 
   return (
     <Box

@@ -5,10 +5,12 @@ export const useStorage = () => {
         localStorage.setItem(name, JSON.stringify(data))
     
     } 
-    const handleGetStorage = (item: string) => {
-        localStorage.getItem(item)
+    const handleGetStorage = (items: string) => {
+        const item = localStorage.getItem(items)
+        if(item){
+            return JSON.parse(item)
+        }
     }
-    
 
     return {
         handleSaveStorage,

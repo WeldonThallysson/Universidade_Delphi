@@ -93,7 +93,6 @@ const CoursesDashboard = () => {
              lg: 2
           }}>
             <Inputs.SelectInput
-              defaultValue={dataOptionsCategoriesFormated?.[0].value}
               label={"Categorias"}
               options={dataOptionsCategoriesFormated ?? []}
               handleOptionSelected={(value) => { 
@@ -120,7 +119,7 @@ const CoursesDashboard = () => {
                 color: theme.colors.secondary,
               }}
 
-            onClick={() => handleSubmit(handleGetAllCourses)}
+            onClick={handleSubmit(handleGetAllCourses)}
               >
               Buscar
             </Button>

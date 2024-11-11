@@ -57,7 +57,6 @@ export const BreadcrumbLiveEdit = ({
 export const columnsLives = [
   { id: "name", label: "Nome", align: "left" },
   { id: "description", label: "Descrição", align: "left" },
-  { id: "course", label: "Curso", align: "left" },
   { id: "category", label: "Categoria", align: "left" },
   { id: "tag", label: "Tag", align: "left" },
   { id: "tutor", label: "Tutor", align: "left"}
